@@ -15,7 +15,6 @@ Death Road to Canada 存档编辑器：在英文原版与简体中文汉化版�
 武器资料整理自 Death Road to Canada Wiki：
 https://deathroadtocanada.fandom.com/wiki/Death_Road_to_Canada_Wiki
 该数据仅用于本工具的本地显示和存档编辑辅助。
-如 Wiki 页面另有署名或授权要求，应以原页面要求为准。
 
 ### 刻晴相关图片
 刻晴相关图片为本项目的彩蛋素材，不代表本项目拥有相关角色或作品的商标、角色及版权。
