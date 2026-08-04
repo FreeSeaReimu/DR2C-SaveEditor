@@ -1,0 +1,2429 @@
+{
+  "schema_version": 1,
+  "game": "Death Road to Canada",
+  "purpose": "英文原版与简体中文汉化补丁的武器名称映射。",
+  "important": "此文件只映射名称和 weapondef 注册顺序；不能单独据此改写活动存档的武器数字 ID。汉化包还会从事件文件注册额外武器，必须在完整加载顺序确认后才可生成安全的 ID 转换表。",
+  "id_generation": "registration_order 是 weapondef 中 custom:/clone-to:（包含 load 子文件）的注册顺序，不保证等于活动存档的运行时武器 ID。",
+  "source": {
+    "english_registry": "weapondef.df",
+    "chinese_registry": "weapondef.df",
+    "pairing_method": "汉化版第 1 项“空手”在原版中没有对应自定义注册项；跳过该项后，按中英文 weapondef 及其 load 子文件的相同注册顺序配对。"
+  },
+  "chinese_only_entries": [
+    {
+      "chinese_registration_order": 1,
+      "chinese": "空手",
+      "conversion_policy": "do_not_infer_runtime_id"
+    }
+  ],
+  "weapon_name_pairs": [
+    {
+      "english_registration_order": 1,
+      "chinese_registration_order": 2,
+      "english": "Claw",
+      "chinese": "利爪",
+      "identifier": "claw"
+    },
+    {
+      "english_registration_order": 2,
+      "chinese_registration_order": 3,
+      "english": "Karate",
+      "chinese": "空手道",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 3,
+      "chinese_registration_order": 4,
+      "english": "Boxing",
+      "chinese": "拳击",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 4,
+      "chinese_registration_order": 5,
+      "english": "Kung Fu",
+      "chinese": "功夫",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 5,
+      "chinese_registration_order": 6,
+      "english": "Sumo",
+      "chinese": "相扑",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 6,
+      "chinese_registration_order": 7,
+      "english": "Blowtorch",
+      "chinese": "喷灯",
+      "identifier": "blowtorch"
+    },
+    {
+      "english_registration_order": 7,
+      "chinese_registration_order": 8,
+      "english": "Chainsaw",
+      "chinese": "链锯",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 8,
+      "chinese_registration_order": 9,
+      "english": "Baseball bat",
+      "chinese": "棒球棒",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 9,
+      "chinese_registration_order": 10,
+      "english": "Nail board",
+      "chinese": "钉板",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 10,
+      "chinese_registration_order": 11,
+      "english": "Wrench",
+      "chinese": "管钳",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 11,
+      "chinese_registration_order": 12,
+      "english": "Sledgehammer",
+      "chinese": "大锤",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 12,
+      "chinese_registration_order": 13,
+      "english": "Kitchen knife",
+      "chinese": "厨刀",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 13,
+      "chinese_registration_order": 14,
+      "english": "Meat cleaver",
+      "chinese": "菜刀",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 14,
+      "chinese_registration_order": 15,
+      "english": "Spatula",
+      "chinese": "刮勺",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 15,
+      "chinese_registration_order": 16,
+      "english": "Hatchet",
+      "chinese": "手斧",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 16,
+      "chinese_registration_order": 17,
+      "english": "Cowboy rifle",
+      "chinese": "牛仔步枪",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 17,
+      "chinese_registration_order": 18,
+      "english": "Hunting rifle",
+      "chinese": "狩猎步枪",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 18,
+      "chinese_registration_order": 19,
+      "english": "Shotgun",
+      "chinese": "霰弹枪",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 19,
+      "chinese_registration_order": 20,
+      "english": "Autoshotgun",
+      "chinese": "连发霰弹枪",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 20,
+      "chinese_registration_order": 21,
+      "english": "Slug Shotgun",
+      "chinese": "独头霰弹枪",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 21,
+      "chinese_registration_order": 22,
+      "english": "BIG DAWG",
+      "chinese": "敖犬霰弹枪",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 22,
+      "chinese_registration_order": 23,
+      "english": "Dolt 45",
+      "chinese": "柯二特.45左轮",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 23,
+      "chinese_registration_order": 24,
+      "english": "Pistol",
+      "chinese": "手枪",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 24,
+      "chinese_registration_order": 25,
+      "english": "Snubnose",
+      "chinese": "狮鼻左轮",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 25,
+      "chinese_registration_order": 26,
+      "english": "Uzi",
+      "chinese": "乌兹冲锋枪",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 26,
+      "chinese_registration_order": 27,
+      "english": "AK47",
+      "chinese": "AK47突击步枪",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 27,
+      "chinese_registration_order": 28,
+      "english": "Cane",
+      "chinese": "拐杖",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 28,
+      "chinese_registration_order": 29,
+      "english": "Frying Pan",
+      "chinese": "煎锅",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 29,
+      "chinese_registration_order": 30,
+      "english": "Otaku katana",
+      "chinese": "阿宅武士刀",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 30,
+      "chinese_registration_order": 31,
+      "english": "Piece of wood",
+      "chinese": "一片木板",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 31,
+      "chinese_registration_order": 32,
+      "english": "Crowbar",
+      "chinese": "撬棍",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 32,
+      "chinese_registration_order": 33,
+      "english": "Nightstick",
+      "chinese": "警棍",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 33,
+      "chinese_registration_order": 34,
+      "english": "Cricket bat",
+      "chinese": "板球棒",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 34,
+      "chinese_registration_order": 35,
+      "english": "Aluminum bat",
+      "chinese": "铝合金球棒",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 35,
+      "chinese_registration_order": 36,
+      "english": "Femur",
+      "chinese": "大腿骨",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 36,
+      "chinese_registration_order": 37,
+      "english": "Golf Club",
+      "chinese": "高尔夫球杆",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 37,
+      "chinese_registration_order": 38,
+      "english": "Medieval Axe",
+      "chinese": "中世纪战斧",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 38,
+      "chinese_registration_order": 39,
+      "english": "Strong Katana",
+      "chinese": "真武士刀",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 39,
+      "chinese_registration_order": 40,
+      "english": "Knight Sword",
+      "chinese": "骑士剑",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 40,
+      "chinese_registration_order": 41,
+      "english": "Claymore",
+      "chinese": "双刃大剑",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 41,
+      "chinese_registration_order": 42,
+      "english": "Zweihander",
+      "chinese": "双手剑",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 42,
+      "chinese_registration_order": 43,
+      "english": "Fire Axe",
+      "chinese": "消防斧",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 43,
+      "chinese_registration_order": 44,
+      "english": "Umbrella",
+      "chinese": "雨伞",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 44,
+      "chinese_registration_order": 45,
+      "english": "Beach Umbrella",
+      "chinese": "沙滩伞",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 45,
+      "chinese_registration_order": 46,
+      "english": "Hockey Stick",
+      "chinese": "冰球棒",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 46,
+      "chinese_registration_order": 47,
+      "english": "Xtreme Hockey Stick",
+      "chinese": "极限冰球棒",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 47,
+      "chinese_registration_order": 48,
+      "english": "Mountie Hockey Stick",
+      "chinese": "骑警冰球棒",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 48,
+      "chinese_registration_order": 49,
+      "english": "Cardboard Tube",
+      "chinese": "硬纸壳管",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 49,
+      "chinese_registration_order": 50,
+      "english": "Pitchfork",
+      "chinese": "干草叉",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 50,
+      "chinese_registration_order": 51,
+      "english": "Shovel",
+      "chinese": "铁铲",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 51,
+      "chinese_registration_order": 52,
+      "english": "Tree Branch",
+      "chinese": "树枝",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 52,
+      "chinese_registration_order": 53,
+      "english": "Metal Pipe",
+      "chinese": "金属管",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 53,
+      "chinese_registration_order": 54,
+      "english": "Rusty Machete",
+      "chinese": "生锈砍刀",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 54,
+      "chinese_registration_order": 55,
+      "english": "Sturdy Machete",
+      "chinese": "坚固砍刀",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 55,
+      "chinese_registration_order": 56,
+      "english": "Parking Meter",
+      "chinese": "停车计价表",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 56,
+      "chinese_registration_order": 57,
+      "english": "Lovely Wand",
+      "chinese": "可爱魔杖",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 57,
+      "chinese_registration_order": 58,
+      "english": "Rapier",
+      "chinese": "武装刺剑",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 58,
+      "chinese_registration_order": 59,
+      "english": "Toy Hammer",
+      "chinese": "玩具锤",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 59,
+      "chinese_registration_order": 60,
+      "english": "Gauntlet",
+      "chinese": "拳铠",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 60,
+      "chinese_registration_order": 61,
+      "english": "Punchquest Gauntlet",
+      "chinese": "Punchquest Gauntlet",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 61,
+      "chinese_registration_order": 62,
+      "english": "Boxing Glove",
+      "chinese": "拳击手套",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 62,
+      "chinese_registration_order": 63,
+      "english": "Uppercut",
+      "chinese": "上勾拳",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 63,
+      "chinese_registration_order": 64,
+      "english": "Morning Star",
+      "chinese": "流星锤",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 64,
+      "chinese_registration_order": 65,
+      "english": "Pool Noodle",
+      "chinese": "长杆",
+      "identifier": "pool1"
+    },
+    {
+      "english_registration_order": 65,
+      "chinese_registration_order": 66,
+      "english": "Pool Noodle",
+      "chinese": "长竿",
+      "identifier": "pool2"
+    },
+    {
+      "english_registration_order": 66,
+      "chinese_registration_order": 67,
+      "english": "Debutante Umbrella",
+      "chinese": "淑女伞",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 67,
+      "chinese_registration_order": 68,
+      "english": "Mason's Machete",
+      "chinese": "梅森砍刀",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 68,
+      "chinese_registration_order": 69,
+      "english": "Rambeux Knife",
+      "chinese": "蓝博匕首",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 69,
+      "chinese_registration_order": 70,
+      "english": "Minigun",
+      "chinese": "加特林机枪",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 70,
+      "chinese_registration_order": 71,
+      "english": "Ridiculous Pistol",
+      "chinese": "嘭嘭手枪",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 71,
+      "chinese_registration_order": 72,
+      "english": "Vlambeer Shotgun",
+      "chinese": "炸鱼霰弹枪",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 72,
+      "chinese_registration_order": 73,
+      "english": "Ninja katana",
+      "chinese": "忍者之刃",
+      "identifier": "nkatana"
+    },
+    {
+      "english_registration_order": 73,
+      "chinese_registration_order": 74,
+      "english": "Take This",
+      "chinese": "初始木剑",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 74,
+      "chinese_registration_order": 75,
+      "english": "White Sword",
+      "chinese": "白刃剑",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 75,
+      "chinese_registration_order": 76,
+      "english": "M#ster Sword",
+      "chinese": "大师之剑",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 76,
+      "chinese_registration_order": 77,
+      "english": "Grenade",
+      "chinese": "手榴弹",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 77,
+      "chinese_registration_order": 78,
+      "english": "Pipe bomb",
+      "chinese": "管状炸弹",
+      "identifier": "pipebomb"
+    },
+    {
+      "english_registration_order": 78,
+      "chinese_registration_order": 79,
+      "english": "Lnk Bomb",
+      "chinese": "凛克炸弹",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 79,
+      "chinese_registration_order": 80,
+      "english": "Bottle",
+      "chinese": "空瓶子",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 80,
+      "chinese_registration_order": 81,
+      "english": "Kunai",
+      "chinese": "苦无",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 81,
+      "chinese_registration_order": 82,
+      "english": "Shuriken",
+      "chinese": "手里剑",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 82,
+      "chinese_registration_order": 83,
+      "english": "Smoke Bomb",
+      "chinese": "烟雾弹",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 83,
+      "chinese_registration_order": 84,
+      "english": "Wooden Boomerang",
+      "chinese": "木制回力镖",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 84,
+      "chinese_registration_order": 85,
+      "english": "Metal Boomerang",
+      "chinese": "金属回旋镖",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 85,
+      "chinese_registration_order": 86,
+      "english": "Wind Shuriken",
+      "chinese": "风之手里剑",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 86,
+      "chinese_registration_order": 87,
+      "english": "Mjollin'er",
+      "chinese": "雷神之锤",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 87,
+      "chinese_registration_order": 88,
+      "english": "Flamethrower",
+      "chinese": "火焰喷射器",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 88,
+      "chinese_registration_order": 89,
+      "english": "Molotov",
+      "chinese": "燃烧弹",
+      "identifier": "molotov"
+    },
+    {
+      "english_registration_order": 89,
+      "chinese_registration_order": 90,
+      "english": "Zombie Leg",
+      "chinese": "僵尸腿",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 90,
+      "chinese_registration_order": 91,
+      "english": "Spine",
+      "chinese": "脊柱",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 91,
+      "chinese_registration_order": 92,
+      "english": "Spine w/ Skull Accessory",
+      "chinese": "脊柱头槌",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 92,
+      "chinese_registration_order": 93,
+      "english": "Re-bar",
+      "chinese": "螺纹钢筋",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 93,
+      "chinese_registration_order": 94,
+      "english": "Devil Fork",
+      "chinese": "魔鬼之叉",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 94,
+      "chinese_registration_order": 95,
+      "english": "Broom",
+      "chinese": "扫把",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 95,
+      "chinese_registration_order": 96,
+      "english": "Mop",
+      "chinese": "拖把",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 96,
+      "chinese_registration_order": 97,
+      "english": "UltraMop",
+      "chinese": "超级拖把",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 97,
+      "chinese_registration_order": 98,
+      "english": "Fishing Pole",
+      "chinese": "钓鱼杆",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 98,
+      "chinese_registration_order": 99,
+      "english": "Ridiculous Fishing Pole",
+      "chinese": "可笑的钓鱼竿",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 99,
+      "chinese_registration_order": 100,
+      "english": "Electric Guitar",
+      "chinese": "电吉他",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 100,
+      "chinese_registration_order": 101,
+      "english": "antlers",
+      "chinese": "鹿角",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 101,
+      "chinese_registration_order": 102,
+      "english": "Ray Gun",
+      "chinese": "射线枪",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 102,
+      "chinese_registration_order": 103,
+      "english": "2x4",
+      "chinese": "预制木板",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 103,
+      "chinese_registration_order": 104,
+      "english": "Flashlight",
+      "chinese": "手电筒",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 104,
+      "chinese_registration_order": 105,
+      "english": "Pokin'",
+      "chinese": "点化",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 105,
+      "chinese_registration_order": 106,
+      "english": "ehzerbeam",
+      "chinese": "枫叶光束",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 106,
+      "chinese_registration_order": 107,
+      "english": "Fierce Claws",
+      "chinese": "猛爪",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 107,
+      "chinese_registration_order": 108,
+      "english": "Mason's Chainsaw",
+      "chinese": "梅森链锯",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 108,
+      "chinese_registration_order": 109,
+      "english": "Kill Fu",
+      "chinese": "杀招",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 109,
+      "chinese_registration_order": 110,
+      "english": "Hammer",
+      "chinese": "羊角锤",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 110,
+      "chinese_registration_order": 111,
+      "english": "Ballpein hammer",
+      "chinese": "榔头",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 111,
+      "chinese_registration_order": 112,
+      "english": "Rubber mallet",
+      "chinese": "橡胶锤",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 112,
+      "chinese_registration_order": 113,
+      "english": "Screwdriver",
+      "chinese": "螺丝刀",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 113,
+      "chinese_registration_order": 114,
+      "english": "Ice pick",
+      "chinese": "冰锥",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 114,
+      "chinese_registration_order": 115,
+      "english": "Shiv",
+      "chinese": "短刀",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 115,
+      "chinese_registration_order": 116,
+      "english": "Pool cue",
+      "chinese": "台球球杆",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 116,
+      "chinese_registration_order": 117,
+      "english": "Purse",
+      "chinese": "手提包",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 117,
+      "chinese_registration_order": 118,
+      "english": "Fire poker",
+      "chinese": "拨火棍",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 118,
+      "chinese_registration_order": 119,
+      "english": "Tire iron",
+      "chinese": "扒胎撬棒",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 119,
+      "chinese_registration_order": 120,
+      "english": "Tennis racket",
+      "chinese": "网球拍",
+      "identifier": "tennis"
+    },
+    {
+      "english_registration_order": 120,
+      "chinese_registration_order": 121,
+      "english": "Oar",
+      "chinese": "船桨",
+      "identifier": "paddle"
+    },
+    {
+      "english_registration_order": 121,
+      "chinese_registration_order": 122,
+      "english": "Log",
+      "chinese": "树干",
+      "identifier": "log"
+    },
+    {
+      "english_registration_order": 122,
+      "chinese_registration_order": 123,
+      "english": "Big frickin' log",
+      "chinese": "大树干",
+      "identifier": "biglog"
+    },
+    {
+      "english_registration_order": 123,
+      "chinese_registration_order": 124,
+      "english": "Air horn",
+      "chinese": "空气喇叭",
+      "identifier": "airhorn"
+    },
+    {
+      "english_registration_order": 124,
+      "chinese_registration_order": 125,
+      "english": "Scythe",
+      "chinese": "镰刀",
+      "identifier": "scythe"
+    },
+    {
+      "english_registration_order": 125,
+      "chinese_registration_order": 126,
+      "english": "The Grim Reaper",
+      "chinese": "死神镰刀",
+      "identifier": "reaper"
+    },
+    {
+      "english_registration_order": 126,
+      "chinese_registration_order": 127,
+      "english": "Sickle",
+      "chinese": "手镰",
+      "identifier": "sickle"
+    },
+    {
+      "english_registration_order": 127,
+      "chinese_registration_order": 128,
+      "english": "Witch's Broom",
+      "chinese": "女巫扫帚",
+      "identifier": "witch"
+    },
+    {
+      "english_registration_order": 128,
+      "chinese_registration_order": 129,
+      "english": "Wizzle stick",
+      "chinese": "巫师魔杖",
+      "identifier": "wizstick"
+    },
+    {
+      "english_registration_order": 129,
+      "chinese_registration_order": 130,
+      "english": "Healing Spray",
+      "chinese": "治疗喷雾",
+      "identifier": "healspray"
+    },
+    {
+      "english_registration_order": 130,
+      "chinese_registration_order": 131,
+      "english": "Cacerola",
+      "chinese": "平底锅",
+      "identifier": "megafry"
+    },
+    {
+      "english_registration_order": 131,
+      "chinese_registration_order": 132,
+      "english": "Mega Maul",
+      "chinese": "巨锤",
+      "identifier": "megamaul"
+    },
+    {
+      "english_registration_order": 132,
+      "chinese_registration_order": 133,
+      "english": "Weak Claw",
+      "chinese": "弱爪",
+      "identifier": "weakclaw"
+    },
+    {
+      "english_registration_order": 133,
+      "chinese_registration_order": 134,
+      "english": "Goat Butt",
+      "chinese": "山羊屁股",
+      "identifier": "butt"
+    },
+    {
+      "english_registration_order": 134,
+      "chinese_registration_order": 135,
+      "english": "Foam Hand",
+      "chinese": "泡沫大手",
+      "identifier": "foamhand"
+    },
+    {
+      "english_registration_order": 135,
+      "chinese_registration_order": 136,
+      "english": "Sports Horn",
+      "chinese": "球迷喇叭",
+      "identifier": "sportshorn"
+    },
+    {
+      "english_registration_order": 136,
+      "chinese_registration_order": 137,
+      "english": "Skull Hammer",
+      "chinese": "骸骨之锤",
+      "identifier": "skullmace"
+    },
+    {
+      "english_registration_order": 137,
+      "chinese_registration_order": 138,
+      "english": "Gladius",
+      "chinese": "罗马短剑",
+      "identifier": "gladius"
+    },
+    {
+      "english_registration_order": 138,
+      "chinese_registration_order": 139,
+      "english": "Bomb Skull",
+      "chinese": "颅骨炸弹",
+      "identifier": "bombskull"
+    },
+    {
+      "english_registration_order": 139,
+      "chinese_registration_order": 140,
+      "english": "Tactical Spear",
+      "chinese": "战术长矛",
+      "identifier": "modspear"
+    },
+    {
+      "english_registration_order": 140,
+      "chinese_registration_order": 141,
+      "english": "Poolcue Spear",
+      "chinese": "球杆刺矛",
+      "identifier": "poolspear"
+    },
+    {
+      "english_registration_order": 141,
+      "chinese_registration_order": 142,
+      "english": "Stick Boot",
+      "chinese": "长杆靴",
+      "identifier": "stickboot"
+    },
+    {
+      "english_registration_order": 142,
+      "chinese_registration_order": 143,
+      "english": "Bardiche",
+      "chinese": "月刃斧",
+      "identifier": "bardiche"
+    },
+    {
+      "english_registration_order": 143,
+      "chinese_registration_order": 144,
+      "english": "Heavy Golden Axe",
+      "chinese": "重型金斧",
+      "identifier": "goldenaxe2"
+    },
+    {
+      "english_registration_order": 144,
+      "chinese_registration_order": 145,
+      "english": "Golden Axe",
+      "chinese": "黄金斧",
+      "identifier": "goldenaxe1"
+    },
+    {
+      "english_registration_order": 145,
+      "chinese_registration_order": 146,
+      "english": "Sturdy Cleaver",
+      "chinese": "坚固厨刀",
+      "identifier": "scleaver"
+    },
+    {
+      "english_registration_order": 146,
+      "chinese_registration_order": 147,
+      "english": "Super Sumo",
+      "chinese": "超级相扑",
+      "identifier": "supersumo"
+    },
+    {
+      "english_registration_order": 147,
+      "chinese_registration_order": 148,
+      "english": "Ded9",
+      "chinese": "驳壳枪",
+      "identifier": "red9"
+    },
+    {
+      "english_registration_order": 148,
+      "chinese_registration_order": 149,
+      "english": "Modded Ded9",
+      "chinese": "枪托驳壳枪",
+      "identifier": "modred9"
+    },
+    {
+      "english_registration_order": 149,
+      "chinese_registration_order": 150,
+      "english": "Skateboard",
+      "chinese": "滑板",
+      "identifier": "bortboard"
+    },
+    {
+      "english_registration_order": 150,
+      "chinese_registration_order": 151,
+      "english": "Guster Sword",
+      "chinese": "破坏之剑",
+      "identifier": "guster"
+    },
+    {
+      "english_registration_order": 151,
+      "chinese_registration_order": 152,
+      "english": "Cold Steel Greatsword",
+      "chinese": "冷钢大剑",
+      "identifier": "demozwei"
+    },
+    {
+      "english_registration_order": 152,
+      "chinese_registration_order": 153,
+      "english": "Wooden Club",
+      "chinese": "大木棒",
+      "identifier": "woodclub"
+    },
+    {
+      "english_registration_order": 153,
+      "chinese_registration_order": 154,
+      "english": "Golden Spear",
+      "chinese": "黄金长矛",
+      "identifier": "goldspear"
+    },
+    {
+      "english_registration_order": 154,
+      "chinese_registration_order": 155,
+      "english": "Hot poker",
+      "chinese": "炽热烧火棍",
+      "identifier": "hotpoker"
+    },
+    {
+      "english_registration_order": 155,
+      "chinese_registration_order": 156,
+      "english": "Mazer Pistol",
+      "chinese": "科学枪",
+      "identifier": "mazer"
+    },
+    {
+      "english_registration_order": 156,
+      "chinese_registration_order": 157,
+      "english": "TactiCop Lite(TM)",
+      "chinese": "战术警用灯",
+      "identifier": "tacticop"
+    },
+    {
+      "english_registration_order": 157,
+      "chinese_registration_order": 158,
+      "english": "Pig Butt",
+      "chinese": "猪屁股",
+      "identifier": "pigbutt"
+    },
+    {
+      "english_registration_order": 158,
+      "chinese_registration_order": 159,
+      "english": "Pukeyball",
+      "chinese": "宝克球",
+      "identifier": "pukeyball"
+    },
+    {
+      "english_registration_order": 159,
+      "chinese_registration_order": 160,
+      "english": "Pickaxe",
+      "chinese": "铁镐",
+      "identifier": "pickaxe"
+    },
+    {
+      "english_registration_order": 160,
+      "chinese_registration_order": 161,
+      "english": "Lady's Log",
+      "chinese": "淑女树干",
+      "identifier": "logladylog"
+    },
+    {
+      "english_registration_order": 161,
+      "chinese_registration_order": 162,
+      "english": "ULTIMATE LOG",
+      "chinese": "究极树干",
+      "identifier": "ultimalog"
+    },
+    {
+      "english_registration_order": 162,
+      "chinese_registration_order": 163,
+      "english": "MegaKnight Blade",
+      "chinese": "究极骑士剑",
+      "identifier": "megaknight"
+    },
+    {
+      "english_registration_order": 163,
+      "chinese_registration_order": 164,
+      "english": "Golden Knife",
+      "chinese": "黄金匕首",
+      "identifier": "goldknife"
+    },
+    {
+      "english_registration_order": 164,
+      "chinese_registration_order": 165,
+      "english": "Lute",
+      "chinese": "鲁特琴",
+      "identifier": "lute"
+    },
+    {
+      "english_registration_order": 165,
+      "chinese_registration_order": 166,
+      "english": "Dagger",
+      "chinese": "匕首",
+      "identifier": "dagger"
+    },
+    {
+      "english_registration_order": 166,
+      "chinese_registration_order": 167,
+      "english": "Halberd",
+      "chinese": "战戟",
+      "identifier": "halberd"
+    },
+    {
+      "english_registration_order": 167,
+      "chinese_registration_order": 168,
+      "english": "Sai",
+      "chinese": "峨眉刺",
+      "identifier": "sai"
+    },
+    {
+      "english_registration_order": 168,
+      "chinese_registration_order": 169,
+      "english": "Blue Robot",
+      "chinese": "蓝色机器人",
+      "identifier": "bluerobot"
+    },
+    {
+      "english_registration_order": 169,
+      "chinese_registration_order": 170,
+      "english": "Red Robot",
+      "chinese": "红色机器人",
+      "identifier": "redrobot"
+    },
+    {
+      "english_registration_order": 170,
+      "chinese_registration_order": 171,
+      "english": "Spiked Bat",
+      "chinese": "尖刺球棒",
+      "identifier": "spikedbat"
+    },
+    {
+      "english_registration_order": 171,
+      "chinese_registration_order": 172,
+      "english": "The Whammer",
+      "chinese": "镶钉球棒",
+      "identifier": "megaspikedbat"
+    },
+    {
+      "english_registration_order": 172,
+      "chinese_registration_order": 173,
+      "english": "ThrowingBoot",
+      "chinese": "旧靴子",
+      "identifier": null
+    },
+    {
+      "english_registration_order": 173,
+      "chinese_registration_order": 174,
+      "english": "Brass Knucks",
+      "chinese": "黄铜指虎",
+      "identifier": "knucks"
+    },
+    {
+      "english_registration_order": 174,
+      "chinese_registration_order": 175,
+      "english": "Firelunk Greatsword",
+      "chinese": "传火大剑",
+      "identifier": "firelink"
+    },
+    {
+      "english_registration_order": 175,
+      "chinese_registration_order": 176,
+      "english": "Dragonslayer",
+      "chinese": "弑龙者",
+      "identifier": "dragonslayer"
+    },
+    {
+      "english_registration_order": 176,
+      "chinese_registration_order": 177,
+      "english": "Cavalry Sabre",
+      "chinese": "骑兵军刀",
+      "identifier": "cavalry"
+    },
+    {
+      "english_registration_order": 177,
+      "chinese_registration_order": 178,
+      "english": "Pirate Cutlass",
+      "chinese": "海盗弯刀",
+      "identifier": "cutlass"
+    },
+    {
+      "english_registration_order": 178,
+      "chinese_registration_order": 179,
+      "english": "Branch Trimmer",
+      "chinese": "树枝修剪器",
+      "identifier": "branchtrim"
+    },
+    {
+      "english_registration_order": 179,
+      "chinese_registration_order": 180,
+      "english": "GIGA GUSTER",
+      "chinese": "洛科手炮",
+      "identifier": "gigaman"
+    },
+    {
+      "english_registration_order": 180,
+      "chinese_registration_order": 181,
+      "english": "Giant Club",
+      "chinese": "巨大树干",
+      "identifier": "giantclub"
+    },
+    {
+      "english_registration_order": 181,
+      "chinese_registration_order": 182,
+      "english": "Green Turret Gun",
+      "chinese": "绿炮塔",
+      "identifier": "greenturretgun"
+    },
+    {
+      "english_registration_order": 182,
+      "chinese_registration_order": 183,
+      "english": "Red Turret Gun",
+      "chinese": "红炮塔",
+      "identifier": "redturretgun"
+    },
+    {
+      "english_registration_order": 183,
+      "chinese_registration_order": 184,
+      "english": "Red Turret",
+      "chinese": "红色炮塔",
+      "identifier": "turretred"
+    },
+    {
+      "english_registration_order": 184,
+      "chinese_registration_order": 185,
+      "english": "Green Turret",
+      "chinese": "绿色炮塔",
+      "identifier": "turretgreen"
+    },
+    {
+      "english_registration_order": 185,
+      "chinese_registration_order": 186,
+      "english": "Silenced Pistol",
+      "chinese": "消音手枪",
+      "identifier": "silentpistol"
+    },
+    {
+      "english_registration_order": 186,
+      "chinese_registration_order": 187,
+      "english": "Sniper Rifle",
+      "chinese": "狙击步枪",
+      "identifier": "silentrifle"
+    },
+    {
+      "english_registration_order": 187,
+      "chinese_registration_order": 188,
+      "english": "Quiet Shotgun",
+      "chinese": "消音霰弹枪",
+      "identifier": "silentshotgun"
+    },
+    {
+      "english_registration_order": 188,
+      "chinese_registration_order": 189,
+      "english": "Solar Mazer",
+      "chinese": "太阳能科学枪",
+      "identifier": "solarmazer"
+    },
+    {
+      "english_registration_order": 189,
+      "chinese_registration_order": 190,
+      "english": "Pirate Cannon",
+      "chinese": "海盗大炮",
+      "identifier": "cannon"
+    },
+    {
+      "english_registration_order": 190,
+      "chinese_registration_order": 191,
+      "english": "Captain's Cannon",
+      "chinese": "船长大炮",
+      "identifier": "captaincannon"
+    },
+    {
+      "english_registration_order": 191,
+      "chinese_registration_order": 192,
+      "english": "Sciency Doodad",
+      "chinese": "科学装置",
+      "identifier": "doodad"
+    },
+    {
+      "english_registration_order": 192,
+      "chinese_registration_order": 193,
+      "english": "Weed whacker",
+      "chinese": "除草机",
+      "identifier": "whacker"
+    },
+    {
+      "english_registration_order": 193,
+      "chinese_registration_order": 194,
+      "english": "Leaf blower",
+      "chinese": "吹叶机",
+      "identifier": "blower"
+    },
+    {
+      "english_registration_order": 194,
+      "chinese_registration_order": 195,
+      "english": "Off-brand Plasms Rifle",
+      "chinese": "手工榴弹炮",
+      "identifier": "plasmarifle"
+    },
+    {
+      "english_registration_order": 195,
+      "chinese_registration_order": 196,
+      "english": "Double-barrel shotgun",
+      "chinese": "双管霰弹枪",
+      "identifier": "dshotgun"
+    },
+    {
+      "english_registration_order": 196,
+      "chinese_registration_order": 197,
+      "english": "Chainsaw Hand",
+      "chinese": "链锯手",
+      "identifier": "chainhand"
+    },
+    {
+      "english_registration_order": 197,
+      "chinese_registration_order": 198,
+      "english": "Farmer's Shotgun",
+      "chinese": "农夫霰弹枪",
+      "identifier": "farmdshotgun"
+    },
+    {
+      "english_registration_order": 198,
+      "chinese_registration_order": 199,
+      "english": "Bow",
+      "chinese": "弓",
+      "identifier": "bow"
+    },
+    {
+      "english_registration_order": 199,
+      "chinese_registration_order": 200,
+      "english": "Cupid's Bow",
+      "chinese": "丘比特之弓",
+      "identifier": "cupidbow"
+    },
+    {
+      "english_registration_order": 200,
+      "chinese_registration_order": 201,
+      "english": "Bonesaw",
+      "chinese": "骨锯",
+      "identifier": "bonesaw"
+    },
+    {
+      "english_registration_order": 201,
+      "chinese_registration_order": 202,
+      "english": "Blowtorch XL",
+      "chinese": "XL喷灯",
+      "identifier": "xlblowtorch"
+    },
+    {
+      "english_registration_order": 202,
+      "chinese_registration_order": 203,
+      "english": "Electric Chainsaw",
+      "chinese": "电动链锯",
+      "identifier": "echainsaw"
+    },
+    {
+      "english_registration_order": 203,
+      "chinese_registration_order": 204,
+      "english": "Moody Chainsaw",
+      "chinese": "毁灭链锯",
+      "identifier": "moodysaw"
+    },
+    {
+      "english_registration_order": 204,
+      "chinese_registration_order": 205,
+      "english": "Bazooka",
+      "chinese": "火箭炮",
+      "identifier": "bazooka"
+    },
+    {
+      "english_registration_order": 205,
+      "chinese_registration_order": 206,
+      "english": "Moody Launcher",
+      "chinese": "毁灭火箭炮",
+      "identifier": "moodyrocket"
+    },
+    {
+      "english_registration_order": 206,
+      "chinese_registration_order": 207,
+      "english": "Grenade Launcher",
+      "chinese": "榴弹发射器",
+      "identifier": "glaunch"
+    },
+    {
+      "english_registration_order": 207,
+      "chinese_registration_order": 208,
+      "english": "Landmine",
+      "chinese": "地雷",
+      "identifier": "landmine"
+    },
+    {
+      "english_registration_order": 208,
+      "chinese_registration_order": 209,
+      "english": "Karatay",
+      "chinese": "空手道",
+      "identifier": "karatay"
+    },
+    {
+      "english_registration_order": 209,
+      "chinese_registration_order": 210,
+      "english": "Roundhouse",
+      "chinese": "回旋踢",
+      "identifier": "roundhouse"
+    },
+    {
+      "english_registration_order": 210,
+      "chinese_registration_order": 211,
+      "english": "Punchball",
+      "chinese": "波动拳",
+      "identifier": "punchball"
+    },
+    {
+      "english_registration_order": 211,
+      "chinese_registration_order": 212,
+      "english": "E-whacker",
+      "chinese": "电动割草机",
+      "identifier": "ewhacker"
+    },
+    {
+      "english_registration_order": 212,
+      "chinese_registration_order": 213,
+      "english": "E-blower",
+      "chinese": "电动吹叶机",
+      "identifier": "eblower"
+    },
+    {
+      "english_registration_order": 213,
+      "chinese_registration_order": 214,
+      "english": "Blacksmith hammer",
+      "chinese": "铁匠锤",
+      "identifier": "blackhammer"
+    },
+    {
+      "english_registration_order": 214,
+      "chinese_registration_order": 215,
+      "english": "Napalm thrower",
+      "chinese": "凝固汽油枪",
+      "identifier": "napalm"
+    },
+    {
+      "english_registration_order": 215,
+      "chinese_registration_order": 216,
+      "english": "Rake",
+      "chinese": "钉耙",
+      "identifier": "rake"
+    },
+    {
+      "english_registration_order": 216,
+      "chinese_registration_order": 217,
+      "english": "Hoe",
+      "chinese": "锄头",
+      "identifier": "hoe"
+    },
+    {
+      "english_registration_order": 217,
+      "chinese_registration_order": 218,
+      "english": "Saw",
+      "chinese": "铁锯",
+      "identifier": "woodsaw"
+    },
+    {
+      "english_registration_order": 218,
+      "chinese_registration_order": 219,
+      "english": "Spoon",
+      "chinese": "勺子",
+      "identifier": "spoon"
+    },
+    {
+      "english_registration_order": 219,
+      "chinese_registration_order": 220,
+      "english": "Butter knife",
+      "chinese": "黄油刀",
+      "identifier": "butter"
+    },
+    {
+      "english_registration_order": 220,
+      "chinese_registration_order": 221,
+      "english": "Fork",
+      "chinese": "餐叉",
+      "identifier": "tfork"
+    },
+    {
+      "english_registration_order": 221,
+      "chinese_registration_order": 222,
+      "english": "Haunted Fork",
+      "chinese": "通灵餐叉",
+      "identifier": "hauntfork"
+    },
+    {
+      "english_registration_order": 222,
+      "chinese_registration_order": 223,
+      "english": "Haunted Butter Knife",
+      "chinese": "通灵黄油刀",
+      "identifier": "hauntknife"
+    },
+    {
+      "english_registration_order": 223,
+      "chinese_registration_order": 224,
+      "english": "Haunted Spoon",
+      "chinese": "通灵勺子",
+      "identifier": "hauntspoon"
+    },
+    {
+      "english_registration_order": 224,
+      "chinese_registration_order": 225,
+      "english": "Fairy Bat",
+      "chinese": "魔仙棒",
+      "identifier": "fairybat"
+    },
+    {
+      "english_registration_order": 225,
+      "chinese_registration_order": 226,
+      "english": "Snow shovel",
+      "chinese": "雪铲",
+      "identifier": "snowshovel"
+    },
+    {
+      "english_registration_order": 226,
+      "chinese_registration_order": 227,
+      "english": "Rat bite",
+      "chinese": "鼠咬",
+      "identifier": "ratbite"
+    },
+    {
+      "english_registration_order": 227,
+      "chinese_registration_order": 228,
+      "english": "Nugssercut",
+      "chinese": "合金切割器",
+      "identifier": "nugspunch"
+    },
+    {
+      "english_registration_order": 228,
+      "chinese_registration_order": 229,
+      "english": "Survival Knife",
+      "chinese": "求生匕首",
+      "identifier": "survknife"
+    },
+    {
+      "english_registration_order": 229,
+      "chinese_registration_order": 230,
+      "english": "Golden Pistol",
+      "chinese": "黄金手枪",
+      "identifier": "goldpistol"
+    },
+    {
+      "english_registration_order": 230,
+      "chinese_registration_order": 231,
+      "english": "LIL' DAWG",
+      "chinese": "黄蜂霰弹枪",
+      "identifier": "lildawg"
+    },
+    {
+      "english_registration_order": 231,
+      "chinese_registration_order": 232,
+      "english": "Golden Scalpel",
+      "chinese": "黄金手术刀",
+      "identifier": "goldscalp"
+    },
+    {
+      "english_registration_order": 232,
+      "chinese_registration_order": 233,
+      "english": "Jackhammer",
+      "chinese": "Jackhammer",
+      "identifier": "jackhammer"
+    },
+    {
+      "english_registration_order": 233,
+      "chinese_registration_order": 234,
+      "english": "E-Jackhammer",
+      "chinese": "电动冲击锤",
+      "identifier": "ejhammer"
+    },
+    {
+      "english_registration_order": 234,
+      "chinese_registration_order": 235,
+      "english": "Firecrackers",
+      "chinese": "噼啪鞭炮",
+      "identifier": "firecrackers"
+    },
+    {
+      "english_registration_order": 235,
+      "chinese_registration_order": 236,
+      "english": "Roman candle",
+      "chinese": "彩珠筒",
+      "identifier": "romancandle"
+    },
+    {
+      "english_registration_order": 236,
+      "chinese_registration_order": 237,
+      "english": "KO Boomer",
+      "chinese": "噼啪爆竹",
+      "identifier": "koboomer"
+    },
+    {
+      "english_registration_order": 237,
+      "chinese_registration_order": 238,
+      "english": "Mount Dingus",
+      "chinese": "小呲花",
+      "identifier": "mountdingus"
+    },
+    {
+      "english_registration_order": 238,
+      "chinese_registration_order": 239,
+      "english": "Charged Punch",
+      "chinese": "动力冲拳",
+      "identifier": "chargepunch"
+    },
+    {
+      "english_registration_order": 239,
+      "chinese_registration_order": 240,
+      "english": "Slam Punch",
+      "chinese": "动力猛砸",
+      "identifier": "slampunch"
+    },
+    {
+      "english_registration_order": 240,
+      "chinese_registration_order": 241,
+      "english": "Robo Upper",
+      "chinese": "机械断头台",
+      "identifier": "botpunch"
+    },
+    {
+      "english_registration_order": 241,
+      "chinese_registration_order": 242,
+      "english": "Auto-Nailgun",
+      "chinese": "自动钉枪",
+      "identifier": "multnail"
+    },
+    {
+      "english_registration_order": 242,
+      "chinese_registration_order": 243,
+      "english": "Speed Mode",
+      "chinese": "极速模式",
+      "identifier": "multmode"
+    },
+    {
+      "english_registration_order": 243,
+      "chinese_registration_order": 244,
+      "english": "Egg",
+      "chinese": "鸡蛋",
+      "identifier": "egg"
+    },
+    {
+      "english_registration_order": 244,
+      "chinese_registration_order": 245,
+      "english": "Assault Shotgun",
+      "chinese": "突击霰弹枪",
+      "identifier": "assault"
+    },
+    {
+      "english_registration_order": 245,
+      "chinese_registration_order": 246,
+      "english": "Fire Extinguisher",
+      "chinese": "灭火器",
+      "identifier": "fireex"
+    },
+    {
+      "english_registration_order": 246,
+      "chinese_registration_order": 247,
+      "english": "Pro's Pool Cue",
+      "chinese": "职业台球杆",
+      "identifier": "megapoolcue"
+    },
+    {
+      "english_registration_order": 247,
+      "chinese_registration_order": 248,
+      "english": "Cowboy Dagger",
+      "chinese": "牛仔匕首",
+      "identifier": "westknife"
+    },
+    {
+      "english_registration_order": 248,
+      "chinese_registration_order": 249,
+      "english": "Marbelle",
+      "chinese": "玛贝尔",
+      "identifier": "marbelle"
+    },
+    {
+      "english_registration_order": 249,
+      "chinese_registration_order": 250,
+      "english": "Lever-Action",
+      "chinese": "杠杆步枪",
+      "identifier": "flipari"
+    },
+    {
+      "english_registration_order": 250,
+      "chinese_registration_order": 251,
+      "english": "Dolt Big Iron",
+      "chinese": "柯二特-铁砧",
+      "identifier": "sixshooter"
+    },
+    {
+      "english_registration_order": 251,
+      "chinese_registration_order": 252,
+      "english": "Duckhunter",
+      "chinese": "野鸭猎人",
+      "identifier": "slamfire"
+    },
+    {
+      "english_registration_order": 252,
+      "chinese_registration_order": 253,
+      "english": "Medical Satchel",
+      "chinese": "医疗跨包",
+      "identifier": "medicbag"
+    },
+    {
+      "english_registration_order": 253,
+      "chinese_registration_order": 254,
+      "english": "Hawke's Homebrew",
+      "chinese": "霍克自制药品",
+      "identifier": "hawkejuice"
+    },
+    {
+      "english_registration_order": 254,
+      "chinese_registration_order": 255,
+      "english": "Sledgeslammer",
+      "chinese": "粉碎者",
+      "identifier": "sledgeslammer"
+    },
+    {
+      "english_registration_order": 255,
+      "chinese_registration_order": 256,
+      "english": "REFUEL",
+      "chinese": "添加燃油",
+      "identifier": "robofuel"
+    },
+    {
+      "english_registration_order": 256,
+      "chinese_registration_order": 257,
+      "english": "DNK-16",
+      "chinese": "M16-极霸",
+      "identifier": "threeburst"
+    },
+    {
+      "english_registration_order": 257,
+      "chinese_registration_order": 258,
+      "english": "Gigantic Repair Manual",
+      "chinese": "巨型维修手册",
+      "identifier": "gigamanual"
+    },
+    {
+      "english_registration_order": 258,
+      "chinese_registration_order": 259,
+      "english": "Ringleader",
+      "chinese": "领袖之鞭",
+      "identifier": "econdorwhip"
+    },
+    {
+      "english_registration_order": 259,
+      "chinese_registration_order": 260,
+      "english": "Maul",
+      "chinese": "撕咬",
+      "identifier": "creaturemaul"
+    },
+    {
+      "english_registration_order": 260,
+      "chinese_registration_order": 261,
+      "english": "Mamba",
+      "chinese": "曼巴手枪",
+      "identifier": "blackmamba"
+    },
+    {
+      "english_registration_order": 261,
+      "chinese_registration_order": 262,
+      "english": "Autorevolver",
+      "chinese": "自动左轮",
+      "identifier": "fosbury"
+    },
+    {
+      "english_registration_order": 262,
+      "chinese_registration_order": 263,
+      "english": "Flechette Shotgun",
+      "chinese": "镖弹霰弹枪",
+      "identifier": "flet"
+    },
+    {
+      "english_registration_order": 263,
+      "chinese_registration_order": 264,
+      "english": "Longbow",
+      "chinese": "长弓",
+      "identifier": "warbow"
+    },
+    {
+      "english_registration_order": 264,
+      "chinese_registration_order": 265,
+      "english": "Diesel",
+      "chinese": "柴油",
+      "identifier": "lfdfuel"
+    },
+    {
+      "english_registration_order": 265,
+      "chinese_registration_order": 266,
+      "english": "Dynamite",
+      "chinese": "炸药",
+      "identifier": "bomberclasstwo"
+    },
+    {
+      "english_registration_order": 266,
+      "chinese_registration_order": 267,
+      "english": "Hexblade",
+      "chinese": "魔剑",
+      "identifier": "elongsword"
+    },
+    {
+      "english_registration_order": 267,
+      "chinese_registration_order": 268,
+      "english": "Earthquaker",
+      "chinese": "地震锤",
+      "identifier": "meleealt"
+    },
+    {
+      "english_registration_order": 268,
+      "chinese_registration_order": 269,
+      "english": "Scorching Ray",
+      "chinese": "凤凰射线",
+      "identifier": "mageclassone"
+    },
+    {
+      "english_registration_order": 269,
+      "chinese_registration_order": 270,
+      "english": "Arcane Flame",
+      "chinese": "火球法杖",
+      "identifier": "mageclasstwo"
+    },
+    {
+      "english_registration_order": 270,
+      "chinese_registration_order": 271,
+      "english": "Silver Longsword",
+      "chinese": "银制长剑",
+      "identifier": "izzylongsword"
+    },
+    {
+      "english_registration_order": 271,
+      "chinese_registration_order": 272,
+      "english": "TIME STOP",
+      "chinese": "时间停止",
+      "identifier": "timestop"
+    },
+    {
+      "english_registration_order": 272,
+      "chinese_registration_order": 273,
+      "english": "Fragment",
+      "chinese": "碎片",
+      "identifier": "rahjl"
+    },
+    {
+      "english_registration_order": 273,
+      "chinese_registration_order": 274,
+      "english": "Leather Whip",
+      "chinese": "皮鞭",
+      "identifier": "midwhip"
+    },
+    {
+      "english_registration_order": 274,
+      "chinese_registration_order": 275,
+      "english": "Steel Chains",
+      "chinese": "铁链",
+      "identifier": "lowwhip"
+    },
+    {
+      "english_registration_order": 275,
+      "chinese_registration_order": 276,
+      "english": "Infernal Whip",
+      "chinese": "地狱之鞭",
+      "identifier": "highwhip"
+    },
+    {
+      "english_registration_order": 276,
+      "chinese_registration_order": 277,
+      "english": "Wooden Foil",
+      "chinese": "木刺剑",
+      "identifier": "fencerfoil"
+    },
+    {
+      "english_registration_order": 277,
+      "chinese_registration_order": 278,
+      "english": "Steel Pike",
+      "chinese": "钢制长矛",
+      "identifier": "steelpike"
+    },
+    {
+      "english_registration_order": 278,
+      "chinese_registration_order": 279,
+      "english": "Kukri",
+      "chinese": "库克里刀",
+      "identifier": "kukri"
+    },
+    {
+      "english_registration_order": 279,
+      "chinese_registration_order": 280,
+      "english": "M.O.A.R",
+      "chinese": "万枪之母",
+      "identifier": "moargun"
+    },
+    {
+      "english_registration_order": 280,
+      "chinese_registration_order": 281,
+      "english": "SPICY SWIG",
+      "chinese": "辛辣小饮",
+      "identifier": "hotsauce"
+    },
+    {
+      "english_registration_order": 281,
+      "chinese_registration_order": 282,
+      "english": "Banner",
+      "chinese": "旗帜",
+      "identifier": "buffbanner"
+    },
+    {
+      "english_registration_order": 282,
+      "chinese_registration_order": 283,
+      "english": "20mm Autobasilisk",
+      "chinese": "20毫米自动蛇蜥炮",
+      "identifier": "carboatcannon"
+    },
+    {
+      "english_registration_order": 283,
+      "chinese_registration_order": 284,
+      "english": "Battle Rifle",
+      "chinese": "决斗步枪",
+      "identifier": "fn_fal"
+    },
+    {
+      "english_registration_order": 284,
+      "chinese_registration_order": 285,
+      "english": "Dolt ACP",
+      "chinese": "呆瓜冲锋枪",
+      "identifier": "the1911"
+    },
+    {
+      "english_registration_order": 285,
+      "chinese_registration_order": 286,
+      "english": "Target Rifle",
+      "chinese": "竞技步枪",
+      "identifier": "targetrifle"
+    },
+    {
+      "english_registration_order": 286,
+      "chinese_registration_order": 287,
+      "english": "Switchblade",
+      "chinese": "弹簧刀",
+      "identifier": "switchblade"
+    },
+    {
+      "english_registration_order": 287,
+      "chinese_registration_order": 288,
+      "english": "Phaseblade",
+      "chinese": "相位剑",
+      "identifier": "phaseblade"
+    },
+    {
+      "english_registration_order": 288,
+      "chinese_registration_order": 289,
+      "english": "Megaphone",
+      "chinese": "扩音器",
+      "identifier": "DINKphone"
+    },
+    {
+      "english_registration_order": 289,
+      "chinese_registration_order": 290,
+      "english": "Stillson Wrench",
+      "chinese": "斯蒂尔森扳手",
+      "identifier": "jag"
+    },
+    {
+      "english_registration_order": 290,
+      "chinese_registration_order": 291,
+      "english": "Dingus-cutter",
+      "chinese": "丁克切割者",
+      "identifier": "skullcutter"
+    },
+    {
+      "english_registration_order": 291,
+      "chinese_registration_order": 292,
+      "english": "P.O Box",
+      "chinese": "邮局盒子",
+      "identifier": "postalham"
+    },
+    {
+      "english_registration_order": 292,
+      "chinese_registration_order": 293,
+      "english": "Frozen Ham",
+      "chinese": "冻火腿",
+      "identifier": "wallofham"
+    },
+    {
+      "english_registration_order": 293,
+      "chinese_registration_order": 294,
+      "english": "Poleaxe",
+      "chinese": "长柄斧",
+      "identifier": "poleaxe"
+    },
+    {
+      "english_registration_order": 294,
+      "chinese_registration_order": 295,
+      "english": "Arc Lightning",
+      "chinese": "弧光闪电",
+      "identifier": "zeusfire"
+    },
+    {
+      "english_registration_order": 295,
+      "chinese_registration_order": 296,
+      "english": "Sunder",
+      "chinese": "Sunder",
+      "identifier": "sunder"
+    },
+    {
+      "english_registration_order": 296,
+      "chinese_registration_order": 297,
+      "english": "Harpoon Gun",
+      "chinese": "鱼叉枪",
+      "identifier": "merenjaharp"
+    },
+    {
+      "english_registration_order": 297,
+      "chinese_registration_order": 298,
+      "english": "Supply Drop",
+      "chinese": "空投补给",
+      "identifier": "supplydrop"
+    },
+    {
+      "english_registration_order": 298,
+      "chinese_registration_order": 299,
+      "english": "Zatoichi",
+      "chinese": "座头市",
+      "identifier": "samurai_sword"
+    },
+    {
+      "english_registration_order": 299,
+      "chinese_registration_order": 300,
+      "english": "Shield",
+      "chinese": "盾牌",
+      "identifier": "warriorshield"
+    },
+    {
+      "english_registration_order": 300,
+      "chinese_registration_order": 301,
+      "english": "Scorching Ray II",
+      "chinese": "灼热射线 II",
+      "identifier": "fadebolt_exp"
+    },
+    {
+      "english_registration_order": 301,
+      "chinese_registration_order": 302,
+      "english": "Fade Bolt",
+      "chinese": "渐隐箭",
+      "identifier": "fadebolt_real"
+    },
+    {
+      "english_registration_order": 302,
+      "chinese_registration_order": 303,
+      "english": "Copy Weapon",
+      "chinese": "复制武器",
+      "identifier": "copycopy"
+    },
+    {
+      "english_registration_order": 303,
+      "chinese_registration_order": 304,
+      "english": "Pewter's Shotgun",
+      "chinese": "佩特霰弹枪",
+      "identifier": "pewshotgun"
+    },
+    {
+      "english_registration_order": 304,
+      "chinese_registration_order": 305,
+      "english": "Machinepistol",
+      "chinese": "冲锋手枪",
+      "identifier": "mp5"
+    },
+    {
+      "english_registration_order": 305,
+      "chinese_registration_order": 306,
+      "english": "SWAT Shotgun",
+      "chinese": "特警霰弹枪",
+      "identifier": "chromeshotgun"
+    },
+    {
+      "english_registration_order": 306,
+      "chinese_registration_order": 307,
+      "english": "Masterkey",
+      "chinese": "万能钥匙",
+      "identifier": "masterkey"
+    },
+    {
+      "english_registration_order": 307,
+      "chinese_registration_order": 308,
+      "english": "Typewriter",
+      "chinese": "打字机",
+      "identifier": "typewriter"
+    },
+    {
+      "english_registration_order": 308,
+      "chinese_registration_order": 309,
+      "english": "Halberd Thrust",
+      "chinese": "瑞士戟（突刺）",
+      "identifier": "swissthrust"
+    },
+    {
+      "english_registration_order": 309,
+      "chinese_registration_order": 310,
+      "english": "Halberd Slash",
+      "chinese": "戟斩",
+      "identifier": "swissslash"
+    },
+    {
+      "english_registration_order": 310,
+      "chinese_registration_order": 311,
+      "english": "Quarterstaff",
+      "chinese": "长棍",
+      "identifier": "quartstaff"
+    },
+    {
+      "english_registration_order": 311,
+      "chinese_registration_order": 312,
+      "english": "Tonfa",
+      "chinese": "警拐",
+      "identifier": "tonfa"
+    },
+    {
+      "english_registration_order": 312,
+      "chinese_registration_order": 313,
+      "english": "Tai Chi",
+      "chinese": "太极拳",
+      "identifier": "taichi"
+    },
+    {
+      "english_registration_order": 313,
+      "chinese_registration_order": 314,
+      "english": "Dinkjitzu",
+      "chinese": "断子柔道",
+      "identifier": "dinkjitsu"
+    },
+    {
+      "english_registration_order": 314,
+      "chinese_registration_order": 315,
+      "english": "Wakizashi",
+      "chinese": "胁差",
+      "identifier": "wakizashi"
+    },
+    {
+      "english_registration_order": 315,
+      "chinese_registration_order": 316,
+      "english": "Kama",
+      "chinese": "链镰",
+      "identifier": "kamathrow"
+    },
+    {
+      "english_registration_order": 316,
+      "chinese_registration_order": 317,
+      "english": "Mortar",
+      "chinese": "迫击炮",
+      "identifier": "mortar"
+    },
+    {
+      "english_registration_order": 317,
+      "chinese_registration_order": 318,
+      "english": "Defibrillator",
+      "chinese": "除颤器",
+      "identifier": "defib"
+    },
+    {
+      "english_registration_order": 318,
+      "chinese_registration_order": 319,
+      "english": "Sheet Metal",
+      "chinese": "金属板材",
+      "identifier": "sheetmetal"
+    },
+    {
+      "english_registration_order": 319,
+      "chinese_registration_order": 320,
+      "english": "Anchor",
+      "chinese": "锚",
+      "identifier": "anchor"
+    },
+    {
+      "english_registration_order": 320,
+      "chinese_registration_order": 321,
+      "english": "Flail",
+      "chinese": "连枷",
+      "identifier": "tflail"
+    },
+    {
+      "english_registration_order": 321,
+      "chinese_registration_order": 322,
+      "english": "Freeze Ray",
+      "chinese": "冷冻射线",
+      "identifier": "freezeray"
+    },
+    {
+      "english_registration_order": 322,
+      "chinese_registration_order": 323,
+      "english": "Fishing Harpoon",
+      "chinese": "捕鱼叉",
+      "identifier": "tfishharp"
+    },
+    {
+      "english_registration_order": 323,
+      "chinese_registration_order": 324,
+      "english": "Cobalt Flail",
+      "chinese": "钴蓝链枷",
+      "identifier": "tbluemoon"
+    },
+    {
+      "english_registration_order": 324,
+      "chinese_registration_order": 325,
+      "english": "Heat Ray",
+      "chinese": "爱心射线",
+      "identifier": "heatray"
+    },
+    {
+      "english_registration_order": 325,
+      "chinese_registration_order": 326,
+      "english": "Future Machine Gun",
+      "chinese": "未来机枪",
+      "identifier": "wf_machinegun"
+    },
+    {
+      "english_registration_order": 326,
+      "chinese_registration_order": 327,
+      "english": "Future Revolver",
+      "chinese": "未来左轮",
+      "identifier": "wf_revolver"
+    },
+    {
+      "english_registration_order": 327,
+      "chinese_registration_order": 328,
+      "english": "Future Katana",
+      "chinese": "未来武士刀",
+      "identifier": "wf_th_katana"
+    },
+    {
+      "english_registration_order": 328,
+      "chinese_registration_order": 329,
+      "english": "Crossbow",
+      "chinese": "弩",
+      "identifier": "crossbow_syca"
+    },
+    {
+      "english_registration_order": 329,
+      "chinese_registration_order": 330,
+      "english": "Ladder",
+      "chinese": "梯子",
+      "identifier": "ladder"
+    },
+    {
+      "english_registration_order": 330,
+      "chinese_registration_order": 331,
+      "english": "Old Lance",
+      "chinese": "旧长矛",
+      "identifier": "lance"
+    },
+    {
+      "english_registration_order": 331,
+      "chinese_registration_order": 332,
+      "english": "Naginata",
+      "chinese": "薙刀",
+      "identifier": "naginata"
+    },
+    {
+      "english_registration_order": 332,
+      "chinese_registration_order": 333,
+      "english": "Macuahuitl",
+      "chinese": "黑曜石锯剑",
+      "identifier": "aztecgreatclub"
+    },
+    {
+      "english_registration_order": 333,
+      "chinese_registration_order": 334,
+      "english": "Mic Stand",
+      "chinese": "麦克风支架",
+      "identifier": "micstand"
+    },
+    {
+      "english_registration_order": 334,
+      "chinese_registration_order": 335,
+      "english": "Foldable Chair",
+      "chinese": "折叠椅",
+      "identifier": "foldychair"
+    },
+    {
+      "english_registration_order": 335,
+      "chinese_registration_order": 336,
+      "english": "Bash",
+      "chinese": "贝斯",
+      "identifier": "bashslime"
+    },
+    {
+      "english_registration_order": 336,
+      "chinese_registration_order": 337,
+      "english": "Rend",
+      "chinese": "撕裂",
+      "identifier": "rend"
+    },
+    {
+      "english_registration_order": 337,
+      "chinese_registration_order": 338,
+      "english": "Water Cannon",
+      "chinese": "水炮",
+      "identifier": "watercannon"
+    },
+    {
+      "english_registration_order": 338,
+      "chinese_registration_order": 339,
+      "english": "Flintlock Pistol",
+      "chinese": "燧发手枪",
+      "identifier": "flintlock"
+    },
+    {
+      "english_registration_order": 339,
+      "chinese_registration_order": 340,
+      "english": "Rally",
+      "chinese": "激励",
+      "identifier": "defendcmd"
+    },
+    {
+      "english_registration_order": 340,
+      "chinese_registration_order": 341,
+      "english": "Shogun's Blade",
+      "chinese": "将军之刃",
+      "identifier": "shogunate"
+    },
+    {
+      "english_registration_order": 341,
+      "chinese_registration_order": 342,
+      "english": "Naval Mines",
+      "chinese": "水雷",
+      "identifier": "navalmine"
+    },
+    {
+      "english_registration_order": 342,
+      "chinese_registration_order": 343,
+      "english": "Quadbarrel",
+      "chinese": "四管枪",
+      "identifier": "quadshotgun"
+    },
+    {
+      "english_registration_order": 343,
+      "chinese_registration_order": 344,
+      "english": "Flintlock Rifle",
+      "chinese": "燧发步枪",
+      "identifier": "musket"
+    },
+    {
+      "english_registration_order": 344,
+      "chinese_registration_order": 345,
+      "english": "Slingshot",
+      "chinese": "弹弓",
+      "identifier": "slingshot_syca"
+    }
+  ]
+}

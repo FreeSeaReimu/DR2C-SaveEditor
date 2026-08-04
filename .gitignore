@@ -1,0 +1,15 @@
+# 运行时生成内容：不应进入源码历史或发布包。
+backups/
+temp/
+__pycache__/
+*.py[cod]
+
+# 本机安装的第三方依赖；按 requirements.txt 重建。
+vendor/
+release/
+.temp/
+
+# 本地配置和编辑器缓存。
+.venv/
+.idea/
+.vscode/

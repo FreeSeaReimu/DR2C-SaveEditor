@@ -1,0 +1,7156 @@
+{
+  "schemaVersion": 1,
+  "game": "Death Road to Canada",
+  "generatedAt": "2026-08-04T01:23:19.772Z",
+  "source": {
+    "name": "Death Road to Canada Fandom Wiki",
+    "apiUrl": "https://deathroadtocanada.fandom.com/api.php",
+    "pages": [
+      {
+        "title": "Melee Weapons",
+        "url": "https://deathroadtocanada.fandom.com/wiki/Melee_Weapons",
+        "revisionId": 21303,
+        "revisionTimestamp": "2026-08-01T16:40:40Z"
+      },
+      {
+        "title": "Ranged Weapons",
+        "url": "https://deathroadtocanada.fandom.com/wiki/Ranged_Weapons",
+        "revisionId": 21335,
+        "revisionTimestamp": "2026-08-03T04:13:33Z"
+      },
+      {
+        "title": "Motorized Weapons",
+        "url": "https://deathroadtocanada.fandom.com/wiki/Motorized_Weapons",
+        "revisionId": 20580,
+        "revisionTimestamp": "2025-07-09T16:29:43Z"
+      },
+      {
+        "title": "Consumable Weapons",
+        "url": "https://deathroadtocanada.fandom.com/wiki/Consumable_Weapons",
+        "revisionId": 21204,
+        "revisionTimestamp": "2026-04-19T12:36:18Z"
+      },
+      {
+        "title": "Special Weapons",
+        "url": "https://deathroadtocanada.fandom.com/wiki/Special_Weapons",
+        "revisionId": 21158,
+        "revisionTimestamp": "2026-04-17T16:20:40Z"
+      }
+    ]
+  },
+  "dataWarnings": [
+    {
+      "type": "duplicateWikiId",
+      "wikiId": 48,
+      "weaponIds": [
+        48,
+        293
+      ],
+      "weaponNames": [
+        "硬纸壳管",
+        "丁克切割者"
+      ],
+      "englishWeaponNames": [
+        "Cardboard Tube",
+        "Dingus-Cutter"
+      ],
+      "message": "Wiki 来源将编号 48 同时标记给多个不同武器（硬纸壳管、丁克切割者）。正式运行时 ID 已改用 weapondef 注册顺序，因此保留全部记录。"
+    },
+    {
+      "type": "duplicateWikiId",
+      "wikiId": 49,
+      "weaponIds": [
+        295,
+        49
+      ],
+      "weaponNames": [
+        "冻火腿",
+        "干草叉"
+      ],
+      "englishWeaponNames": [
+        "Frozen Ham",
+        "Pitchfork"
+      ],
+      "message": "Wiki 来源将编号 49 同时标记给多个不同武器（冻火腿、干草叉）。正式运行时 ID 已改用 weapondef 注册顺序，因此保留全部记录。"
+    },
+    {
+      "type": "duplicateWikiId",
+      "wikiId": 118,
+      "weaponIds": [
+        294,
+        118
+      ],
+      "weaponNames": [
+        "邮局盒子",
+        "台球球杆"
+      ],
+      "englishWeaponNames": [
+        "P.O Box",
+        "Pool Cue"
+      ],
+      "message": "Wiki 来源将编号 118 同时标记给多个不同武器（邮局盒子、台球球杆）。正式运行时 ID 已改用 weapondef 注册顺序，因此保留全部记录。"
+    },
+    {
+      "type": "duplicateWikiId",
+      "wikiId": 326,
+      "weaponIds": [
+        284,
+        283
+      ],
+      "weaponNames": [
+        "旗帜",
+        "辛辣小饮"
+      ],
+      "englishWeaponNames": [
+        "Banner (Buff Banner)",
+        "Spicy swig"
+      ],
+      "message": "Wiki 来源将编号 326 同时标记给多个不同武器（旗帜、辛辣小饮）。正式运行时 ID 已改用 weapondef 注册顺序，因此保留全部记录。"
+    },
+    {
+      "type": "duplicateWikiId",
+      "wikiId": 399,
+      "weaponIds": [
+        325,
+        313
+      ],
+      "weaponNames": [
+        "捕鱼叉",
+        "长棍"
+      ],
+      "englishWeaponNames": [
+        "Fishing Harpoon",
+        "Quarterstaff"
+      ],
+      "message": "Wiki 来源将编号 399 同时标记给多个不同武器（捕鱼叉、长棍）。正式运行时 ID 已改用 weapondef 注册顺序，因此保留全部记录。"
+    }
+  ],
+  "weapons": [
+    {
+      "weapon": {
+        "id": 6,
+        "wikiId": 6,
+        "name": "喷灯",
+        "englishName": "Blowtorch"
+      },
+      "power": 0,
+      "cooldown": null,
+      "knockback": 0,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "F",
+      "notes": "可点燃僵尸。初始装填 100 发，无法补充；火焰狂人初始持有时可充能。",
+      "reload": 0,
+      "penetrate": null,
+      "ammunition": "Butane (max 100)",
+      "spread": 0,
+      "vendors": [],
+      "locations": [
+        "Burning House",
+        "Hardware Store"
+      ],
+      "events": [],
+      "category": "ranged",
+      "sourcePage": "Ranged Weapons",
+      "englishNotes": "Ignites zombies. Comes preloaded with 100 charges that cannot be refilled. Pyromaniacs start with this weapon (rechargable)."
+    },
+    {
+      "weapon": {
+        "id": 7,
+        "wikiId": 7,
+        "name": "链锯",
+        "englishName": "Chainsaw"
+      },
+      "power": 0.5,
+      "cooldown": 1.25,
+      "knockback": 1,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "A",
+      "notes": "可快速伤害僵尸。攻击时每 40 个游戏刻（0.67 秒）消耗 1 单位燃料，闲置时每 160 个游戏刻（2.67 秒）消耗 1 单位燃料。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": "Gasoline (max 50)",
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Weapon Fanatic",
+          "price": 20,
+          "currency": "food",
+          "condition": null,
+          "raw": "Weapon Fanatic (20 food)"
+        },
+        {
+          "name": "Gas-Powered Tools",
+          "price": 10,
+          "currency": "food",
+          "condition": null,
+          "raw": "Gas-Powered Tools (10 food)"
+        }
+      ],
+      "locations": [
+        "Hardware Store",
+        "Cabin"
+      ],
+      "events": [
+        "Hand Upgrade"
+      ],
+      "category": "motorized",
+      "sourcePage": "Motorized Weapons",
+      "englishNotes": "Rapidly damages zombies. Expends fuel at a rate of 1 unit every 40 game ticks (or 0.67 seconds) while attacking and 1 unit every 160 ticks (2.67 seconds) while idle."
+    },
+    {
+      "weapon": {
+        "id": 8,
+        "wikiId": 8,
+        "name": "棒球棒",
+        "englishName": "Baseball Bat"
+      },
+      "power": 1,
+      "cooldown": 0.75,
+      "knockback": 2,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0.02,
+      "tier": "D",
+      "notes": "轻便且击退能力不错。运动员可能初始持有；Roller Derby Girl 初始持有。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Sporting Goods Store",
+        "Athletic Store"
+      ],
+      "events": [
+        "Kinda Pushy"
+      ],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "A lightweight weapon with good knockback. Athletes may start with this weapon. Roller Derby Girl starts with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 9,
+        "wikiId": 9,
+        "name": "钉板",
+        "englishName": "Nail Board"
+      },
+      "power": 1.3,
+      "cooldown": 1.5,
+      "knockback": 3,
+      "extraHits": {
+        "count": 2,
+        "chance": 1
+      },
+      "breakScale": 0.05,
+      "tier": "E",
+      "notes": null,
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Hardware Store",
+        "House"
+      ],
+      "events": [
+        "Weapon Stealing Bandits"
+      ],
+      "category": "melee",
+      "sourcePage": "Melee Weapons"
+    },
+    {
+      "weapon": {
+        "id": 10,
+        "wikiId": 10,
+        "name": "管钳",
+        "englishName": "Wrench"
+      },
+      "power": 1.3,
+      "cooldown": 1,
+      "knockback": 1,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "D",
+      "notes": "Roller Derby Girl 和机械师初始持有。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Hardware Store",
+        "Junkyard"
+      ],
+      "events": [
+        "Helping with Car Trouble"
+      ],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Roller Derby Girl and Mechanics start with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 11,
+        "wikiId": 11,
+        "name": "大锤",
+        "englishName": "Sledgehammer"
+      },
+      "power": 1.5,
+      "cooldown": 1.2,
+      "knockback": 3,
+      "extraHits": {
+        "count": 1,
+        "chance": 0.6
+      },
+      "breakScale": 0,
+      "tier": "C",
+      "notes": "适合力量较高角色的好武器。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Blunt Master",
+          "price": 8,
+          "currency": "food",
+          "condition": null,
+          "raw": "Blunt Master (8 food)"
+        }
+      ],
+      "locations": [
+        "Hardware Store"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "A good weapon for strong characters."
+    },
+    {
+      "weapon": {
+        "id": 12,
+        "wikiId": 12,
+        "name": "厨刀",
+        "englishName": "Kitchen Knife"
+      },
+      "power": 0.75,
+      "cooldown": 0.5,
+      "knockback": 0.25,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0.01,
+      "tier": "F",
+      "notes": "幸存者可能随机初始持有。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Grocery Store",
+        "Kitchen",
+        "Restaurant"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Survivors may randomly start with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 13,
+        "wikiId": 13,
+        "name": "菜刀",
+        "englishName": "Meat Cleaver"
+      },
+      "power": 1,
+      "cooldown": 0,
+      "knockback": 0.25,
+      "extraHits": {
+        "count": 1,
+        "chance": 1
+      },
+      "breakScale": 0.0025,
+      "tier": "D",
+      "notes": "便宜但不错的轻型起始武器。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Blade Master",
+          "price": 0,
+          "currency": "food",
+          "condition": "Free [",
+          "raw": "Blade Master (Free [)"
+        }
+      ],
+      "locations": [
+        "Grocery Store",
+        "Kitchen",
+        "Restaurant"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "A good lightweight weapon for start."
+    },
+    {
+      "weapon": {
+        "id": 14,
+        "wikiId": 14,
+        "name": "刮勺",
+        "englishName": "Spatula"
+      },
+      "power": 0,
+      "cooldown": 0,
+      "knockback": 0.1,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0.25,
+      "tier": "F",
+      "notes": "突刺武器。攻击僵尸时不会损坏，攻击其他目标时有 25% 概率损坏。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Kitchen",
+        "Grocery Store",
+        "Restaurant"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Thrusting weapon. Unbreakable against zombies, 25% break chance if used against anything else."
+    },
+    {
+      "weapon": {
+        "id": 15,
+        "wikiId": 15,
+        "name": "手斧",
+        "englishName": "Hatchet"
+      },
+      "power": 1.25,
+      "cooldown": 0.75,
+      "knockback": 0.5,
+      "extraHits": {
+        "count": 1,
+        "chance": 0.1
+      },
+      "breakScale": 0,
+      "tier": "C",
+      "notes": "结实、轻便的好武器。战士初始持有。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Axe Merchant",
+          "price": 3,
+          "currency": "food",
+          "condition": null,
+          "raw": "Axe Merchant (3 food)"
+        }
+      ],
+      "locations": [
+        "House",
+        "Apartment",
+        "Cabin",
+        "Camp Supplies Shop"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "A good sturdy lightweight weapon. Fighters start with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 16,
+        "wikiId": 16,
+        "name": "牛仔步枪",
+        "englishName": "Cowboy Rifle"
+      },
+      "power": 3,
+      "cooldown": null,
+      "knockback": 1.5,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "D",
+      "notes": "枪械收藏家初始持有。近战时有 2% 概率损坏。",
+      "reload": 1,
+      "penetrate": 0,
+      "ammunition": "Rounds (max 50)",
+      "spread": 0,
+      "vendors": [
+        {
+          "name": "Firearm Salesman",
+          "price": 5,
+          "currency": "food",
+          "condition": null,
+          "raw": "Firearm Salesman (5 food)"
+        },
+        {
+          "name": "Rifle Collector",
+          "price": 10,
+          "currency": "food",
+          "condition": "for 2 rifles",
+          "raw": "Rifle Collector (10 food for 2 rifles)"
+        }
+      ],
+      "locations": [
+        "Gun Shop",
+        "House",
+        "Safe"
+      ],
+      "events": [
+        "A Strange Vending Machine",
+        "Bandit Raid Defense",
+        "Helping out Someone in Need!"
+      ],
+      "category": "ranged",
+      "sourcePage": "Ranged Weapons",
+      "englishNotes": "Gun Collectors start with this weapon. Has a 2% chance of breaking in melee combat."
+    },
+    {
+      "weapon": {
+        "id": 17,
+        "wikiId": 17,
+        "name": "狩猎步枪",
+        "englishName": "Hunting Rifle"
+      },
+      "power": 4,
+      "cooldown": null,
+      "knockback": 2,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "C",
+      "notes": "拥有「招牌武器」和「临危不乱」特质的幸存者可能初始持有；Clock King 初始持有。",
+      "reload": 1.3,
+      "penetrate": 1,
+      "ammunition": "Rounds (max 50)",
+      "spread": 0,
+      "vendors": [
+        {
+          "name": "Rifle Collector",
+          "price": 15,
+          "currency": "food",
+          "condition": null,
+          "raw": "Rifle Collector (15 food)"
+        }
+      ],
+      "locations": [
+        "Gun Shop",
+        "Concrete Bunker",
+        "House",
+        "Safe",
+        "Bank"
+      ],
+      "events": [
+        "Three Graves"
+      ],
+      "category": "ranged",
+      "sourcePage": "Ranged Weapons",
+      "englishNotes": "Survivors with Trademark Weapon and Calm Under Fire starts with this weapon. Clock King starts with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 18,
+        "wikiId": 18,
+        "name": "霰弹枪",
+        "englishName": "Shotgun"
+      },
+      "power": 0.5,
+      "cooldown": null,
+      "knockback": 1.5,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "D",
+      "notes": "枪械收藏家、Gordo 和 Hermit 初始持有。",
+      "reload": 1,
+      "penetrate": 10,
+      "ammunition": "Shells (max 40)",
+      "spread": 4,
+      "vendors": [
+        {
+          "name": "Firearm Salesman",
+          "price": 5,
+          "currency": "food",
+          "condition": null,
+          "raw": "Firearm Salesman (5 food)"
+        },
+        {
+          "name": "Shotgun Peddler",
+          "price": 7,
+          "currency": "food",
+          "condition": null,
+          "raw": "Shotgun Peddler (7 food)"
+        }
+      ],
+      "locations": [
+        "Gun Shop",
+        "House",
+        "Safe"
+      ],
+      "events": [
+        "A Strange Vending Machine",
+        "Helping out Someone in Need!",
+        "Three Graves"
+      ],
+      "category": "ranged",
+      "sourcePage": "Ranged Weapons",
+      "englishNotes": "Gun Collectors, Gordo, and Hermit start with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 19,
+        "wikiId": 19,
+        "name": "连发霰弹枪",
+        "englishName": "Automatic Shotgun (Autoshotty)"
+      },
+      "power": 0.5,
+      "cooldown": null,
+      "knockback": 1.5,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "A",
+      "notes": null,
+      "reload": 0.4,
+      "penetrate": 10,
+      "ammunition": "Shells (max 80)",
+      "spread": 4,
+      "vendors": [
+        {
+          "name": "Firearm Salesman",
+          "price": 25,
+          "currency": "food",
+          "condition": null,
+          "raw": "Firearm Salesman (25 food)"
+        },
+        {
+          "name": "Shotgun Peddler",
+          "price": 30,
+          "currency": "food",
+          "condition": null,
+          "raw": "Shotgun Peddler (30 food)"
+        }
+      ],
+      "locations": [
+        "Concrete Bunker",
+        "Safe"
+      ],
+      "events": [
+        "Challenge Mode",
+        "Three Graves"
+      ],
+      "category": "ranged",
+      "sourcePage": "Ranged Weapons"
+    },
+    {
+      "weapon": {
+        "id": 20,
+        "wikiId": 20,
+        "name": "独头霰弹枪",
+        "englishName": "Slug Shotgun"
+      },
+      "power": 5,
+      "cooldown": null,
+      "knockback": 3,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "B",
+      "notes": "发射一枚威力强大、直线穿透能力很强的弹丸。",
+      "reload": 1.5,
+      "penetrate": 2,
+      "ammunition": "Shells (max 40)",
+      "spread": 1,
+      "vendors": [
+        {
+          "name": "Shotgun Peddler",
+          "price": 25,
+          "currency": "food",
+          "condition": null,
+          "raw": "Shotgun Peddler (25 food)"
+        }
+      ],
+      "locations": [
+        "Concrete Bunker",
+        "Safe"
+      ],
+      "events": [
+        "Challenge Mode"
+      ],
+      "category": "ranged",
+      "sourcePage": "Ranged Weapons",
+      "englishNotes": "Fires a single powerful pellet with strong linear penetration."
+    },
+    {
+      "weapon": {
+        "id": 21,
+        "wikiId": 21,
+        "name": "敖犬霰弹枪",
+        "englishName": "Big Dawg"
+      },
+      "power": 0.7,
+      "cooldown": null,
+      "knockback": 4,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "G",
+      "notes": null,
+      "reload": 1.4,
+      "penetrate": 15,
+      "ammunition": "Shells (max 40)",
+      "spread": 5,
+      "vendors": [
+        {
+          "name": "Pinnacle Weapons (20 food) at Prepper Paradise",
+          "price": null,
+          "currency": null,
+          "condition": null,
+          "raw": "Pinnacle Weapons (20 food) at Prepper Paradise"
+        }
+      ],
+      "locations": [],
+      "events": [],
+      "category": "ranged",
+      "sourcePage": "Ranged Weapons"
+    },
+    {
+      "weapon": {
+        "id": 22,
+        "wikiId": 22,
+        "name": "柯二特.45左轮",
+        "englishName": "Dolt .45 (Magnum)"
+      },
+      "power": 2.5,
+      "cooldown": null,
+      "knockback": 1,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "C",
+      "notes": "Gordo 和 Rck Grmes 初始持有。",
+      "reload": 1,
+      "penetrate": 15,
+      "ammunition": "Bullets (max 60)",
+      "spread": 1,
+      "vendors": [
+        {
+          "name": "Firearm Salesman",
+          "price": 5,
+          "currency": "food",
+          "condition": null,
+          "raw": "Firearm Salesman (5 food)"
+        }
+      ],
+      "locations": [
+        "Police Headquarters",
+        "Gun Shop",
+        "Police Station",
+        "House",
+        "Safe"
+      ],
+      "events": [
+        "Safe",
+        "A Strange Vending Machine",
+        "Helping out Someone in Need!",
+        "Three Graves"
+      ],
+      "category": "ranged",
+      "sourcePage": "Ranged Weapons",
+      "englishNotes": "Gordo and Rck Grmes start with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 23,
+        "wikiId": 23,
+        "name": "手枪",
+        "englishName": "Pistol"
+      },
+      "power": 1.5,
+      "cooldown": null,
+      "knockback": 1,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "F",
+      "notes": "枪械收藏家初始持有。",
+      "reload": 0.5,
+      "penetrate": 10,
+      "ammunition": "Bullets (max 90)",
+      "spread": 0,
+      "vendors": [
+        {
+          "name": "Firearm Salesman",
+          "price": 1,
+          "currency": "food",
+          "condition": null,
+          "raw": "Firearm Salesman (1 food)"
+        }
+      ],
+      "locations": [
+        "Police Headquarters",
+        "Gun Shop",
+        "Police Station",
+        "House"
+      ],
+      "events": [
+        "Three Graves"
+      ],
+      "category": "ranged",
+      "sourcePage": "Ranged Weapons",
+      "englishNotes": "Gun Collectors start with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 24,
+        "wikiId": 24,
+        "name": "狮鼻左轮",
+        "englishName": "Snubnose Revolver"
+      },
+      "power": 2,
+      "cooldown": null,
+      "knockback": 1.5,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "D",
+      "notes": "射击技能提供的穿透加成减半。",
+      "reload": 0.7,
+      "penetrate": 10,
+      "ammunition": "Bullets (max 60)",
+      "spread": 2,
+      "vendors": [],
+      "locations": [
+        "Police Headquarters",
+        "Gun Shop",
+        "Police Station"
+      ],
+      "events": [
+        "Helping out Someone in Need!",
+        "Three Graves"
+      ],
+      "category": "ranged",
+      "sourcePage": "Ranged Weapons",
+      "englishNotes": "Penetrate bonus from shooting skill is halved."
+    },
+    {
+      "weapon": {
+        "id": 25,
+        "wikiId": 25,
+        "name": "乌兹冲锋枪",
+        "englishName": "Uzi (Submachine Gun)"
+      },
+      "power": 1.2,
+      "cooldown": null,
+      "knockback": 1.5,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "A",
+      "notes": "射击技能提供的穿透加成减半。Witch 初始持有。",
+      "reload": 0.125,
+      "penetrate": 10,
+      "ammunition": "Bullets (max 160)",
+      "spread": 3,
+      "vendors": [
+        {
+          "name": "Army Surplus Fortress",
+          "price": 25,
+          "currency": "food",
+          "condition": null,
+          "raw": "Army Surplus Fortress (25 food)"
+        },
+        {
+          "name": "Firearm Salesman",
+          "price": 12,
+          "currency": "food",
+          "condition": null,
+          "raw": "Firearm Salesman (12 food)"
+        },
+        {
+          "name": "Fire Sale Trader",
+          "price": 10,
+          "currency": "food",
+          "condition": null,
+          "raw": "Fire Sale Trader (10 food)"
+        }
+      ],
+      "locations": [
+        "Gun Shop",
+        "Safe"
+      ],
+      "events": [
+        "Challenge Mode"
+      ],
+      "category": "ranged",
+      "sourcePage": "Ranged Weapons",
+      "englishNotes": "Penetrate bonus from shooting skill is halved. Witch starts with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 26,
+        "wikiId": 26,
+        "name": "AK47突击步枪",
+        "englishName": "AK47 (Assault Rifle, Automatic Rifle)"
+      },
+      "power": 2.5,
+      "cooldown": null,
+      "knockback": 2,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "A",
+      "notes": "射击技能提供的穿透加成减半。",
+      "reload": 0.2,
+      "penetrate": 10,
+      "ammunition": "Rounds (max 150)",
+      "spread": 2,
+      "vendors": [
+        {
+          "name": "Army Surplus Fortress",
+          "price": 25,
+          "currency": "food",
+          "condition": null,
+          "raw": "Army Surplus Fortress (25 food)"
+        },
+        {
+          "name": "Rifle Collector",
+          "price": 25,
+          "currency": "food",
+          "condition": null,
+          "raw": "Rifle Collector (25 food)"
+        },
+        {
+          "name": "Firearm Salesman",
+          "price": 20,
+          "currency": "food",
+          "condition": null,
+          "raw": "Firearm Salesman (20 food)"
+        }
+      ],
+      "locations": [
+        "Concrete Bunker",
+        "Military Depot",
+        "Safe"
+      ],
+      "events": [
+        "Challenge Mode",
+        "Three Graves"
+      ],
+      "category": "ranged",
+      "sourcePage": "Ranged Weapons",
+      "englishNotes": "Penetrate bonus from shooting skill is halved."
+    },
+    {
+      "weapon": {
+        "id": 27,
+        "wikiId": 27,
+        "name": "拐杖",
+        "englishName": "Cane"
+      },
+      "power": 1,
+      "cooldown": 0.85,
+      "knockback": 1,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0.02,
+      "tier": "F",
+      "notes": "幸存者可能随机初始持有。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Hospital Raid",
+        "Medical Clinic"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Survivors may randomly start with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 28,
+        "wikiId": 28,
+        "name": "煎锅",
+        "englishName": "Frying Pan"
+      },
+      "power": 1,
+      "cooldown": 0.9,
+      "knockback": 1,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "E",
+      "notes": "幸存者可能随机初始持有。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Grocery Store",
+        "Restaurant",
+        "Kitchen"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Survivors may randomly start with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 29,
+        "wikiId": 29,
+        "name": "阿宅武士刀",
+        "englishName": "Otaku Katana"
+      },
+      "power": 2,
+      "cooldown": 0.6,
+      "knockback": 0.25,
+      "extraHits": {
+        "count": 2,
+        "chance": 0.6
+      },
+      "breakScale": 0.05,
+      "tier": "D",
+      "notes": "轻便且不错的武器，但会损坏。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Blade Master",
+          "price": 5,
+          "currency": "food",
+          "condition": null,
+          "raw": "Blade Master (5 food)"
+        },
+        {
+          "name": "Anime Salesman",
+          "price": 5,
+          "currency": "food",
+          "condition": "for 4",
+          "raw": "Anime Salesman (5 food for 4)"
+        }
+      ],
+      "locations": [
+        "Various"
+      ],
+      "events": [
+        "The Dinkdoor: Door of Dinks"
+      ],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "A cheap but good light weapon until it break."
+    },
+    {
+      "weapon": {
+        "id": 30,
+        "wikiId": 30,
+        "name": "一片木板",
+        "englishName": "Piece of Wood"
+      },
+      "power": 0.75,
+      "cooldown": 0.5,
+      "knockback": 1,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0.1,
+      "tier": "F",
+      "notes": "可通过破坏木制家具（沙发、橱柜等）获得。幸存者可能随机初始持有。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "House",
+        "Apartment"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Obtained by breaking wooden furniture (sofas, cupboards, etc). Survivors may randomly start with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 31,
+        "wikiId": 31,
+        "name": "撬棍",
+        "englishName": "Crowbar"
+      },
+      "power": 1.5,
+      "cooldown": 1.1,
+      "knockback": 2,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "D",
+      "notes": "Gordo 和 Gungineers 初始持有。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Junkyard",
+        "Factory"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Gordo and Gungineers start with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 32,
+        "wikiId": 32,
+        "name": "警棍",
+        "englishName": "Nightstick"
+      },
+      "power": 0.8,
+      "cooldown": 0.65,
+      "knockback": 1.5,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "C",
+      "notes": "轻便且击退能力不错。拥有「招牌武器」特质的幸存者可能初始持有；Mall Cops 初始持有。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Police Headquarters",
+        "Police Station",
+        "Lost Safehouse"
+      ],
+      "events": [
+        "Helping out Someone in Need!"
+      ],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "A lightweight weapon with good knockback. Survivors with Trademark Weapon may start with this weapon. Mall Cops start with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 33,
+        "wikiId": 33,
+        "name": "板球棒",
+        "englishName": "Cricket Bat"
+      },
+      "power": 1.1,
+      "cooldown": 0.7,
+      "knockback": 2.2,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0.01,
+      "tier": "D",
+      "notes": "轻便且击退能力不错。运动员可能初始持有。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Sporting Goods Store",
+        "Athletic Store"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "A lightweight weapon with good knockback. Athletes may start with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 34,
+        "wikiId": 34,
+        "name": "铝合金球棒",
+        "englishName": "Aluminum Bat"
+      },
+      "power": 1,
+      "cooldown": 0.75,
+      "knockback": 2,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "C",
+      "notes": "轻便且击退能力不错。拥有「招牌武器」特质的幸存者可能初始持有。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Fire Sale Trader",
+          "price": 6,
+          "currency": "food",
+          "condition": null,
+          "raw": "Fire Sale Trader (6 food)"
+        }
+      ],
+      "locations": [
+        "Sporting Goods Store",
+        "Athletic Store",
+        "Quiet Hotel"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "A lightweight weapon with good knockback. Survivors with Trademark Weapon may start with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 35,
+        "wikiId": 35,
+        "name": "大腿骨",
+        "englishName": "Femur"
+      },
+      "power": 0.75,
+      "cooldown": 0.5,
+      "knockback": 1,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0.05,
+      "tier": "F",
+      "notes": "可通过破坏骷髅获得。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Pet Store"
+      ],
+      "events": [
+        "THE U.S.S RUSTOLEUM"
+      ],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Can be obtained by breaking skeletons."
+    },
+    {
+      "weapon": {
+        "id": 36,
+        "wikiId": 36,
+        "name": "高尔夫球杆",
+        "englishName": "Golf Club"
+      },
+      "power": 0.5,
+      "cooldown": 0.55,
+      "knockback": 2,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0.02,
+      "tier": "E",
+      "notes": "极为轻便且击退能力不错。运动员可能初始持有。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Sporting Goods Store",
+        "Athletic Store",
+        "Big Office Complex",
+        "Office Building"
+      ],
+      "events": [
+        "Driving Range Last Stand"
+      ],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "A super-lightweight weapon with good knockback. Athletes may start with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 37,
+        "wikiId": 37,
+        "name": "中世纪战斧",
+        "englishName": "Medieval Axe"
+      },
+      "power": 3,
+      "cooldown": 1.85,
+      "knockback": 2,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "B",
+      "notes": "命中时会在一定范围内造成范围伤害。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Axe Merchant",
+          "price": 20,
+          "currency": "food",
+          "condition": null,
+          "raw": "Axe Merchant (20 food)"
+        },
+        {
+          "name": "Heavy Weapons Knight",
+          "price": 15,
+          "currency": "food",
+          "condition": null,
+          "raw": "Heavy Weapons Knight (15 food)"
+        }
+      ],
+      "locations": [
+        "Museum"
+      ],
+      "events": [
+        "Cursed Treasure"
+      ],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Deals area-of-effect damage within an area on hit."
+    },
+    {
+      "weapon": {
+        "id": 38,
+        "wikiId": 38,
+        "name": "真武士刀",
+        "englishName": "Strong Katana"
+      },
+      "power": 2,
+      "cooldown": 0.8,
+      "knockback": 0.25,
+      "extraHits": {
+        "count": 2,
+        "chance": 0.6
+      },
+      "breakScale": 0,
+      "tier": "B",
+      "notes": "不错的中型武器。动漫迷初始持有。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Museum",
+        "Bank"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "A good medium weapon. Anime Fans start with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 39,
+        "wikiId": 39,
+        "name": "骑士剑",
+        "englishName": "Knight Sword"
+      },
+      "power": 2.5,
+      "cooldown": 1.3,
+      "knockback": 1.5,
+      "extraHits": {
+        "count": 1,
+        "chance": 1
+      },
+      "breakScale": 0,
+      "tier": "B",
+      "notes": "优秀的中等重量武器。Blade Master 在蓄满 COOL IT 时会免费赠予队伍一把骑士剑。Knight 初始持有；拥有「招牌武器」特质的幸存者可能初始持有。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Blade Master",
+          "price": 20,
+          "currency": "food",
+          "condition": null,
+          "raw": "Blade Master (20 food)"
+        },
+        {
+          "name": "Medium Weapons Knight",
+          "price": 15,
+          "currency": "food",
+          "condition": null,
+          "raw": "Medium Weapons Knight (15 food)"
+        }
+      ],
+      "locations": [
+        "Safe"
+      ],
+      "events": [
+        "Cursed Treasure"
+      ],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "A great medium-weight weapon. Blade Master will give the party a knight sword for free with a full charge COOL IT. Knight starts with this weapon. Survivors with Trademark Weapon may start with this weapons."
+    },
+    {
+      "weapon": {
+        "id": 40,
+        "wikiId": 40,
+        "name": "双刃大剑",
+        "englishName": "Claymore (Mighty Claymore)"
+      },
+      "power": 3.5,
+      "cooldown": 1.6,
+      "knockback": 3,
+      "extraHits": {
+        "count": 3,
+        "chance": 1
+      },
+      "breakScale": 0,
+      "tier": "S",
+      "notes": "Herman 初始持有。若通过「Cursed Treasure」文本事件获得，会永久绑定给选择拿取它的角色，并将该角色的背包容量设为 1 格；该角色身上的其他占格物品会移入汽车库存。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Blade Master",
+          "price": 35,
+          "currency": "food",
+          "condition": null,
+          "raw": "Blade Master (35 food)"
+        },
+        {
+          "name": "Heavy Weapons Knight",
+          "price": 30,
+          "currency": "food",
+          "condition": null,
+          "raw": "Heavy Weapons Knight (30 food)"
+        }
+      ],
+      "locations": [],
+      "events": [
+        "Challenge Mode",
+        "Cursed Treasure"
+      ],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Herman starts with this weapon. If obtained by the Cursed Treasure text event, it will permanently lock the Claymore to the character you chose to have take it, and set that character's inventory space to 1 slot. Note that any item that takes up inventory on the character will be moved to the car inventory."
+    },
+    {
+      "weapon": {
+        "id": 41,
+        "wikiId": 41,
+        "name": "双手剑",
+        "englishName": "Zweihander (Cold Steel Greatsword)"
+      },
+      "power": 3.5,
+      "cooldown": 1.5,
+      "knockback": 3,
+      "extraHits": {
+        "count": 3,
+        "chance": 1
+      },
+      "breakScale": 0,
+      "tier": "S",
+      "notes": "优秀的重型武器，比其他超重武器更轻。购买前选择“要求演示”可将价格降至 30 食物。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Lynn C. Thompson",
+          "price": 45,
+          "currency": "food",
+          "condition": null,
+          "raw": "Lynn C. Thompson (45 food)"
+        }
+      ],
+      "locations": [],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "A great heavy weapon being lighter than other massive-weight weapons. Price can be reduced to 30 food if the player \"asks for a demo\" before buying it."
+    },
+    {
+      "weapon": {
+        "id": 42,
+        "wikiId": 42,
+        "name": "消防斧",
+        "englishName": "Fire Axe"
+      },
+      "power": 2,
+      "cooldown": 1.2,
+      "knockback": 2,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "C",
+      "notes": "命中时会在小范围内造成范围伤害。Hermit 和火焰狂人初始持有。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Axe Salesman",
+          "price": 6,
+          "currency": "food",
+          "condition": null,
+          "raw": "Axe Salesman (6 food)"
+        }
+      ],
+      "locations": [
+        "Burning House"
+      ],
+      "events": [
+        "Helping out Someone in Need!"
+      ],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Deals area-of-effect damage within small area on hit. Hermit and Pyromaniac start with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 43,
+        "wikiId": 43,
+        "name": "雨伞",
+        "englishName": "Umbrella"
+      },
+      "power": 0.5,
+      "cooldown": 0.7,
+      "knockback": 1.5,
+      "extraHits": {
+        "count": 1,
+        "chance": 1
+      },
+      "breakScale": 0.02,
+      "tier": "E",
+      "notes": "在「Horrible Weather」事件中减少士气损失。幸存者可能随机初始持有。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Umbrella Shop",
+        "House"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Reduces morale loss during the Horrible Weather event. Survivors may randomly start with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 44,
+        "wikiId": 44,
+        "name": "沙滩伞",
+        "englishName": "Beach Umbrella"
+      },
+      "power": 0.75,
+      "cooldown": 0.9,
+      "knockback": 2,
+      "extraHits": {
+        "count": 2,
+        "chance": 1
+      },
+      "breakScale": 0.02,
+      "tier": "E",
+      "notes": "在「Horrible Weather」事件中减少士气损失。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Umbrella Shop"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Reduces morale loss during the Horrible Weather event."
+    },
+    {
+      "weapon": {
+        "id": 45,
+        "wikiId": 45,
+        "name": "冰球棒",
+        "englishName": "Hockey Stick"
+      },
+      "power": 0.75,
+      "cooldown": 0.65,
+      "knockback": 2,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0.02,
+      "tier": "D",
+      "notes": "极为轻便，击退能力和攻击距离都不错。运动员可能初始持有。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Axe Merchant",
+          "price": 0,
+          "currency": "food",
+          "condition": "Free [",
+          "raw": "Axe Merchant (Free [)"
+        }
+      ],
+      "locations": [
+        "Sporting Goods Store",
+        "Athletic Store"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "A super-lightweight weapon with good knockback and good reach. Athletes may start with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 46,
+        "wikiId": 46,
+        "name": "极限冰球棒",
+        "englishName": "Xtreme Hockey Stick"
+      },
+      "power": 1,
+      "cooldown": 0.65,
+      "knockback": 4,
+      "extraHits": {
+        "count": 1,
+        "chance": 0.3
+      },
+      "breakScale": 0,
+      "tier": "A",
+      "notes": "体育用品店的稀有战利品。优秀的轻型武器，击退能力和攻击距离都不错。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Sporting Goods Store",
+        "Athletic Store"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Rare loot of Sporting Goods Store. A great lightweight weapon with good knockback and good reach."
+    },
+    {
+      "weapon": {
+        "id": 47,
+        "wikiId": 47,
+        "name": "骑警冰球棒",
+        "englishName": "Mountie Hockey Stick"
+      },
+      "power": 1,
+      "cooldown": 0.65,
+      "knockback": 8,
+      "extraHits": {
+        "count": 4,
+        "chance": 0.7
+      },
+      "breakScale": 0,
+      "tier": "G",
+      "notes": null,
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "special",
+      "sourcePage": "Special Weapons"
+    },
+    {
+      "weapon": {
+        "id": 48,
+        "wikiId": 48,
+        "name": "硬纸壳管",
+        "englishName": "Cardboard Tube"
+      },
+      "power": 0,
+      "cooldown": 0.5,
+      "knockback": 8,
+      "extraHits": {
+        "count": 5,
+        "chance": 1
+      },
+      "breakScale": 0.05,
+      "tier": "P",
+      "notes": "拥有极高击退和额外命中数。DSYP 与 Kepa 初始持有。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Factory",
+        "Yall-Mart"
+      ],
+      "events": [
+        "More Valuable Than Gold"
+      ],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Has massive knockback and extra hits. DSYP and Kepa start with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 293,
+        "wikiId": 48,
+        "name": "丁克切割者",
+        "englishName": "Dingus-Cutter"
+      },
+      "power": 2.5,
+      "cooldown": 1.3,
+      "knockback": 2,
+      "extraHits": {
+        "count": 2,
+        "chance": 1
+      },
+      "breakScale": 0,
+      "tier": "A",
+      "notes": "拥有「招牌武器」和「BERSERK!」特质的角色初始持有。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Characters with Trademark Weapon and BERSERK! start with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 295,
+        "wikiId": 49,
+        "name": "冻火腿",
+        "englishName": "Frozen Ham"
+      },
+      "power": 4,
+      "cooldown": 1.1,
+      "knockback": 2,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "B",
+      "notes": "拥有「招牌武器」和「迟钝」特质的角色初始持有。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Character with Trademark Weapon and Oblivious start with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 49,
+        "wikiId": 49,
+        "name": "干草叉",
+        "englishName": "Pitchfork"
+      },
+      "power": 1.5,
+      "cooldown": 1.2,
+      "knockback": 1,
+      "extraHits": {
+        "count": 2,
+        "chance": 1
+      },
+      "breakScale": 0,
+      "tier": "C",
+      "notes": "威力强大但沉重的突刺武器。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Farm",
+        "Hardware Store"
+      ],
+      "events": [
+        "A Trip to the Farm"
+      ],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "A powerful but heavy thrusting weapon."
+    },
+    {
+      "weapon": {
+        "id": 50,
+        "wikiId": 50,
+        "name": "铁铲",
+        "englishName": "Shovel"
+      },
+      "power": 1.5,
+      "cooldown": 1.3,
+      "knockback": 2,
+      "extraHits": {
+        "count": 2,
+        "chance": 0.5
+      },
+      "breakScale": 0,
+      "tier": "C",
+      "notes": "重型武器。可用于在「Spooky Graveyard」中解救 Count Dinkula。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Farm",
+        "Hardware Store",
+        "Spooky Graveyard"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "A heavy weapon. Can be used to free Count Dinkula in the Spooky Graveyard."
+    },
+    {
+      "weapon": {
+        "id": 51,
+        "wikiId": 51,
+        "name": "树枝",
+        "englishName": "Tree Branch (Stick)"
+      },
+      "power": 0.5,
+      "cooldown": 0.5,
+      "knockback": 0.5,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0.05,
+      "tier": "F",
+      "notes": "L*nk 初始持有。可在「True Despair」事件中使用。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Cabin"
+      ],
+      "events": [
+        "A Strange Vending Machine",
+        "Still Having to Wait in Line"
+      ],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "L*nk starts with this weapon. May be used during the True Despair event."
+    },
+    {
+      "weapon": {
+        "id": 52,
+        "wikiId": 52,
+        "name": "金属管",
+        "englishName": "Metal Pipe"
+      },
+      "power": 2,
+      "cooldown": 1.35,
+      "knockback": 2,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "E",
+      "notes": "Megabuffs 初始持有。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Factory",
+        "Junkyard"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Megabuffs start with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 53,
+        "wikiId": 53,
+        "name": "生锈砍刀",
+        "englishName": "Rusty Machete"
+      },
+      "power": 1.5,
+      "cooldown": 0.86,
+      "knockback": 1,
+      "extraHits": {
+        "count": 1,
+        "chance": 0.2
+      },
+      "breakScale": 0.005,
+      "tier": "D",
+      "notes": null,
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Camp Supplies Shop",
+        "Cabin"
+      ],
+      "events": [
+        "Repair Shop Repair"
+      ],
+      "category": "melee",
+      "sourcePage": "Melee Weapons"
+    },
+    {
+      "weapon": {
+        "id": 54,
+        "wikiId": 54,
+        "name": "坚固砍刀",
+        "englishName": "Sturdy Machete"
+      },
+      "power": 2,
+      "cooldown": 0.86,
+      "knockback": 1,
+      "extraHits": {
+        "count": 1,
+        "chance": 0.2
+      },
+      "breakScale": 0,
+      "tier": "B",
+      "notes": "优秀的轻型武器。拥有「招牌武器」特质的幸存者可能初始持有。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Blade Master",
+          "price": 12,
+          "currency": "food",
+          "condition": null,
+          "raw": "Blade Master (12 food)"
+        },
+        {
+          "name": "Fire Sale Trader",
+          "price": 6,
+          "currency": "food",
+          "condition": null,
+          "raw": "Fire Sale Trader (6 food)"
+        }
+      ],
+      "locations": [
+        "Cabin",
+        "Camp Supplies Shop",
+        "Sporting Goods Store"
+      ],
+      "events": [
+        "Cursed Treasure"
+      ],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "A great lightweight weapon. Survivors with Trademark Weapon may start with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 55,
+        "wikiId": 55,
+        "name": "停车计价表",
+        "englishName": "Parking Meter"
+      },
+      "power": 2,
+      "cooldown": 1.55,
+      "knockback": 2,
+      "extraHits": {
+        "count": 4,
+        "chance": 0.3
+      },
+      "breakScale": 0,
+      "tier": "C",
+      "notes": "Clem 初始持有。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Weapon Fanatic",
+          "price": 10,
+          "currency": "food",
+          "condition": null,
+          "raw": "Weapon Fanatic (10 food)"
+        }
+      ],
+      "locations": [],
+      "events": [
+        "Weapon Stealing Bandits",
+        "Junkyard Pals"
+      ],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Clem starts with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 56,
+        "wikiId": 56,
+        "name": "可爱魔杖",
+        "englishName": "Lovely Wand"
+      },
+      "power": 0.5,
+      "cooldown": 0.5,
+      "knockback": 1.5,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "A",
+      "notes": "挥动时会发射爱心光束弹。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "special",
+      "sourcePage": "Special Weapons",
+      "englishNotes": "Launches a lovebeam projectile when swinging."
+    },
+    {
+      "weapon": {
+        "id": 57,
+        "wikiId": 57,
+        "name": "武装刺剑",
+        "englishName": "Rapier"
+      },
+      "power": 1.6,
+      "cooldown": 0.15,
+      "knockback": 0,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "B",
+      "notes": "突刺武器。Fencer 初始持有。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [
+        "Cursed Treasure"
+      ],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Thrusting weapon. Fencer starts with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 58,
+        "wikiId": 58,
+        "name": "玩具锤",
+        "englishName": "Toy Hammer"
+      },
+      "power": 0,
+      "cooldown": 0.9,
+      "knockback": 5,
+      "extraHits": {
+        "count": 1,
+        "chance": 0.6
+      },
+      "breakScale": 0,
+      "tier": "C",
+      "notes": "被此武器命中的僵尸偶尔会受到远强于基础数值的击退。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "special",
+      "sourcePage": "Special Weapons",
+      "englishNotes": "Zombies hit by this weapon will occasionally experience knockback many times stronger than the base weapon's."
+    },
+    {
+      "weapon": {
+        "id": 59,
+        "wikiId": 59,
+        "name": "拳铠",
+        "englishName": "Gauntlet"
+      },
+      "power": 1,
+      "cooldown": 0.8,
+      "knockback": 2,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "C",
+      "notes": null,
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Light Weapons Knight",
+          "price": 3,
+          "currency": "food",
+          "condition": null,
+          "raw": "Light Weapons Knight (3 food)"
+        }
+      ],
+      "locations": [
+        "Museum"
+      ],
+      "events": [
+        "Cursed Treasure"
+      ],
+      "category": "melee",
+      "sourcePage": "Melee Weapons"
+    },
+    {
+      "weapon": {
+        "id": 60,
+        "wikiId": 60,
+        "name": "Punchquest Gauntlet",
+        "englishName": "Punchquest Gauntlet"
+      },
+      "power": 1,
+      "cooldown": 0.6,
+      "knockback": 2,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "S",
+      "notes": "除主挥击外还会发射投射物。也可在 Gnomey's Despair 事件中获得。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "special",
+      "sourcePage": "Special Weapons",
+      "englishNotes": "Shoots projectiles in addition to the main swing. Can also be obtained from Gnomey's Despair Event."
+    },
+    {
+      "weapon": {
+        "id": 61,
+        "wikiId": 61,
+        "name": "拳击手套",
+        "englishName": "Boxing Glove"
+      },
+      "power": 0.75,
+      "cooldown": 0.5,
+      "knockback": 1.5,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "F",
+      "notes": null,
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "special",
+      "sourcePage": "Special Weapons"
+    },
+    {
+      "weapon": {
+        "id": 62,
+        "wikiId": 62,
+        "name": "上勾拳",
+        "englishName": "Uppercut"
+      },
+      "power": 1.3,
+      "cooldown": 1.3,
+      "knockback": 3,
+      "extraHits": {
+        "count": 1,
+        "chance": 1
+      },
+      "breakScale": 0,
+      "tier": "F",
+      "notes": "使用武器切换键发动。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "special",
+      "sourcePage": "Special Weapons",
+      "englishNotes": "Activated with the weapon switching key."
+    },
+    {
+      "weapon": {
+        "id": 63,
+        "wikiId": 63,
+        "name": "流星锤",
+        "englishName": "Morning Star"
+      },
+      "power": 2.5,
+      "cooldown": 1.3,
+      "knockback": 3,
+      "extraHits": {
+        "count": 4,
+        "chance": 0.5
+      },
+      "breakScale": 0,
+      "tier": "A",
+      "notes": null,
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Medium Weapons Knight",
+          "price": 15,
+          "currency": "food",
+          "condition": null,
+          "raw": "Medium Weapons Knight (15 food)"
+        }
+      ],
+      "locations": [],
+      "events": [
+        "Cursed Treasure"
+      ],
+      "category": "melee",
+      "sourcePage": "Melee Weapons"
+    },
+    {
+      "weapon": {
+        "id": 66,
+        "wikiId": 66,
+        "name": "淑女伞",
+        "englishName": "Debutante Umbrella"
+      },
+      "power": 1,
+      "cooldown": 0.7,
+      "knockback": 1.5,
+      "extraHits": {
+        "count": 1,
+        "chance": 1
+      },
+      "breakScale": 0,
+      "tier": "B",
+      "notes": "在「Horrible Weather」事件中减少士气损失。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "special",
+      "sourcePage": "Special Weapons",
+      "englishNotes": "Reduces morale loss during the Horrible Weather event."
+    },
+    {
+      "weapon": {
+        "id": 67,
+        "wikiId": 67,
+        "name": "梅森砍刀",
+        "englishName": "Mason's Machete"
+      },
+      "power": 2,
+      "cooldown": 0.86,
+      "knockback": 0.35,
+      "extraHits": {
+        "count": 3,
+        "chance": 0.3
+      },
+      "breakScale": 0,
+      "tier": "A",
+      "notes": null,
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "special",
+      "sourcePage": "Special Weapons"
+    },
+    {
+      "weapon": {
+        "id": 68,
+        "wikiId": 68,
+        "name": "蓝博匕首",
+        "englishName": "Rambeux Knife"
+      },
+      "power": 1.2,
+      "cooldown": 0,
+      "knockback": 0.25,
+      "extraHits": {
+        "count": 1,
+        "chance": 1
+      },
+      "breakScale": 0,
+      "tier": "B",
+      "notes": null,
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "special",
+      "sourcePage": "Special Weapons"
+    },
+    {
+      "weapon": {
+        "id": 69,
+        "wikiId": 69,
+        "name": "加特林机枪",
+        "englishName": "Minigun"
+      },
+      "power": 2.5,
+      "cooldown": null,
+      "knockback": 4,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "G",
+      "notes": "Rambeux 初始持有。",
+      "reload": 0.1,
+      "penetrate": 20,
+      "ammunition": "Rounds (max 400)",
+      "spread": 5,
+      "vendors": [
+        {
+          "name": "Army Surplus Fortress",
+          "price": 75,
+          "currency": "food",
+          "condition": null,
+          "raw": "Army Surplus Fortress (75 food)"
+        },
+        {
+          "name": "Pinnacle Weapons",
+          "price": 35,
+          "currency": "food",
+          "condition": null,
+          "raw": "Pinnacle Weapons (35 food)"
+        },
+        {
+          "name": "Rifle Collector",
+          "price": 65,
+          "currency": "food",
+          "condition": null,
+          "raw": "Rifle Collector (65 food)"
+        }
+      ],
+      "locations": [
+        "Museum"
+      ],
+      "events": [
+        "Challenge Mode",
+        "Three Graves"
+      ],
+      "category": "ranged",
+      "sourcePage": "Ranged Weapons",
+      "englishNotes": "Rambeux starts with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 70,
+        "wikiId": 70,
+        "name": "嘭嘭手枪",
+        "englishName": "Ridiculous Pistol"
+      },
+      "power": 1,
+      "cooldown": 0.55,
+      "knockback": 1,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "D",
+      "notes": "每次射击都会造成强烈的屏幕震动。威力低于普通手枪。",
+      "reload": null,
+      "penetrate": 10,
+      "ammunition": "Bullets (max 100)",
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "special",
+      "sourcePage": "Special Weapons",
+      "englishNotes": "Causes intense screenshake with each shot. Being weaker than normal pistol."
+    },
+    {
+      "weapon": {
+        "id": 71,
+        "wikiId": 71,
+        "name": "炸鱼霰弹枪",
+        "englishName": "Vlambeer Shotgun"
+      },
+      "power": 0.5,
+      "cooldown": 0.35,
+      "knockback": 1,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "C",
+      "notes": "每次射击都会造成强烈的屏幕震动。比普通霰弹枪多发射 1 颗弹丸，射速 +200%、弹容量 +25%，但击退较低。",
+      "reload": null,
+      "penetrate": 10,
+      "ammunition": "Shells (max 50)",
+      "spread": 4,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "special",
+      "sourcePage": "Special Weapons",
+      "englishNotes": "Causes intense screenshake with each shot. Fires 1 more pellet, has +200% fire rate and +25% capacity but less knockback comparing to normal shotgun."
+    },
+    {
+      "weapon": {
+        "id": 72,
+        "wikiId": 72,
+        "name": "忍者之刃",
+        "englishName": "Ninja Katana"
+      },
+      "power": 2,
+      "cooldown": 0.6,
+      "knockback": 0.25,
+      "extraHits": {
+        "count": 2,
+        "chance": 0.6
+      },
+      "breakScale": 0,
+      "tier": "B",
+      "notes": "拥有「招牌武器」特质的幸存者可能初始持有。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Survivors with Trademark Weapon may start with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 73,
+        "wikiId": 73,
+        "name": "初始木剑",
+        "englishName": "Take This"
+      },
+      "power": 0.75,
+      "cooldown": 0.5,
+      "knockback": 1,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "C",
+      "notes": "突刺武器。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "special",
+      "sourcePage": "Special Weapons",
+      "englishNotes": "A thrusting weapon."
+    },
+    {
+      "weapon": {
+        "id": 74,
+        "wikiId": 74,
+        "name": "白刃剑",
+        "englishName": "White Sword"
+      },
+      "power": 1,
+      "cooldown": 0.5,
+      "knockback": 2,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "C",
+      "notes": "「Take This」的后继武器。突刺武器；满血突刺时会发射光弹。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "special",
+      "sourcePage": "Special Weapons",
+      "englishNotes": "Successor of Take This. A thrusting weapon. Launches a light projectile when stabbing at full health."
+    },
+    {
+      "weapon": {
+        "id": 75,
+        "wikiId": 75,
+        "name": "大师之剑",
+        "englishName": "M*ster Sword"
+      },
+      "power": 1.5,
+      "cooldown": 0.5,
+      "knockback": 1,
+      "extraHits": {
+        "count": 1,
+        "chance": 1
+      },
+      "breakScale": 0,
+      "tier": "A",
+      "notes": "白刃剑的后继武器。满血挥动时会发射更大的光弹；不再是突刺武器。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "special",
+      "sourcePage": "Special Weapons",
+      "englishNotes": "Successor of the White Sword. Lauches a larger light projectile when swinging at full health. No longer a thrusting weapon."
+    },
+    {
+      "weapon": {
+        "id": 80,
+        "wikiId": 80,
+        "name": "苦无",
+        "englishName": "Kunai"
+      },
+      "power": 1,
+      "cooldown": 0.5,
+      "knockback": 0.25,
+      "extraHits": {
+        "count": 3,
+        "chance": 0.6
+      },
+      "breakScale": 0,
+      "tier": "B",
+      "notes": "功能等同于徒手攻击。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "special",
+      "sourcePage": "Special Weapons",
+      "englishNotes": "Functions as an unarmed attack."
+    },
+    {
+      "weapon": {
+        "id": 82,
+        "wikiId": 82,
+        "name": "烟雾弹",
+        "englishName": "Smoke Bomb"
+      },
+      "power": 0,
+      "cooldown": 0,
+      "knockback": null,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "F",
+      "notes": "将使用者传送离开当前位置。忍者初始持有；全部耗尽后忍者会产出更多。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": "10 max",
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "consumable",
+      "sourcePage": "Consumable Weapons",
+      "englishNotes": "Teleports user away from their location. Ninja starts with this weapon; Ninja produces more when they are all consumed."
+    },
+    {
+      "weapon": {
+        "id": 86,
+        "wikiId": 86,
+        "name": "雷神之锤",
+        "englishName": "Mjollin'er"
+      },
+      "power": 3,
+      "cooldown": 1,
+      "knockback": 3,
+      "extraHits": {
+        "count": 3,
+        "chance": 0.1
+      },
+      "breakScale": 0,
+      "tier": "S",
+      "notes": "近战武器；当远处有可见僵尸时可进行回旋镖式攻击。可以丢下，但除 Valkyrie 外的幸存者无法拾取。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "special",
+      "sourcePage": "Special Weapons",
+      "englishNotes": "A Melee weapon with a boomerang-style attack when zombies in sight with a distance. Can be droppped but cannot be picked up by any survivor other than Valkyrie."
+    },
+    {
+      "weapon": {
+        "id": 87,
+        "wikiId": 87,
+        "name": "火焰喷射器",
+        "englishName": "Flamethrower"
+      },
+      "power": 0.5,
+      "cooldown": null,
+      "knockback": null,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "F",
+      "notes": "喷出大型火焰，点燃僵尸和物体，并在地面留下火焰区域。",
+      "reload": 0.05,
+      "penetrate": null,
+      "ammunition": "Gasoline (max 100)",
+      "spread": 0,
+      "vendors": [
+        {
+          "name": "Army Surplus Fortress",
+          "price": 50,
+          "currency": "food",
+          "condition": null,
+          "raw": "Army Surplus Fortress (50 food)"
+        },
+        {
+          "name": "Weapon Fanatic",
+          "price": 40,
+          "currency": "food",
+          "condition": null,
+          "raw": "Weapon Fanatic (40 food)"
+        },
+        {
+          "name": "Firearm Salesman",
+          "price": 35,
+          "currency": "food",
+          "condition": null,
+          "raw": "Firearm Salesman (35 food)"
+        }
+      ],
+      "locations": [
+        "Burning House"
+      ],
+      "events": [],
+      "category": "ranged",
+      "sourcePage": "Ranged Weapons",
+      "englishNotes": "Spits large jets of flame which ignite zombies/objects and create patches of fire on the ground."
+    },
+    {
+      "weapon": {
+        "id": 89,
+        "wikiId": 89,
+        "name": "僵尸腿",
+        "englishName": "Zombie Leg"
+      },
+      "power": 0.5,
+      "cooldown": 0.75,
+      "knockback": 3,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0.0025,
+      "tier": "E",
+      "notes": "生成骷髅时有 0.625% 概率将其替换为此物品。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Various"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Has a 0.625% chance of replacing a spawned skeleton."
+    },
+    {
+      "weapon": {
+        "id": 90,
+        "wikiId": 90,
+        "name": "脊柱",
+        "englishName": "Spine"
+      },
+      "power": 1,
+      "cooldown": 0.7,
+      "knockback": 1,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0.01,
+      "tier": "F",
+      "notes": "破坏骷髅时有 5% 概率掉落；生成骷髅时还有 2.5% 概率将其替换为此物品。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Various"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Has a 5% chance of dropping from breaking a skeleton, as well as a 2.5% chance of replacing a spawned skeleton."
+    },
+    {
+      "weapon": {
+        "id": 91,
+        "wikiId": 91,
+        "name": "脊柱头槌",
+        "englishName": "Spine w/ Skull Accessory"
+      },
+      "power": 1.5,
+      "cooldown": 0.7,
+      "knockback": 1.5,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0.005,
+      "tier": "E",
+      "notes": "生成骷髅时有 1.25% 概率将其替换为此物品。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Various"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Has a 1.25% chance of replacing a spawned skeleton."
+    },
+    {
+      "weapon": {
+        "id": 92,
+        "wikiId": 92,
+        "name": "螺纹钢筋",
+        "englishName": "Re-bar"
+      },
+      "power": 0.5,
+      "cooldown": 0.5,
+      "knockback": 1,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "F",
+      "notes": "突刺武器。幸存者可能随机初始持有。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Junkyard"
+      ],
+      "events": [
+        "Weapon Stealing Bandits"
+      ],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Thrusting weapon. Survivors may randomly start with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 93,
+        "wikiId": 93,
+        "name": "魔鬼之叉",
+        "englishName": "Devil Fork"
+      },
+      "power": 2,
+      "cooldown": 0.75,
+      "knockback": 1,
+      "extraHits": {
+        "count": 2,
+        "chance": 0.5
+      },
+      "breakScale": 0,
+      "tier": "B",
+      "notes": "突刺武器。永久绑定给被附身的幸存者；使用时发出红光。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [
+        "The Unsummoned"
+      ],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Thrusting weapon. Permanently locked onto possessed survivor. Emits a red glow while active."
+    },
+    {
+      "weapon": {
+        "id": 94,
+        "wikiId": 94,
+        "name": "扫把",
+        "englishName": "Broomstick"
+      },
+      "power": 0.2,
+      "cooldown": 0.6,
+      "knockback": 1,
+      "extraHits": {
+        "count": 2,
+        "chance": 1
+      },
+      "breakScale": 0.02,
+      "tier": "F",
+      "notes": "幸存者可能随机初始持有。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "House",
+        "Apartment",
+        "Closet"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Survivors may randomly start with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 95,
+        "wikiId": 95,
+        "name": "拖把",
+        "englishName": "Mop"
+      },
+      "power": 0.6,
+      "cooldown": 0.8,
+      "knockback": 1.5,
+      "extraHits": {
+        "count": 1,
+        "chance": 1
+      },
+      "breakScale": 0.02,
+      "tier": "F",
+      "notes": "幸存者可能随机初始持有。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "House",
+        "Apartment",
+        "Closet"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Survivors may randomly start with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 96,
+        "wikiId": 96,
+        "name": "超级拖把",
+        "englishName": "Ultra Mop"
+      },
+      "power": 0.8,
+      "cooldown": 0.8,
+      "knockback": 2,
+      "extraHits": {
+        "count": 4,
+        "chance": 1
+      },
+      "breakScale": 0,
+      "tier": "B",
+      "notes": null,
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "special",
+      "sourcePage": "Special Weapons"
+    },
+    {
+      "weapon": {
+        "id": 97,
+        "wikiId": 97,
+        "name": "钓鱼杆",
+        "englishName": "Fishing Pole"
+      },
+      "power": 0.5,
+      "cooldown": 0.5,
+      "knockback": 1,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0.1,
+      "tier": "F",
+      "notes": "在 Fishing Cabins 中必定能找到。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Cabin",
+        "Camp Supplies Shop",
+        "Sporting Goods Store",
+        "Athletic Store"
+      ],
+      "events": [
+        "Weapon Stealing Bandits"
+      ],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Can always be found in the Fishing Cabins."
+    },
+    {
+      "weapon": {
+        "id": 98,
+        "wikiId": 98,
+        "name": "可笑的钓鱼竿",
+        "englishName": "Ridiculous Fishing Pole"
+      },
+      "power": 0.8,
+      "cooldown": 0.5,
+      "knockback": 1,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "C",
+      "notes": "无法在 Fishing Cabins 中钓鱼。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "special",
+      "sourcePage": "Special Weapons",
+      "englishNotes": "Cannot be used to fish at the Fishing Cabins."
+    },
+    {
+      "weapon": {
+        "id": 99,
+        "wikiId": 99,
+        "name": "电吉他",
+        "englishName": "Electric Guitar"
+      },
+      "power": 1.5,
+      "cooldown": 0.86,
+      "knockback": 1.5,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "C",
+      "notes": "拥有「招牌武器」特质的幸存者可能初始持有。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Axe Salesman",
+          "price": 10,
+          "currency": "food",
+          "condition": null,
+          "raw": "Axe Salesman (10 food)"
+        }
+      ],
+      "locations": [
+        "NUTZ \"4\" TOYS"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Survivors with Trademark Weapon may start with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 101,
+        "wikiId": 101,
+        "name": "射线枪",
+        "englishName": "Ray Gun"
+      },
+      "power": 2,
+      "cooldown": null,
+      "knockback": 1.5,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "B",
+      "notes": "初始装填 200 发，无法补充。在 UFO Landing Site 击杀 Alien 后掉落。",
+      "reload": 0.7,
+      "penetrate": 50,
+      "ammunition": "ZAPS (max 200)",
+      "spread": 0,
+      "vendors": [],
+      "locations": [
+        "UFO Landing Site"
+      ],
+      "events": [],
+      "category": "ranged",
+      "sourcePage": "Ranged Weapons",
+      "englishNotes": "Comes preloaded with 200 charges that cannot be refilled. Dropped by Alien on death in the UFO Landing Site."
+    },
+    {
+      "weapon": {
+        "id": 102,
+        "wikiId": 102,
+        "name": "预制木板",
+        "englishName": "2x4"
+      },
+      "power": 1.2,
+      "cooldown": 1,
+      "knockback": 1.5,
+      "extraHits": {
+        "count": 1,
+        "chance": 1
+      },
+      "breakScale": 0.05,
+      "tier": "F",
+      "notes": null,
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Hardware Store"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons"
+    },
+    {
+      "weapon": {
+        "id": 103,
+        "wikiId": 103,
+        "name": "手电筒",
+        "englishName": "Flashlight"
+      },
+      "power": 0.7,
+      "cooldown": 0,
+      "knockback": 0.25,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0.02,
+      "tier": "F",
+      "notes": "瞄准型武器。即使不直接手持，也能在黑暗地点提供照明。每次旅程开始时，汽车后备箱内固定有两把手电筒。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Handy Tools Salesman",
+          "price": 1,
+          "currency": "food",
+          "condition": null,
+          "raw": "Handy Tools Salesman (1 food)"
+        },
+        {
+          "name": "Handy Tools Salesman",
+          "price": 0,
+          "currency": "food",
+          "condition": "Free [",
+          "raw": "Handy Tools Salesman (Free [)"
+        }
+      ],
+      "locations": [],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Aiming weapon. Provides light in dark locations even when not held directly. Two flashlights are always in the car's trunk at the start of each run."
+    },
+    {
+      "weapon": {
+        "id": 107,
+        "wikiId": 107,
+        "name": "梅森链锯",
+        "englishName": "Mason's Chainsaw"
+      },
+      "power": 0.5,
+      "cooldown": 1.25,
+      "knockback": 1,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "A",
+      "notes": "燃料消耗速度为普通链锯的一半。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": "Gasoline (max 50)",
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "special",
+      "sourcePage": "Special Weapons",
+      "englishNotes": "Consumes fuel at half the rate of the normal chainsaw."
+    },
+    {
+      "weapon": {
+        "id": 109,
+        "wikiId": 109,
+        "name": "羊角锤",
+        "englishName": "Hammer (Claw Hammer)"
+      },
+      "power": 1,
+      "cooldown": 0.7,
+      "knockback": 1,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "D",
+      "notes": null,
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Blunt Master",
+          "price": 2,
+          "currency": "food",
+          "condition": null,
+          "raw": "Blunt Master (2 food)"
+        }
+      ],
+      "locations": [
+        "House",
+        "Apartment",
+        "Hardware Store"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons"
+    },
+    {
+      "weapon": {
+        "id": 110,
+        "wikiId": 110,
+        "name": "榔头",
+        "englishName": "Ballpeen Hammer"
+      },
+      "power": 1.2,
+      "cooldown": 0.85,
+      "knockback": 1.2,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "D",
+      "notes": null,
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Blunt Master",
+          "price": 3,
+          "currency": "food",
+          "condition": null,
+          "raw": "Blunt Master (3 food)"
+        }
+      ],
+      "locations": [
+        "Factory",
+        "Hardware Store"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons"
+    },
+    {
+      "weapon": {
+        "id": 111,
+        "wikiId": 111,
+        "name": "橡胶锤",
+        "englishName": "Rubber Mallet"
+      },
+      "power": 0.5,
+      "cooldown": 0.75,
+      "knockback": 1.5,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "D",
+      "notes": null,
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Factory",
+        "Hardware Store",
+        "House"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons"
+    },
+    {
+      "weapon": {
+        "id": 112,
+        "wikiId": 112,
+        "name": "螺丝刀",
+        "englishName": "Screwdriver"
+      },
+      "power": 0.7,
+      "cooldown": 0.5,
+      "knockback": 0.1,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "F",
+      "notes": "突刺武器。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Factory",
+        "Hardware Store",
+        "Junkyard"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Thrusting weapon."
+    },
+    {
+      "weapon": {
+        "id": 113,
+        "wikiId": 113,
+        "name": "剪刀",
+        "englishName": "Scissors"
+      },
+      "power": 0.7,
+      "cooldown": 0,
+      "knockback": 0.1,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0.02,
+      "tier": "F",
+      "notes": null,
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "House"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons"
+    },
+    {
+      "weapon": {
+        "id": 114,
+        "wikiId": 114,
+        "name": "手术刀",
+        "englishName": "Scalpel"
+      },
+      "power": 1.5,
+      "cooldown": 0,
+      "knockback": 0,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0.02,
+      "tier": "E",
+      "notes": "瞄准型武器。Surgeons 初始持有。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Hospital Raid",
+        "Medical Clinic"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Aiming weapon. Surgeons start with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 115,
+        "wikiId": 115,
+        "name": "冰锥",
+        "englishName": "Ice Pick"
+      },
+      "power": 1,
+      "cooldown": 0,
+      "knockback": 0,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0.02,
+      "tier": "F",
+      "notes": "突刺武器。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Grocery Store",
+        "Restaurant",
+        "Kitchen"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Thrusting weapon."
+    },
+    {
+      "weapon": {
+        "id": 116,
+        "wikiId": 116,
+        "name": "针织针",
+        "englishName": "Knitting Needle"
+      },
+      "power": 0.5,
+      "cooldown": 0,
+      "knockback": 0,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0.05,
+      "tier": "F",
+      "notes": "突刺武器。幸存者可能随机初始持有。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "House",
+        "Apartment"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Thrusting weapon. Survivors may randomly start with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 117,
+        "wikiId": 117,
+        "name": "短刀",
+        "englishName": "Shiv"
+      },
+      "power": 1.3,
+      "cooldown": 0.5,
+      "knockback": 0,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0.03,
+      "tier": "D",
+      "notes": "突刺武器。疲劳产生速度为正常的一半。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Police Headquarters",
+        "Police Station"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Thrusting weapon. Causes fatigue at half the normal rate."
+    },
+    {
+      "weapon": {
+        "id": 294,
+        "wikiId": 118,
+        "name": "邮局盒子",
+        "englishName": "P.O Box"
+      },
+      "power": 1.25,
+      "cooldown": 0.9,
+      "knockback": 3,
+      "extraHits": {
+        "count": 1,
+        "chance": 1
+      },
+      "breakScale": 0,
+      "tier": "B",
+      "notes": "拥有「招牌武器」和「坚韧型」特质的幸存者初始持有。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Survivors with Trademark Weapon and Resilient Type start with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 118,
+        "wikiId": 118,
+        "name": "台球球杆",
+        "englishName": "Pool Cue"
+      },
+      "power": 0.5,
+      "cooldown": 0.5,
+      "knockback": 1.5,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0.02,
+      "tier": "F",
+      "notes": "突刺武器。疲劳产生速度为正常的一半。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Polearm Pal",
+          "price": 0,
+          "currency": "food",
+          "condition": "Free [",
+          "raw": "Polearm Pal (Free [)"
+        }
+      ],
+      "locations": [
+        "Bar"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Thrusting weapon. Causes fatigue at half the normal rate."
+    },
+    {
+      "weapon": {
+        "id": 119,
+        "wikiId": 119,
+        "name": "手提包",
+        "englishName": "Purse"
+      },
+      "power": 0.2,
+      "cooldown": 0.75,
+      "knockback": 1.5,
+      "extraHits": {
+        "count": 1,
+        "chance": null
+      },
+      "breakScale": 0.005,
+      "tier": "F",
+      "notes": null,
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "House"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons"
+    },
+    {
+      "weapon": {
+        "id": 120,
+        "wikiId": 120,
+        "name": "拨火棍",
+        "englishName": "Fire Poker"
+      },
+      "power": 0.6,
+      "cooldown": 0.6,
+      "knockback": 1,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "D",
+      "notes": "突刺武器。疲劳产生速度为正常的一半。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Burning House",
+        "Lost Stronghold"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Thrusting weapon. Causes fatigue at half the normal rate."
+    },
+    {
+      "weapon": {
+        "id": 121,
+        "wikiId": 121,
+        "name": "扒胎撬棒",
+        "englishName": "Tire Iron"
+      },
+      "power": 0.8,
+      "cooldown": 0.6,
+      "knockback": 1,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "D",
+      "notes": "常见于“road”和“with Car”地点的故障车辆附近。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Junkyard",
+        "Factory"
+      ],
+      "events": [
+        "Car Preservation Tunnel",
+        "Last Street in the World"
+      ],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Commonly found in \"road\" and \"with Car\" locations, near broken-down cars"
+    },
+    {
+      "weapon": {
+        "id": 122,
+        "wikiId": 122,
+        "name": "网球拍",
+        "englishName": "Tennis Racket"
+      },
+      "power": 0.6,
+      "cooldown": 0.5,
+      "knockback": 1.5,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0.03,
+      "tier": "E",
+      "notes": "运动员可能初始持有。疲劳产生速度为正常的一半。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Sporting Goods Store",
+        "Athletic Store"
+      ],
+      "events": [
+        "Repair Shop Repair"
+      ],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Athletes may start with this weapon. Causes fatigue at half the normal rate."
+    },
+    {
+      "weapon": {
+        "id": 123,
+        "wikiId": 123,
+        "name": "船桨",
+        "englishName": "Oar"
+      },
+      "power": 0.9,
+      "cooldown": 0.5,
+      "knockback": 2,
+      "extraHits": {
+        "count": 2,
+        "chance": 1
+      },
+      "breakScale": 0.03,
+      "tier": "E",
+      "notes": "运动员可能初始持有。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Camp Supplies Shop"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Athletes may start with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 124,
+        "wikiId": 124,
+        "name": "树干",
+        "englishName": "Log"
+      },
+      "power": 2,
+      "cooldown": 2,
+      "knockback": 3,
+      "extraHits": {
+        "count": 3,
+        "chance": 1
+      },
+      "breakScale": 0,
+      "tier": "E",
+      "notes": "额外命中数不错，但重量极大。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Blunt Master",
+          "price": 0,
+          "currency": "food",
+          "condition": "Free [",
+          "raw": "Blunt Master (Free [)"
+        }
+      ],
+      "locations": [
+        "Cabin",
+        "Prepper Paradise"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "A good weapon with good extra hits but massive weight."
+    },
+    {
+      "weapon": {
+        "id": 125,
+        "wikiId": 125,
+        "name": "大树干",
+        "englishName": "Big Log (Big Frickin' Log)"
+      },
+      "power": 3,
+      "cooldown": 3,
+      "knockback": 4,
+      "extraHits": {
+        "count": 5,
+        "chance": 1
+      },
+      "breakScale": 0,
+      "tier": "D",
+      "notes": "威力强大、额外命中数极高，但重量极大。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Cabin",
+        "Prepper Paradise"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "A strong weapon with great extra hits but massive weight."
+    },
+    {
+      "weapon": {
+        "id": 127,
+        "wikiId": 127,
+        "name": "镰刀",
+        "englishName": "Scythe"
+      },
+      "power": 1.7,
+      "cooldown": 1.4,
+      "knockback": 0.5,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "C",
+      "notes": "沉重的武器，额外命中数不错但伤害较低。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Fire Sale Trader",
+          "price": 10,
+          "currency": "food",
+          "condition": null,
+          "raw": "Fire Sale Trader (10 food)"
+        }
+      ],
+      "locations": [
+        "Farm"
+      ],
+      "events": [
+        "A Trip to the Farm"
+      ],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "A heavy weapon with good extra hits but low damage."
+    },
+    {
+      "weapon": {
+        "id": 128,
+        "wikiId": 128,
+        "name": "死神镰刀",
+        "englishName": "The Grim Reaper"
+      },
+      "power": 2.5,
+      "cooldown": 1.4,
+      "knockback": 0.5,
+      "extraHits": {
+        "count": 4,
+        "chance": 1
+      },
+      "breakScale": 0,
+      "tier": "S",
+      "notes": "在「Spooky Graveyard」中与 Death 握手获得。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Obtained by shaking hands with Death in the Spooky Graveyard."
+    },
+    {
+      "weapon": {
+        "id": 129,
+        "wikiId": 129,
+        "name": "手镰",
+        "englishName": "Sickle"
+      },
+      "power": 1.3,
+      "cooldown": 0.75,
+      "knockback": 0.25,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "C",
+      "notes": "优秀、结实且轻便的武器。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Farm"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "A great, sturdy lightweight weapon."
+    },
+    {
+      "weapon": {
+        "id": 130,
+        "wikiId": 130,
+        "name": "女巫扫帚",
+        "englishName": "Witch's Broom"
+      },
+      "power": 0.5,
+      "cooldown": 0.6,
+      "knockback": 1.5,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "C",
+      "notes": "Witch 初始持有。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Witch",
+          "price": 5,
+          "currency": "food",
+          "condition": null,
+          "raw": "Witch (5 food)"
+        }
+      ],
+      "locations": [],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Witch starts with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 131,
+        "wikiId": 131,
+        "name": "巫师魔杖",
+        "englishName": "Wizzle Stick"
+      },
+      "power": 0.5,
+      "cooldown": 0.9,
+      "knockback": 0.5,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "G",
+      "notes": "发射会追踪僵尸、并在命中后分裂的能量球。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "special",
+      "sourcePage": "Special Weapons",
+      "englishNotes": "Shoots an energy ball that homes in zombies and multiplies on hit."
+    },
+    {
+      "weapon": {
+        "id": 132,
+        "wikiId": 132,
+        "name": "治疗喷雾",
+        "englishName": "Healing Spray"
+      },
+      "power": -1,
+      "cooldown": 0,
+      "knockback": null,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "F",
+      "notes": "喷出粉红色雾气，恢复 1 点生命值。初始装填 3 发；在浴室发现时为 1–2 发；从 Prepper Paradise 或 Medical Supplies 购买时为 10 发。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": "10 max",
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Handy Tools Salesman",
+          "price": 6,
+          "currency": "food",
+          "condition": null,
+          "raw": "Handy Tools Salesman (6 food)"
+        },
+        {
+          "name": "Survival Gear",
+          "price": 10,
+          "currency": "food",
+          "condition": null,
+          "raw": "Survival Gear (10 food)"
+        },
+        {
+          "name": "Medical Supplies",
+          "price": 15,
+          "currency": "food",
+          "condition": null,
+          "raw": "Medical Supplies (15 food)"
+        }
+      ],
+      "locations": [
+        "Hospital Raid",
+        "Medical Clinic",
+        "Bathrooms"
+      ],
+      "events": [],
+      "category": "consumable",
+      "sourcePage": "Consumable Weapons",
+      "englishNotes": "Produces pink mist that heals 1 hitpoint. Preloaded with 3 charges; 1-2 charges if found in a bathroom; 10 charges if purchased from Prepper Paradise or Medical Supplies."
+    },
+    {
+      "weapon": {
+        "id": 133,
+        "wikiId": 133,
+        "name": "平底锅",
+        "englishName": "Cacerola"
+      },
+      "power": 1.5,
+      "cooldown": 0.9,
+      "knockback": 2,
+      "extraHits": {
+        "count": 1,
+        "chance": 0.5
+      },
+      "breakScale": 0,
+      "tier": "B",
+      "notes": "Cacerola 是西班牙语“平底锅”的意思。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "special",
+      "sourcePage": "Special Weapons",
+      "englishNotes": "Cacerola is Spanish for 'pan'."
+    },
+    {
+      "weapon": {
+        "id": 134,
+        "wikiId": 134,
+        "name": "巨锤",
+        "englishName": "Mega Maul"
+      },
+      "power": 2.2,
+      "cooldown": 1.4,
+      "knockback": 3.5,
+      "extraHits": {
+        "count": 2,
+        "chance": 0.8
+      },
+      "breakScale": 0,
+      "tier": "B",
+      "notes": "适合力量和体能均为 6 的角色的优秀武器。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Blunt Master",
+          "price": 16,
+          "currency": "food",
+          "condition": null,
+          "raw": "Blunt Master (16 food)"
+        },
+        {
+          "name": "Fire Sale Trader",
+          "price": 10,
+          "currency": "food",
+          "condition": null,
+          "raw": "Fire Sale Trader (10 food)"
+        }
+      ],
+      "locations": [],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "A great weapon for characters with 6 Strength and 6 Fitness."
+    },
+    {
+      "weapon": {
+        "id": 137,
+        "wikiId": 137,
+        "name": "泡沫大手",
+        "englishName": "Foam Hand"
+      },
+      "power": 0,
+      "cooldown": 0.65,
+      "knockback": 3,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "C",
+      "notes": "Ultimate Sports Fan 初始持有。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Sporting Goods Store"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Ultimate Sports Fan starts with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 139,
+        "wikiId": 139,
+        "name": "骸骨之锤",
+        "englishName": "Skull Hammer"
+      },
+      "power": 3.5,
+      "cooldown": 1.4,
+      "knockback": 3.5,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "A",
+      "notes": null,
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Skeleton Knight",
+          "price": 25,
+          "currency": "food",
+          "condition": null,
+          "raw": "Skeleton Knight (25 food)"
+        }
+      ],
+      "locations": [],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons"
+    },
+    {
+      "weapon": {
+        "id": 140,
+        "wikiId": 140,
+        "name": "罗马短剑",
+        "englishName": "Gladius"
+      },
+      "power": 2.5,
+      "cooldown": 0.8,
+      "knockback": 1,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "B",
+      "notes": null,
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Skeleton Knight",
+          "price": 15,
+          "currency": "food",
+          "condition": null,
+          "raw": "Skeleton Knight (15 food)"
+        },
+        {
+          "name": "Light Weapons Knight",
+          "price": 12,
+          "currency": "food",
+          "condition": null,
+          "raw": "Light Weapons Knight (12 food)"
+        }
+      ],
+      "locations": [],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons"
+    },
+    {
+      "weapon": {
+        "id": 142,
+        "wikiId": 142,
+        "name": "战术长矛",
+        "englishName": "Tactical Spear (Homemade Spear)"
+      },
+      "power": 1.5,
+      "cooldown": 0.7,
+      "knockback": 0.5,
+      "extraHits": {
+        "count": 1,
+        "chance": 0.1
+      },
+      "breakScale": 0,
+      "tier": "B",
+      "notes": "结实、轻便的突刺武器。疲劳产生速度为正常的一半。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Polearm Pal",
+          "price": 9,
+          "currency": "food",
+          "condition": null,
+          "raw": "Polearm Pal (9 food)"
+        }
+      ],
+      "locations": [],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "A sturdy lightweight thrusting weapon. Causes fatigue at half the normal rate."
+    },
+    {
+      "weapon": {
+        "id": 143,
+        "wikiId": 143,
+        "name": "球杆刺矛",
+        "englishName": "Poolcue Spear"
+      },
+      "power": 0.5,
+      "cooldown": 0.6,
+      "knockback": 0,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0.0025,
+      "tier": "D",
+      "notes": "突刺武器。疲劳产生速度为正常的一半。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Bar"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Thrusting weapon. Causes fatigue at half the normal rate."
+    },
+    {
+      "weapon": {
+        "id": 144,
+        "wikiId": 144,
+        "name": "长杆靴",
+        "englishName": "Stick Boot"
+      },
+      "power": 0.6,
+      "cooldown": 1.2,
+      "knockback": 3,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0.001,
+      "tier": "P",
+      "notes": "突刺武器。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Polearm Pal",
+          "price": 6,
+          "currency": "food",
+          "condition": null,
+          "raw": "Polearm Pal (6 food)"
+        }
+      ],
+      "locations": [],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Thrusting weapon."
+    },
+    {
+      "weapon": {
+        "id": 145,
+        "wikiId": 145,
+        "name": "月刃斧",
+        "englishName": "Bardiche"
+      },
+      "power": 3.5,
+      "cooldown": 2.15,
+      "knockback": 2,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "B",
+      "notes": "命中时会在大范围内造成范围伤害。重量极大。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Polearm Pal",
+          "price": 25,
+          "currency": "food",
+          "condition": null,
+          "raw": "Polearm Pal (25 Food)"
+        }
+      ],
+      "locations": [],
+      "events": [
+        "Cursed Treasure"
+      ],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Deals area-of-effect damage within large area on hit. Has massive weight."
+    },
+    {
+      "weapon": {
+        "id": 146,
+        "wikiId": 146,
+        "name": "重型金斧",
+        "englishName": "Heavy Golden Axe"
+      },
+      "power": 4.5,
+      "cooldown": 2.25,
+      "knockback": 2,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "A",
+      "notes": "可在 The Last Arcade 获得。命中时会在大范围内造成范围伤害。提供小范围照明。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "The Last Arcade"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Can be obtained from The Last Arcade. Deals area-of-effect damage within large area on hit. Provides a small area of illumination."
+    },
+    {
+      "weapon": {
+        "id": 147,
+        "wikiId": 147,
+        "name": "黄金斧",
+        "englishName": "Golden Axe"
+      },
+      "power": 3,
+      "cooldown": 1.7,
+      "knockback": 2,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "A",
+      "notes": "可在 The Last Arcade 获得。命中时会在大范围内造成范围伤害。提供小范围照明。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "The Last Arcade"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Can be obtained from The Last Arcade. Deals area-of-effect damage within large area on hit. Provides a small area of illumination."
+    },
+    {
+      "weapon": {
+        "id": 148,
+        "wikiId": 148,
+        "name": "坚固厨刀",
+        "englishName": "Sturdy Cleaver"
+      },
+      "power": 1,
+      "cooldown": 0,
+      "knockback": 0.25,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "B",
+      "notes": "拥有「招牌武器」特质的幸存者可能初始持有。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [
+        "Challenge Mode",
+        "Cursed Treasure"
+      ],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Survivors with Trademark Weapon may start with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 150,
+        "wikiId": 150,
+        "name": "驳壳枪",
+        "englishName": "Ded9"
+      },
+      "power": 2.5,
+      "cooldown": null,
+      "knockback": 1,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "B",
+      "notes": null,
+      "reload": 0.5,
+      "penetrate": 10,
+      "ammunition": "Bullets (max 80)",
+      "spread": 1,
+      "vendors": [
+        {
+          "name": "H*NK",
+          "price": 10,
+          "currency": "food",
+          "condition": null,
+          "raw": "H*NK (10 food)"
+        }
+      ],
+      "locations": [],
+      "events": [],
+      "category": "ranged",
+      "sourcePage": "Ranged Weapons"
+    },
+    {
+      "weapon": {
+        "id": 151,
+        "wikiId": 151,
+        "name": "枪托驳壳枪",
+        "englishName": "Modded Ded9"
+      },
+      "power": 2.5,
+      "cooldown": 0.4,
+      "knockback": 1,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "B",
+      "notes": "相比 Ded9，射速 +20%、弹容量 +50%、穿透 +5%。",
+      "reload": null,
+      "penetrate": 15,
+      "ammunition": "Bullets (max 120)",
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "special",
+      "sourcePage": "Special Weapons",
+      "englishNotes": "Has +20% fire rate and +50% capacity, as well as +5% penetrate comparing to Ded9."
+    },
+    {
+      "weapon": {
+        "id": 152,
+        "wikiId": 152,
+        "name": "滑板",
+        "englishName": "Skateboard"
+      },
+      "power": 1,
+      "cooldown": 1.1,
+      "knockback": 2,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "B",
+      "notes": null,
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "special",
+      "sourcePage": "Special Weapons"
+    },
+    {
+      "weapon": {
+        "id": 153,
+        "wikiId": 153,
+        "name": "破坏之剑",
+        "englishName": "Guster Sword"
+      },
+      "power": 4.5,
+      "cooldown": 2,
+      "knockback": 5,
+      "extraHits": {
+        "count": 3,
+        "chance": 1
+      },
+      "breakScale": 0,
+      "tier": "S",
+      "notes": "属性与 MegaKnight Blade 完全相同。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "special",
+      "sourcePage": "Special Weapons",
+      "englishNotes": "Shares the same stats with MegaKnight Blade."
+    },
+    {
+      "weapon": {
+        "id": 155,
+        "wikiId": 155,
+        "name": "大木棒",
+        "englishName": "Wooden Club"
+      },
+      "power": 1.5,
+      "cooldown": 1.1,
+      "knockback": 3,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "C",
+      "notes": "适合力量较高角色的好武器。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Cabin"
+      ],
+      "events": [
+        "Challenge Mode",
+        "Cursed Treasure"
+      ],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "A good weapon for strong characters."
+    },
+    {
+      "weapon": {
+        "id": 156,
+        "wikiId": 156,
+        "name": "黄金长矛",
+        "englishName": "Golden Spear"
+      },
+      "power": 2.5,
+      "cooldown": 0.9,
+      "knockback": 0.5,
+      "extraHits": {
+        "count": 2,
+        "chance": 0.7
+      },
+      "breakScale": 0,
+      "tier": "A",
+      "notes": "威力强大的突刺武器，攻击距离不错。疲劳产生速度为正常的一半。提供小范围照明。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Haunted Mansion"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "A powerful thrusting weapon with good reach. Causes fatigue at half the normal rate. Provides a small area of illumination."
+    },
+    {
+      "weapon": {
+        "id": 157,
+        "wikiId": 157,
+        "name": "炽热烧火棍",
+        "englishName": "Hot Poker"
+      },
+      "power": 0.3,
+      "cooldown": 0.3,
+      "knockback": 0.5,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "A",
+      "notes": "突刺武器。拥有「招牌武器」特质的幸存者可能初始持有。可点燃僵尸和可燃物；疲劳产生速度为正常的一半；在黑暗中发光。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Burning House"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Thrusting weapon. Survivors with Trademark Weapon may start with this weapon. Ignites zombies and flammable objects. Causes fatigue at half the normal rate. Shines in darkness."
+    },
+    {
+      "weapon": {
+        "id": 158,
+        "wikiId": 158,
+        "name": "科学枪",
+        "englishName": "Mazer Pistol"
+      },
+      "power": 2,
+      "cooldown": null,
+      "knockback": 1.5,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "B",
+      "notes": "初始装填 200 发，无法补充。",
+      "reload": 0.7,
+      "penetrate": 50,
+      "ammunition": "MAZAPS (max 200)",
+      "spread": 0,
+      "vendors": [
+        {
+          "name": "Mad Scientist",
+          "price": 12,
+          "currency": "food",
+          "condition": null,
+          "raw": "Mad Scientist (12 food)"
+        }
+      ],
+      "locations": [],
+      "events": [],
+      "category": "ranged",
+      "sourcePage": "Ranged Weapons",
+      "englishNotes": "Comes preloaded with 200 charges that cannot be refilled."
+    },
+    {
+      "weapon": {
+        "id": 159,
+        "wikiId": 159,
+        "name": "战术警用灯",
+        "englishName": "TactiCop Lite™"
+      },
+      "power": 0.9,
+      "cooldown": 0.7,
+      "knockback": 1.2,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "C",
+      "notes": "瞄准型武器。即使不直接手持，也能在黑暗地点提供照明。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Handy Tools Salesman",
+          "price": 5,
+          "currency": "food",
+          "condition": null,
+          "raw": "Handy Tools Salesman (5 food)"
+        }
+      ],
+      "locations": [
+        "Police Headquarters",
+        "Police Station",
+        "Prepper Cabin",
+        "Antiquated Citadel"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Aiming weapon. Provides light in dark locations even when not held directly."
+    },
+    {
+      "weapon": {
+        "id": 162,
+        "wikiId": 162,
+        "name": "铁镐",
+        "englishName": "Pickaxe"
+      },
+      "power": 2,
+      "cooldown": 1.3,
+      "knockback": 1.5,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "C",
+      "notes": null,
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Farm",
+        "Hardware Store"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons"
+    },
+    {
+      "weapon": {
+        "id": 163,
+        "wikiId": 163,
+        "name": "淑女树干",
+        "englishName": "Lady's Log"
+      },
+      "power": 2,
+      "cooldown": 1.2,
+      "knockback": 3,
+      "extraHits": {
+        "count": 3,
+        "chance": 1
+      },
+      "breakScale": 0,
+      "tier": "B",
+      "notes": "比树干更轻。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "special",
+      "sourcePage": "Special Weapons",
+      "englishNotes": "Lighter than Log."
+    },
+    {
+      "weapon": {
+        "id": 164,
+        "wikiId": 164,
+        "name": "究极树干",
+        "englishName": "ULTIMATE LOG"
+      },
+      "power": 3.5,
+      "cooldown": 3,
+      "knockback": 9,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "C",
+      "notes": "拥有所有近战武器中最高的击退能力。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Fire Sale Trader",
+          "price": 10,
+          "currency": "food",
+          "condition": null,
+          "raw": "Fire Sale Trader (10 food)"
+        }
+      ],
+      "locations": [
+        "Cabin",
+        "Prepper Paradise"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Has the highest knockback of any melee weapon."
+    },
+    {
+      "weapon": {
+        "id": 165,
+        "wikiId": 165,
+        "name": "究极骑士剑",
+        "englishName": "MegaKnight Blade"
+      },
+      "power": 4.5,
+      "cooldown": 2,
+      "knockback": 5,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "S",
+      "notes": "威力强大但重量极大。属性与 Guster Sword 相同。从 Heavy Weapons Knight 购买时还会为队伍提供力量训练。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Heavy Weapons Knight",
+          "price": 35,
+          "currency": "food",
+          "condition": null,
+          "raw": "Heavy Weapons Knight (35 food)"
+        }
+      ],
+      "locations": [
+        "Dark Mansion"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "A powerful weapon with massive weight. Has identical stats to the Guster Sword. Buying from the Heavy Weapons Knight will also give the party Strength training."
+    },
+    {
+      "weapon": {
+        "id": 166,
+        "wikiId": 166,
+        "name": "黄金匕首",
+        "englishName": "Golden Knife"
+      },
+      "power": 4,
+      "cooldown": 0,
+      "knockback": 0.25,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "A",
+      "notes": "威力强大、极为轻便的武器。疲劳产生速度为正常的一半。提供小范围照明。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Dark Mansion"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "A powerful super-lightweight weapon. Causes fatigue at half the normal rate. Provides a small area of illumination."
+    },
+    {
+      "weapon": {
+        "id": 167,
+        "wikiId": 167,
+        "name": "鲁特琴",
+        "englishName": "Lute"
+      },
+      "power": 1.5,
+      "cooldown": 0.86,
+      "knockback": 1.5,
+      "extraHits": {
+        "count": 1,
+        "chance": 0.5
+      },
+      "breakScale": 0,
+      "tier": "B",
+      "notes": null,
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "special",
+      "sourcePage": "Special Weapons"
+    },
+    {
+      "weapon": {
+        "id": 168,
+        "wikiId": 168,
+        "name": "匕首",
+        "englishName": "Dagger"
+      },
+      "power": 1.5,
+      "cooldown": 0.65,
+      "knockback": 0.25,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "B",
+      "notes": null,
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Light Weapons Knight",
+          "price": 5,
+          "currency": "food",
+          "condition": null,
+          "raw": "Light Weapons Knight (5 food)"
+        },
+        {
+          "name": "Light Weapons Knight",
+          "price": 0,
+          "currency": "food",
+          "condition": "Free [",
+          "raw": "Light Weapons Knight (Free [)"
+        }
+      ],
+      "locations": [],
+      "events": [
+        "Cursed Treasure"
+      ],
+      "category": "melee",
+      "sourcePage": "Melee Weapons"
+    },
+    {
+      "weapon": {
+        "id": 169,
+        "wikiId": 169,
+        "name": "战戟",
+        "englishName": "Halberd"
+      },
+      "power": 2.5,
+      "cooldown": 1.4,
+      "knockback": 2,
+      "extraHits": {
+        "count": 3,
+        "chance": 1
+      },
+      "breakScale": 0,
+      "tier": "B",
+      "notes": "威力强大的中重型武器，攻击距离不错。适合力量和体能均为 6 的角色。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Medium Weapons Knight",
+          "price": 24,
+          "currency": "food",
+          "condition": null,
+          "raw": "Medium Weapons Knight (24 food)"
+        }
+      ],
+      "locations": [
+        "Abandoned Warehouse"
+      ],
+      "events": [
+        "Challenge Mode",
+        "Cursed Treasure"
+      ],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "A powerful medium-heavy weapon with good reach. A great weapon for characters with 6 Strength and 6 Fitness."
+    },
+    {
+      "weapon": {
+        "id": 170,
+        "wikiId": 170,
+        "name": "峨眉刺",
+        "englishName": "Sai"
+      },
+      "power": 1,
+      "cooldown": 0.5,
+      "knockback": 0.25,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "B",
+      "notes": "Tortuga 初始持有。拥有特殊攻击动画。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Tortuga starts with this weapon. Has a special attack animation."
+    },
+    {
+      "weapon": {
+        "id": 173,
+        "wikiId": 173,
+        "name": "尖刺球棒",
+        "englishName": "Spiked Bat"
+      },
+      "power": 1.5,
+      "cooldown": 0.75,
+      "knockback": 2,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0.005,
+      "tier": "D",
+      "notes": "轻便且击退能力不错。是棒球棒的强化版。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Rest Stop"
+      ],
+      "events": [
+        "Repair Shop Repair"
+      ],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "A lightweight weapon with good knockback. Stronger version of Baseball Bat."
+    },
+    {
+      "weapon": {
+        "id": 174,
+        "wikiId": 174,
+        "name": "镶钉球棒",
+        "englishName": "The Whammer"
+      },
+      "power": 1.5,
+      "cooldown": 0.75,
+      "knockback": 2,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "C",
+      "notes": "优秀的轻型武器，击退能力不错。是棒球棒的终极版。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Sporting Goods Store",
+        "Athletic Store"
+      ],
+      "events": [
+        "Challenge Mode"
+      ],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "A great lightweight weapon with good knockback. The ultimate version of Baseball Bat."
+    },
+    {
+      "weapon": {
+        "id": 176,
+        "wikiId": 176,
+        "name": "黄铜指虎",
+        "englishName": "Brass Knucks"
+      },
+      "power": 1,
+      "cooldown": 0.6,
+      "knockback": 1.5,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "C",
+      "notes": "轻便且击退能力不错。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Shady Trainer",
+          "price": 3,
+          "currency": "food",
+          "condition": null,
+          "raw": "Shady Trainer (3 food)"
+        }
+      ],
+      "locations": [
+        "Police Headquarters",
+        "Police Station",
+        "Prison"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "A lightweight weapon with good knockback."
+    },
+    {
+      "weapon": {
+        "id": 177,
+        "wikiId": 177,
+        "name": "传火大剑",
+        "englishName": "Firelunk Greatsword"
+      },
+      "power": 2.2,
+      "cooldown": 1.5,
+      "knockback": 3,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "G",
+      "notes": "可点燃僵尸和可燃物；在黑暗中发光。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Raging Inferno"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Ignites zombies and flammable objects. Shines in darkness."
+    },
+    {
+      "weapon": {
+        "id": 178,
+        "wikiId": 178,
+        "name": "弑龙者",
+        "englishName": "Dragonslayer"
+      },
+      "power": 4.5,
+      "cooldown": 1.7,
+      "knockback": 5,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "S",
+      "notes": null,
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Haunted Mansion"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons"
+    },
+    {
+      "weapon": {
+        "id": 179,
+        "wikiId": 179,
+        "name": "骑兵军刀",
+        "englishName": "Cavalry Sabre"
+      },
+      "power": 2,
+      "cooldown": 1.3,
+      "knockback": 1.5,
+      "extraHits": {
+        "count": 2,
+        "chance": 1
+      },
+      "breakScale": 0,
+      "tier": "A",
+      "notes": "威力强大的中等重量武器。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Dark Mansion",
+        "Haunted Mansion"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "A powerful weapon with medium weight."
+    },
+    {
+      "weapon": {
+        "id": 180,
+        "wikiId": 180,
+        "name": "海盗弯刀",
+        "englishName": "Pirate Cutlass"
+      },
+      "power": 2,
+      "cooldown": 1.1,
+      "knockback": 1.5,
+      "extraHits": {
+        "count": 1,
+        "chance": 1
+      },
+      "breakScale": 0,
+      "tier": "A",
+      "notes": "Pirate Captain 初始持有。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [
+        "Cursed Treasure",
+        "THE U.S.S RUSTOLEUM"
+      ],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Pirate Captain starts with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 181,
+        "wikiId": 181,
+        "name": "树枝修剪器",
+        "englishName": "Branch Trimmer"
+      },
+      "power": 1.2,
+      "cooldown": 0.3,
+      "knockback": 0.3,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "D",
+      "notes": "虽然沉重，但额外命中数不错、伤害较低。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Hardware Store"
+      ],
+      "events": [
+        "Repair Shop Repair"
+      ],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Being heavy, has good extra hits but low damage."
+    },
+    {
+      "weapon": {
+        "id": 182,
+        "wikiId": 182,
+        "name": "洛科手炮",
+        "englishName": "GIGA GUSTER"
+      },
+      "power": null,
+      "cooldown": 0,
+      "knockback": null,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "F",
+      "notes": "可蓄力射出更强的一击。不会锁定僵尸。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": "LEMONBALL",
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "special",
+      "sourcePage": "Special Weapons",
+      "englishNotes": "Can be charged into a stronger shot. Doesn't lock on zombies."
+    },
+    {
+      "weapon": {
+        "id": 183,
+        "wikiId": 183,
+        "name": "巨大树干",
+        "englishName": "Giant Club"
+      },
+      "power": 3,
+      "cooldown": 1.8,
+      "knockback": 4,
+      "extraHits": {
+        "count": 5,
+        "chance": 1
+      },
+      "breakScale": 0,
+      "tier": "S",
+      "notes": null,
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "special",
+      "sourcePage": "Special Weapons"
+    },
+    {
+      "weapon": {
+        "id": 188,
+        "wikiId": 188,
+        "name": "消音手枪",
+        "englishName": "Silenced Pistol"
+      },
+      "power": 1.2,
+      "cooldown": null,
+      "knockback": 1,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "F",
+      "notes": "比其他枪械更不容易吸引僵尸。",
+      "reload": 0.5,
+      "penetrate": 10,
+      "ammunition": "Bullets (max 90)",
+      "spread": 0,
+      "vendors": [
+        {
+          "name": "Silent But Deadly",
+          "price": 3,
+          "currency": "food",
+          "condition": null,
+          "raw": "Silent But Deadly (3 food)"
+        },
+        {
+          "name": "Silent But Deadly",
+          "price": 0,
+          "currency": "food",
+          "condition": "Free [",
+          "raw": "Silent But Deadly (Free [)"
+        }
+      ],
+      "locations": [],
+      "events": [],
+      "category": "ranged",
+      "sourcePage": "Ranged Weapons",
+      "englishNotes": "Attracts zombies less frequently than other firearms."
+    },
+    {
+      "weapon": {
+        "id": 189,
+        "wikiId": 189,
+        "name": "狙击步枪",
+        "englishName": "Sniper Rifle"
+      },
+      "power": 3.5,
+      "cooldown": null,
+      "knockback": 2,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "B",
+      "notes": "比其他枪械更不容易吸引僵尸。",
+      "reload": 1.3,
+      "penetrate": 1,
+      "ammunition": "Rounds (max 50)",
+      "spread": 0,
+      "vendors": [
+        {
+          "name": "Silent But Deadly",
+          "price": 25,
+          "currency": "food",
+          "condition": null,
+          "raw": "Silent But Deadly (25 food)"
+        }
+      ],
+      "locations": [],
+      "events": [],
+      "category": "ranged",
+      "sourcePage": "Ranged Weapons",
+      "englishNotes": "Attracts zombies less frequently than other firearms."
+    },
+    {
+      "weapon": {
+        "id": 190,
+        "wikiId": 190,
+        "name": "消音霰弹枪",
+        "englishName": "Quiet Shotgun"
+      },
+      "power": 0.4,
+      "cooldown": null,
+      "knockback": 1.5,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "B",
+      "notes": "比其他枪械更不容易吸引僵尸。",
+      "reload": 0.7,
+      "penetrate": 10,
+      "ammunition": "Shells (max 80)",
+      "spread": 4,
+      "vendors": [
+        {
+          "name": "Silent But Deadly",
+          "price": 30,
+          "currency": "food",
+          "condition": null,
+          "raw": "Silent But Deadly (30 food)"
+        }
+      ],
+      "locations": [],
+      "events": [],
+      "category": "ranged",
+      "sourcePage": "Ranged Weapons",
+      "englishNotes": "Attracts zombies less frequently than other firearms."
+    },
+    {
+      "weapon": {
+        "id": 191,
+        "wikiId": 191,
+        "name": "太阳能科学枪",
+        "englishName": "Solar Mazer"
+      },
+      "power": 2,
+      "cooldown": 0.7,
+      "knockback": 1.5,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "B",
+      "notes": "每次搜刮事件后充能。",
+      "reload": null,
+      "penetrate": 50,
+      "ammunition": "MAZAPS (max 50)",
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "special",
+      "sourcePage": "Special Weapons",
+      "englishNotes": "Recharges after every looting event."
+    },
+    {
+      "weapon": {
+        "id": 192,
+        "wikiId": 192,
+        "name": "海盗大炮",
+        "englishName": "Pirate Cannon"
+      },
+      "power": 2,
+      "cooldown": null,
+      "knockback": null,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "A",
+      "notes": "发射会弹跳的炮弹，炮弹在触地前会穿透僵尸。后坐力很高，会将射手击退。",
+      "reload": 1,
+      "penetrate": "Always",
+      "ammunition": "Shots (max 50)",
+      "spread": 0,
+      "vendors": [
+        {
+          "name": "Pirate Captain",
+          "price": 5,
+          "currency": "food",
+          "condition": null,
+          "raw": "Pirate Captain (5 food)"
+        }
+      ],
+      "locations": [
+        "NUTZ \"4\" TOYS"
+      ],
+      "events": [],
+      "category": "ranged",
+      "sourcePage": "Ranged Weapons",
+      "englishNotes": "Fires a bouncing cannonball that pierce through zombies until hitting the ground. Has high recoil that knocks the shooter back."
+    },
+    {
+      "weapon": {
+        "id": 193,
+        "wikiId": 193,
+        "name": "船长大炮",
+        "englishName": "Captain's Cannon"
+      },
+      "power": 2,
+      "cooldown": 1,
+      "knockback": null,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "A",
+      "notes": "发射大型弹跳炮弹，炮弹在触地前会穿透僵尸。每次搜刮事件后充能。",
+      "reload": null,
+      "penetrate": 100,
+      "ammunition": "Shots (max 50)",
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "special",
+      "sourcePage": "Special Weapons",
+      "englishNotes": "Fires a large bouncing cannonball that pierce through zombies until hitting the ground. Recharges after every looting event."
+    },
+    {
+      "weapon": {
+        "id": 194,
+        "wikiId": 194,
+        "name": "科学装置",
+        "englishName": "Sciency Doodad"
+      },
+      "power": null,
+      "cooldown": 0,
+      "knockback": null,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "F",
+      "notes": "将使用者传送至面对方向，并制造造成伤害的烟雾。提供小范围照明。Mad Scientist 初始持有时可充能。初始装填 5 发；免费获得时为 2 发。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": "5 charges",
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Mad Scientist (5 food",
+          "price": null,
+          "currency": null,
+          "condition": null,
+          "raw": "Mad Scientist (5 food"
+        },
+        {
+          "name": "Free [)",
+          "price": null,
+          "currency": null,
+          "condition": null,
+          "raw": "Free [)"
+        }
+      ],
+      "locations": [],
+      "events": [],
+      "category": "consumable",
+      "sourcePage": "Consumable Weapons",
+      "englishNotes": "Teleports user in direction they're facing; creates damaging puff of smoke. Provides a small area of illumination. Mad Scientist starts with this weapon (recharges). Preloaded with 5 charges; 2 charges if received for free."
+    },
+    {
+      "weapon": {
+        "id": 195,
+        "wikiId": 195,
+        "name": "除草机",
+        "englishName": "Weed Whacker"
+      },
+      "power": 0.3,
+      "cooldown": 0.7,
+      "knockback": 0,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": null,
+      "tier": "C",
+      "notes": "可从远处快速伤害僵尸。攻击时每 3 秒消耗 1 单位燃料，闲置时每 30 秒消耗 1 单位燃料。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": "Gasoline (max 30)",
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Gas-Powered Tools",
+          "price": 5,
+          "currency": "food",
+          "condition": null,
+          "raw": "Gas-Powered Tools (5 food)"
+        }
+      ],
+      "locations": [
+        "Hardware Store",
+        "Public Park"
+      ],
+      "events": [
+        "Repair Shop Repair"
+      ],
+      "category": "motorized",
+      "sourcePage": "Motorized Weapons",
+      "englishNotes": "Rapidly damages zombies from a range. Expends fuel at a rate of 1 unit every 3 seconds while attacking and 1 unit every 30 seconds while idle."
+    },
+    {
+      "weapon": {
+        "id": 196,
+        "wikiId": 196,
+        "name": "吹叶机",
+        "englishName": "Leaf Blower"
+      },
+      "power": 0,
+      "cooldown": 1,
+      "knockback": 10,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": null,
+      "tier": "C",
+      "notes": "击退并击倒僵尸。攻击时每 3 秒消耗 1 单位燃料，闲置时每 30 秒消耗 1 单位燃料。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": "Gasoline (max 30)",
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Gas-Powered Tools",
+          "price": 5,
+          "currency": "food",
+          "condition": null,
+          "raw": "Gas-Powered Tools (5 food)"
+        }
+      ],
+      "locations": [
+        "Hardware Store",
+        "Public Park"
+      ],
+      "events": [
+        "Repair Shop Repair"
+      ],
+      "category": "motorized",
+      "sourcePage": "Motorized Weapons",
+      "englishNotes": "Pushes away and knocks down zombies. Expends fuel at a rate of 1 unit every 3 seconds while attacking and 1 unit every 30 seconds while idle."
+    },
+    {
+      "weapon": {
+        "id": 197,
+        "wikiId": 197,
+        "name": "手工榴弹炮",
+        "englishName": "Off-brand Plasms Rifle"
+      },
+      "power": 2,
+      "cooldown": 0.1,
+      "knockback": 1.5,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "S",
+      "notes": "Moody 携带时，每次搜刮任务后回复 20 发弹药。",
+      "reload": null,
+      "penetrate": 0,
+      "ammunition": "PLASMS (max 300)",
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "special",
+      "sourcePage": "Special Weapons",
+      "englishNotes": "Recharges 20 ammo after every looting mission when carried by Moody."
+    },
+    {
+      "weapon": {
+        "id": 198,
+        "wikiId": 198,
+        "name": "双管霰弹枪",
+        "englishName": "Double Barrel Shotgun"
+      },
+      "power": 0.6,
+      "cooldown": null,
+      "knockback": 2.3,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "C",
+      "notes": "每次射击消耗两发霰弹。",
+      "reload": 1.3,
+      "penetrate": 20,
+      "ammunition": "Shells (max 60)",
+      "spread": 6,
+      "vendors": [
+        {
+          "name": "Fire Sale Trader",
+          "price": 6,
+          "currency": "food",
+          "condition": null,
+          "raw": "Fire Sale Trader (6 food)"
+        },
+        {
+          "name": "Shotgun Peddler",
+          "price": 12,
+          "currency": "food",
+          "condition": null,
+          "raw": "Shotgun Peddler (12 food)"
+        },
+        {
+          "name": "Romero",
+          "price": null,
+          "currency": null,
+          "condition": "free",
+          "raw": "Romero (free)"
+        }
+      ],
+      "locations": [
+        "Prepper Cabin"
+      ],
+      "events": [
+        "Hand Upgrade"
+      ],
+      "category": "ranged",
+      "sourcePage": "Ranged Weapons",
+      "englishNotes": "Consumes two shells per shot."
+    },
+    {
+      "weapon": {
+        "id": 199,
+        "wikiId": 199,
+        "name": "链锯手",
+        "englishName": "Chainsaw Hand"
+      },
+      "power": 0.5,
+      "cooldown": 1.25,
+      "knockback": 1,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "B",
+      "notes": "可快速伤害僵尸。与链锯相比，伤害低 20%、燃料效率高 50%。永久绑定给被给予它的幸存者，但可被强盗抢走。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": "Gasoline (max 50)",
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [
+        "Hand Upgrade"
+      ],
+      "category": "motorized",
+      "sourcePage": "Motorized Weapons",
+      "englishNotes": "Rapidly damages zombies. Compared to Chainsaw, has 20% lower damage output and 50% better fuel efficiency. Permanently locked onto the survivor it is given to, but can be stolen by bandits."
+    },
+    {
+      "weapon": {
+        "id": 200,
+        "wikiId": 200,
+        "name": "农夫霰弹枪",
+        "englishName": "Farmer's Shotgun"
+      },
+      "power": 0.8,
+      "cooldown": 1,
+      "knockback": 2.3,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "B",
+      "notes": "每次使用消耗两发弹药。相比普通双管霰弹枪，伤害 +33%。",
+      "reload": null,
+      "penetrate": 20,
+      "ammunition": "Shells (max 60)",
+      "spread": 6,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "special",
+      "sourcePage": "Special Weapons",
+      "englishNotes": "Consumes two ammunition per use. Has +33% damage comparing to normal double barrel shotgun."
+    },
+    {
+      "weapon": {
+        "id": 201,
+        "wikiId": 201,
+        "name": "弓",
+        "englishName": "Bow"
+      },
+      "power": 0.5,
+      "cooldown": null,
+      "knockback": 0,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "D",
+      "notes": "安静，不会惊动僵尸。拥有「Bow and Arrows」特质的幸存者初始持有。",
+      "reload": 0,
+      "penetrate": "Scales",
+      "ammunition": "Arrows (max 50)",
+      "spread": 0,
+      "vendors": [
+        {
+          "name": "Fire Sale Trader",
+          "price": 6,
+          "currency": "food",
+          "condition": null,
+          "raw": "Fire Sale Trader (6 food)"
+        },
+        {
+          "name": "Survival Gear",
+          "price": 5,
+          "currency": "food",
+          "condition": null,
+          "raw": "Survival Gear (5 food)"
+        },
+        {
+          "name": "Survival Gear",
+          "price": 0,
+          "currency": "food",
+          "condition": "Free [",
+          "raw": "Survival Gear (Free [)"
+        }
+      ],
+      "locations": [
+        "Sporting Goods Store",
+        "Shopping Mall"
+      ],
+      "events": [],
+      "category": "ranged",
+      "sourcePage": "Ranged Weapons",
+      "englishNotes": "Silent; does not alert zombies. Survivors with Bow and Arrows start with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 202,
+        "wikiId": 202,
+        "name": "丘比特之弓",
+        "englishName": "Cupid's Bow"
+      },
+      "power": 0.5,
+      "cooldown": 0.5,
+      "knockback": 0,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "B",
+      "notes": "安静，不会惊动僵尸。每次搜刮任务后回复 10 发弹药。",
+      "reload": null,
+      "penetrate": 0,
+      "ammunition": "LOVE (max 60)",
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "special",
+      "sourcePage": "Special Weapons",
+      "englishNotes": "Silent; does not alert zombies. Recharges 10 ammo after every looting mission."
+    },
+    {
+      "weapon": {
+        "id": 203,
+        "wikiId": 203,
+        "name": "骨锯",
+        "englishName": "Bonesaw"
+      },
+      "power": 2,
+      "cooldown": 1.2,
+      "knockback": 0.4,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "C",
+      "notes": "拥有「招牌武器」特质的幸存者可能初始持有。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Hospital Raid",
+        "Medical Clinic"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Survivors with Trademark Weapon may start with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 204,
+        "wikiId": 204,
+        "name": "XL喷灯",
+        "englishName": "Blowtorch XL"
+      },
+      "power": 0,
+      "cooldown": null,
+      "knockback": 0,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "F",
+      "notes": "可点燃僵尸。初始装填 500 发，无法补充。",
+      "reload": 0,
+      "penetrate": null,
+      "ammunition": "Butane (max 500)",
+      "spread": 0,
+      "vendors": [
+        {
+          "name": "Fire Sale Trader",
+          "price": 10,
+          "currency": "food",
+          "condition": null,
+          "raw": "Fire Sale Trader (10 food)"
+        }
+      ],
+      "locations": [],
+      "events": [],
+      "category": "ranged",
+      "sourcePage": "Ranged Weapons",
+      "englishNotes": "Ignites zombies. Comes preloaded with 500 charges that cannot be refilled."
+    },
+    {
+      "weapon": {
+        "id": 205,
+        "wikiId": 205,
+        "name": "电动链锯",
+        "englishName": "Electric Chainsaw"
+      },
+      "power": 0.3,
+      "cooldown": 0.7,
+      "knockback": 0,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": null,
+      "tier": "A",
+      "notes": "初始有 80 发电量。可快速伤害僵尸，但远弱于燃油链锯。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": "Juice (max 250)",
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Electric-Powered Tools",
+          "price": 10,
+          "currency": "food",
+          "condition": null,
+          "raw": "Electric-Powered Tools (10 food)"
+        }
+      ],
+      "locations": [
+        "Hardware Store",
+        "Cabin"
+      ],
+      "events": [],
+      "category": "motorized",
+      "sourcePage": "Motorized Weapons",
+      "englishNotes": "Starts with 80 charges. Rapidly damages zombies. Much weaker than gas-powered Chainsaw."
+    },
+    {
+      "weapon": {
+        "id": 206,
+        "wikiId": 206,
+        "name": "毁灭链锯",
+        "englishName": "Moody Chainsaw"
+      },
+      "power": 0.3,
+      "cooldown": 0.7,
+      "knockback": 0,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "A",
+      "notes": "功能与电动链锯相同。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": "Juice (max 50)",
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "special",
+      "sourcePage": "Special Weapons",
+      "englishNotes": "Functions the same as Electric Chainsaw."
+    },
+    {
+      "weapon": {
+        "id": 207,
+        "wikiId": 207,
+        "name": "火箭炮",
+        "englishName": "Bazooka"
+      },
+      "power": null,
+      "cooldown": null,
+      "knockback": null,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "F",
+      "notes": "发射触地爆炸的火箭。初始装填 3 发，无法补充；在 Prepper Paradise 获得时为 8 发。",
+      "reload": 1,
+      "penetrate": null,
+      "ammunition": "Rockets (max 100)",
+      "spread": 0,
+      "vendors": [
+        {
+          "name": "Carnage Weapons XL",
+          "price": 12,
+          "currency": "food",
+          "condition": null,
+          "raw": "Carnage Weapons XL (12 food)"
+        },
+        {
+          "name": "Heavy Ordnance Trader",
+          "price": 15,
+          "currency": "food",
+          "condition": null,
+          "raw": "Heavy Ordnance Trader (15 food)"
+        }
+      ],
+      "locations": [
+        "Military Depot"
+      ],
+      "events": [],
+      "category": "ranged",
+      "sourcePage": "Ranged Weapons",
+      "englishNotes": "Fires rockets that explode upon hitting the ground. Comes preloaded with 3 charges that cannot be refilled, or 8 charges from Prepper Paradise."
+    },
+    {
+      "weapon": {
+        "id": 208,
+        "wikiId": 208,
+        "name": "毁灭火箭炮",
+        "englishName": "Moody Launcher"
+      },
+      "power": null,
+      "cooldown": 1,
+      "knockback": null,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "F",
+      "notes": "发射触地爆炸的火箭。功能类似火箭炮，但容量更高。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": "Rockets (max 10)",
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "special",
+      "sourcePage": "Special Weapons",
+      "englishNotes": "Fires rockets that explode upon hitting the ground. Functions like a Bazooka with higher capacity."
+    },
+    {
+      "weapon": {
+        "id": 209,
+        "wikiId": 209,
+        "name": "榴弹发射器",
+        "englishName": "Grenade Launcher"
+      },
+      "power": null,
+      "cooldown": null,
+      "knockback": null,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "F",
+      "notes": "发射触地一秒后爆炸的榴弹。初始装填 6 发，无法补充；在 Prepper Paradise 获得时为 15 发。",
+      "reload": 1,
+      "penetrate": null,
+      "ammunition": "Grenades",
+      "spread": 0,
+      "vendors": [
+        {
+          "name": "Carnage Weapons XL",
+          "price": 12,
+          "currency": "food",
+          "condition": null,
+          "raw": "Carnage Weapons XL (12 food)"
+        },
+        {
+          "name": "Heavy Ordnance Trader",
+          "price": 12,
+          "currency": "food",
+          "condition": null,
+          "raw": "Heavy Ordnance Trader (12 food)"
+        }
+      ],
+      "locations": [
+        "Military Depot"
+      ],
+      "events": [],
+      "category": "ranged",
+      "sourcePage": "Ranged Weapons",
+      "englishNotes": "Fires grenades that explode a second after hitting the ground. Comes preloaded with 6 charges that cannot be refilled, or 15 charges from Prepper Paradise."
+    },
+    {
+      "weapon": {
+        "id": 214,
+        "wikiId": 214,
+        "name": "电动割草机",
+        "englishName": "E-whacker"
+      },
+      "power": 0.3,
+      "cooldown": 1,
+      "knockback": 0,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": null,
+      "tier": "C",
+      "notes": "初始有 50 发电量。可快速伤害僵尸。攻击时每 3 秒消耗 1 单位燃料。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": "Battery (max 250)",
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Electric-Powered Tools",
+          "price": 5,
+          "currency": "food",
+          "condition": null,
+          "raw": "Electric-Powered Tools (5 food)"
+        }
+      ],
+      "locations": [
+        "Hardware Store",
+        "Public Park"
+      ],
+      "events": [],
+      "category": "motorized",
+      "sourcePage": "Motorized Weapons",
+      "englishNotes": "Starts with 50 charges. Rapidly damages zombies. Expends fuel at a rate of 1 unit every 3 seconds while attacking."
+    },
+    {
+      "weapon": {
+        "id": 215,
+        "wikiId": 215,
+        "name": "电动吹叶机",
+        "englishName": "E-blower"
+      },
+      "power": 0,
+      "cooldown": 1,
+      "knockback": 10,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": null,
+      "tier": "C",
+      "notes": "初始有 50 发电量。可击退并击倒僵尸。攻击时每 3 秒消耗 1 单位燃料。拥有「招牌武器（Inventive）」特质的幸存者初始持有。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": "Battery (max 50)",
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Electric-Powered Tools",
+          "price": 5,
+          "currency": "food",
+          "condition": null,
+          "raw": "Electric-Powered Tools (5 food)"
+        }
+      ],
+      "locations": [
+        "Hardware Store",
+        "Public Park"
+      ],
+      "events": [],
+      "category": "motorized",
+      "sourcePage": "Motorized Weapons",
+      "englishNotes": "Starts with 50 charges. Pushes away and knocks down zombies. Expends fuel at a rate of 1 unit every 3 seconds while attacking. Survivors with the Trademark Weapon (Inventive) perk start with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 216,
+        "wikiId": 216,
+        "name": "铁匠锤",
+        "englishName": "Blacksmith Hammer"
+      },
+      "power": 1.5,
+      "cooldown": 0.9,
+      "knockback": 1.5,
+      "extraHits": {
+        "count": 1,
+        "chance": 0.2
+      },
+      "breakScale": 0,
+      "tier": "C",
+      "notes": "五金店的稀有战利品。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Hardware Store"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Rare loot of Hardware Store."
+    },
+    {
+      "weapon": {
+        "id": 217,
+        "wikiId": 217,
+        "name": "凝固汽油枪",
+        "englishName": "Napalm Thrower (Napalm Launcher)"
+      },
+      "power": 0.5,
+      "cooldown": null,
+      "knockback": null,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "F",
+      "notes": "喷出更大的火焰，点燃僵尸和物体，并在地面留下持续更久的火焰区域。初始装填 50 发，无法补充；在 Prepper Paradise 获得时为 100 发。火焰狂人初始持有时可充能。",
+      "reload": 0.05,
+      "penetrate": null,
+      "ammunition": "'palm (max 200)",
+      "spread": 0,
+      "vendors": [
+        {
+          "name": "Carnage Weapons XL",
+          "price": 16,
+          "currency": "food",
+          "condition": null,
+          "raw": "Carnage Weapons XL (16 food)"
+        },
+        {
+          "name": "Fire Sale Trader",
+          "price": 10,
+          "currency": "food",
+          "condition": null,
+          "raw": "Fire Sale Trader (10 food)"
+        }
+      ],
+      "locations": [
+        "Raging Inferno"
+      ],
+      "events": [],
+      "category": "ranged",
+      "sourcePage": "Ranged Weapons",
+      "englishNotes": "Spits larger jets of flame which ignite zombies/objects and create longer lasting patches of fire on the ground. Comes preloaded with 50 charges that cannot be refilled, or 100 charges from Prepper Paradise. Pyromaniac and Pyromaniacs start with this weapon (rechargable)."
+    },
+    {
+      "weapon": {
+        "id": 218,
+        "wikiId": 218,
+        "name": "钉耙",
+        "englishName": "Rake"
+      },
+      "power": 0.4,
+      "cooldown": 0.6,
+      "knockback": 1,
+      "extraHits": {
+        "count": 2,
+        "chance": 1
+      },
+      "breakScale": 0.01,
+      "tier": "F",
+      "notes": "瞄准型武器，伤害较低。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Farm",
+        "Hardware Store"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "An aiming weapon with low damage."
+    },
+    {
+      "weapon": {
+        "id": 219,
+        "wikiId": 219,
+        "name": "锄头",
+        "englishName": "Hoe"
+      },
+      "power": 0.5,
+      "cooldown": 0.7,
+      "knockback": 1.1,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "E",
+      "notes": "瞄准型武器，伤害较低。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Farm",
+        "Hardware Store"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "An aiming weapon with low damage."
+    },
+    {
+      "weapon": {
+        "id": 220,
+        "wikiId": 220,
+        "name": "铁锯",
+        "englishName": "Saw"
+      },
+      "power": 0.7,
+      "cooldown": 0.5,
+      "knockback": 1,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "E",
+      "notes": null,
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Hardware Store"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons"
+    },
+    {
+      "weapon": {
+        "id": 221,
+        "wikiId": 221,
+        "name": "勺子",
+        "englishName": "Spoon"
+      },
+      "power": 0.25,
+      "cooldown": 0,
+      "knockback": 0.1,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0.05,
+      "tier": "F",
+      "notes": "瞄准型武器。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Kitchen",
+        "Grocery Store",
+        "Restaurant"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Aiming weapon."
+    },
+    {
+      "weapon": {
+        "id": 222,
+        "wikiId": 222,
+        "name": "黄油刀",
+        "englishName": "Butter Knife"
+      },
+      "power": 0.25,
+      "cooldown": 0,
+      "knockback": 0.1,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "F",
+      "notes": "瞄准型武器。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Grocery Store",
+        "Restaurant",
+        "Kitchen"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Aiming weapon."
+    },
+    {
+      "weapon": {
+        "id": 223,
+        "wikiId": 223,
+        "name": "餐叉",
+        "englishName": "Fork"
+      },
+      "power": 0.25,
+      "cooldown": 0,
+      "knockback": 0.1,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "F",
+      "notes": "瞄准型武器。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Grocery Store",
+        "Restaurant",
+        "Kitchen"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Aiming weapon."
+    },
+    {
+      "weapon": {
+        "id": 227,
+        "wikiId": 227,
+        "name": "魔仙棒",
+        "englishName": "Fairy Bat"
+      },
+      "power": 1,
+      "cooldown": 0.75,
+      "knockback": 2,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "C",
+      "notes": "轻便且击退能力不错。Fairy Queen 初始持有。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Abandoned Warehouse"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "A lightweight weapon with good knockback. Fairy Queen starts with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 228,
+        "wikiId": 228,
+        "name": "雪铲",
+        "englishName": "Snow Shovel"
+      },
+      "power": 1.5,
+      "cooldown": 1.3,
+      "knockback": 2,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "C",
+      "notes": "在积雪地形使用时会发射能击倒僵尸的雪球。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Farm",
+        "Hardware Store",
+        "Beach"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Launches snowballs that knock down zombies when used on snowy terrain."
+    },
+    {
+      "weapon": {
+        "id": 231,
+        "wikiId": 231,
+        "name": "求生匕首",
+        "englishName": "Survival Knife"
+      },
+      "power": 1.2,
+      "cooldown": 0,
+      "knockback": 0.25,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "B",
+      "notes": null,
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Survival Gear",
+          "price": 6,
+          "currency": "food",
+          "condition": null,
+          "raw": "Survival Gear (6 food)"
+        },
+        {
+          "name": "Survival Gear",
+          "price": 0,
+          "currency": "food",
+          "condition": "Free [",
+          "raw": "Survival Gear (Free [)"
+        }
+      ],
+      "locations": [],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons"
+    },
+    {
+      "weapon": {
+        "id": 234,
+        "wikiId": 234,
+        "name": "黄金手术刀",
+        "englishName": "Golden Scalpel"
+      },
+      "power": 3,
+      "cooldown": 0,
+      "knockback": 0,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "A",
+      "notes": "威力强大、极为轻便的瞄准型武器。疲劳产生速度为正常的一半。提供小范围照明。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Final Hospital"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "A powerful, super-lightweight aiming weapon. Causes fatigue at half the normal rate. Provides a small area of illumination."
+    },
+    {
+      "weapon": {
+        "id": 241,
+        "wikiId": 241,
+        "name": "动力冲拳",
+        "englishName": "Charged Punch"
+      },
+      "power": 0.75,
+      "cooldown": 0,
+      "knockback": 1,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": null,
+      "tier": "F",
+      "notes": "向前冲刺出拳，对路径上的僵尸和物体造成伤害。按住攻击键最多可蓄力 3 次，提高拳击速度和距离；满蓄力时会自动发动。再次蓄力前有 1 秒冷却。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": "Charges(max 9)",
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "special",
+      "sourcePage": "Special Weapons",
+      "englishNotes": "Dash punches forwards, damaging zombies and objects along the way. Can be charged up to 3 time by holding the fire button, which increases punch speed and distance. Will automatically active on full charge. Has a cooldown of 1 second before another punch can be charged."
+    },
+    {
+      "weapon": {
+        "id": 242,
+        "wikiId": 242,
+        "name": "动力猛砸",
+        "englishName": "Slam Punch"
+      },
+      "power": 1,
+      "cooldown": 0,
+      "knockback": 1,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": null,
+      "tier": "F",
+      "notes": "跃入空中后猛砸地面，对使用者周围小范围内的僵尸和物体造成伤害。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": "Charges(max 5)",
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "special",
+      "sourcePage": "Special Weapons",
+      "englishNotes": "Leaps into the air, then slams down onto the ground, damaging zombies and objects in a small area around the user."
+    },
+    {
+      "weapon": {
+        "id": 243,
+        "wikiId": 243,
+        "name": "机械断头台",
+        "englishName": "Robo Upper"
+      },
+      "power": 1.5,
+      "cooldown": 1.2,
+      "knockback": 3,
+      "extraHits": {
+        "count": 1,
+        "chance": 1
+      },
+      "breakScale": 0,
+      "tier": "F",
+      "notes": null,
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "special",
+      "sourcePage": "Special Weapons"
+    },
+    {
+      "weapon": {
+        "id": 244,
+        "wikiId": 244,
+        "name": "自动钉枪",
+        "englishName": "Auto-Nailgun"
+      },
+      "power": 0.5,
+      "cooldown": 1,
+      "knockback": 0,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "F",
+      "notes": "安静，不会惊动僵尸。持续射击会提高射速和伤害。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": "Nails(max 300)",
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "special",
+      "sourcePage": "Special Weapons",
+      "englishNotes": "Silent; does not alert zombies. Fire rate and damage increase with continuous firing."
+    },
+    {
+      "weapon": {
+        "id": 245,
+        "wikiId": 245,
+        "name": "极速模式",
+        "englishName": "Speed Mode"
+      },
+      "power": 0,
+      "cooldown": 0,
+      "knockback": 0,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "F",
+      "notes": "在 2.5 秒内显著提高移动速度。会从墙壁反弹、击倒僵尸并推开家具。效果期间无法使用武器或拾取战利品，并会被迫持续向前移动。效果结束后使用者会有 1 秒虚弱期，期间不能使用、拾取或切换武器。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": "Charges(max 7)",
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "special",
+      "sourcePage": "Special Weapons",
+      "englishNotes": "Significantly increases movement speed for 2.5 seconds. Will bounce off walls, knocks zombies down and pushes furnitures away. While the effect is active, the user cannot use weapons or pick up loot, and is forced to keep moving forwards. The user become vulnerable for a second after the effect, in which they cannot use, pickup or switch weapons."
+    },
+    {
+      "weapon": {
+        "id": 255,
+        "wikiId": 288,
+        "name": "医疗跨包",
+        "englishName": "Medical Satchel"
+      },
+      "power": 0.2,
+      "cooldown": 0.75,
+      "knockback": 1.5,
+      "extraHits": {
+        "count": 1,
+        "chance": 1
+      },
+      "breakScale": null,
+      "tier": null,
+      "notes": "Dr. Hawke 初始持有。由她本人持有时，可消耗医疗用品治疗附近队友。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": "5 charges",
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "consumable",
+      "sourcePage": "Consumable Weapons",
+      "englishNotes": "Dr. Hawke starts with this weapon. When held by herself, can consume Medical Supplies to heal teammates nearby."
+    },
+    {
+      "weapon": {
+        "id": 259,
+        "wikiId": 291,
+        "name": "M16-极霸",
+        "englishName": "DNK-16"
+      },
+      "power": 2,
+      "cooldown": null,
+      "knockback": 1.33,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "B",
+      "notes": "可进行三连发射击。",
+      "reload": 1,
+      "penetrate": 20,
+      "ammunition": "Rounds (max 150)",
+      "spread": 1.1,
+      "vendors": [],
+      "locations": [
+        "Military Depot"
+      ],
+      "events": [],
+      "category": "ranged",
+      "sourcePage": "Ranged Weapons",
+      "englishNotes": "Can fire in 3-round bursts."
+    },
+    {
+      "weapon": {
+        "id": 307,
+        "wikiId": 307,
+        "name": "冲锋手枪",
+        "englishName": "Machinepistol"
+      },
+      "power": 1.25,
+      "cooldown": null,
+      "knockback": 1,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "B",
+      "notes": "射击技能提供的穿透加成会部分降低。可在 Harbour 箱子中找到；在使用 COOL IT（需要 cool-it 4 级以上）时完成 cop bandits 事件可获得。",
+      "reload": 0.25,
+      "penetrate": 10,
+      "ammunition": "Bullets (max 110)",
+      "spread": 2,
+      "vendors": [],
+      "locations": [
+        "Police Headquarters"
+      ],
+      "events": [],
+      "category": "ranged",
+      "sourcePage": "Ranged Weapons",
+      "englishNotes": "Penetrate bonus from shooting skill is partially reduced. Can be found in Harbour crates. Reward from cop bandits event when using COOL IT (requires cool-it 4+)."
+    },
+    {
+      "weapon": {
+        "id": 308,
+        "wikiId": 308,
+        "name": "特警霰弹枪",
+        "englishName": "SWAT Shotgun (Chrome Shotgun)"
+      },
+      "power": 0.5,
+      "cooldown": null,
+      "knockback": 2.5,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "C",
+      "notes": "泵动霰弹枪；每发霰弹射出 7 颗弹丸。可在 Harbour 箱子中找到；在使用 COOL IT（需要 cool-it 4 级以上）时完成 cop bandits 事件可获得。",
+      "reload": 1,
+      "penetrate": 10,
+      "ammunition": "Shells (max 60)",
+      "spread": 3,
+      "vendors": [],
+      "locations": [
+        "Police Headquarters"
+      ],
+      "events": [],
+      "category": "ranged",
+      "sourcePage": "Ranged Weapons",
+      "englishNotes": "Pump shotgun; fires seven pellets per shell. Can be found in Harbour crates. Reward from cop bandits event when using COOL IT (requires cool-it 4+)."
+    },
+    {
+      "weapon": {
+        "id": 270,
+        "wikiId": 309,
+        "name": "地震锤",
+        "englishName": "Earthquaker"
+      },
+      "power": 4,
+      "cooldown": 1,
+      "knockback": 3.5,
+      "extraHits": {
+        "count": 1,
+        "chance": 1
+      },
+      "breakScale": 0,
+      "tier": "S",
+      "notes": "命中时会产生地震，对大范围内所有僵尸造成伤害。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "special",
+      "sourcePage": "Special Weapons",
+      "englishNotes": "On hit, creates a quake that damages all zombies within a large area."
+    },
+    {
+      "weapon": {
+        "id": 273,
+        "wikiId": 320,
+        "name": "银制长剑",
+        "englishName": "Silver Longsword"
+      },
+      "power": 2.5,
+      "cooldown": 1.25,
+      "knockback": 2,
+      "extraHits": {
+        "count": 1,
+        "chance": 1
+      },
+      "breakScale": 0,
+      "tier": "A",
+      "notes": "Isabelle the Paladin 初始持有。拥有「招牌武器」和「英雄型」特质的角色初始持有。略强于骑士剑。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Isabelle the Paladin starts with this weapon. Character with Trademark Weapon and Hero Type start with this weapon. Slightly stronger than Knight Sword."
+    },
+    {
+      "weapon": {
+        "id": 275,
+        "wikiId": 322,
+        "name": "碎片",
+        "englishName": "Fragment"
+      },
+      "power": 1.5,
+      "cooldown": 0.7,
+      "knockback": 1,
+      "extraHits": {
+        "count": 1,
+        "chance": 0.5
+      },
+      "breakScale": 0,
+      "tier": "A",
+      "notes": null,
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "special",
+      "sourcePage": "Special Weapons"
+    },
+    {
+      "weapon": {
+        "id": 281,
+        "wikiId": 324,
+        "name": "库克里刀",
+        "englishName": "Kukri"
+      },
+      "power": 1.5,
+      "cooldown": 0.75,
+      "knockback": 0.5,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "B",
+      "notes": "命中时会使敌人残废并减速。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Special Gimmick Weapons",
+          "price": 4,
+          "currency": "food",
+          "condition": null,
+          "raw": "Special Gimmick Weapons (4 Food)"
+        }
+      ],
+      "locations": [],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Maims enemies on hit, slowing them."
+    },
+    {
+      "weapon": {
+        "id": 284,
+        "wikiId": 326,
+        "name": "旗帜",
+        "englishName": "Banner (Buff Banner)"
+      },
+      "power": 0,
+      "cooldown": 1,
+      "knockback": 2,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": null,
+      "tier": null,
+      "notes": "装备时会播放音乐并强化队友，使其近战攻击造成小型暴击。手持时持续消耗充能；切换武器或充能耗尽时增益消失。耗尽后约 30 秒充能完成（Wiki 原文存疑）。武器本身属于近战武器，疲劳产生速度为正常的一半。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": "200 max",
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Special Gimmick Weapons",
+          "price": 6,
+          "currency": "food",
+          "condition": null,
+          "raw": "Special Gimmick Weapons (6 Food)"
+        }
+      ],
+      "locations": [],
+      "events": [],
+      "category": "consumable",
+      "sourcePage": "Consumable Weapons",
+      "englishNotes": "When equipped, plays music and buff your teammates, making their melee attacks deal minicrits. Constantly consume charges when held. Buff will lost when switching weapons or when charges run out. Takes 30 seconds to recharge after running out (?). The weapon itself functions as a melee weapon that causes fatigue at half the normal rate."
+    },
+    {
+      "weapon": {
+        "id": 283,
+        "wikiId": 326,
+        "name": "辛辣小饮",
+        "englishName": "Spicy swig"
+      },
+      "power": 0,
+      "cooldown": 0,
+      "knockback": null,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": null,
+      "notes": "点燃角色周围的所有僵尸。初始有 1 次充能；每次任务后回复 1 次，最多储存 3 次。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": "3 charges",
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "consumable",
+      "sourcePage": "Consumable Weapons",
+      "englishNotes": "Uses to ignite all zombies around the character. Starts with 1 charge, and recharge by 1 after each mission, up to 3 charges."
+    },
+    {
+      "weapon": {
+        "id": 286,
+        "wikiId": 329,
+        "name": "决斗步枪",
+        "englishName": "Battle Rifle"
+      },
+      "power": 2.5,
+      "cooldown": null,
+      "knockback": 2,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "B",
+      "notes": null,
+      "reload": 0.8,
+      "penetrate": 2,
+      "ammunition": "Rounds (max 60)",
+      "spread": 1,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "ranged",
+      "sourcePage": "Ranged Weapons"
+    },
+    {
+      "weapon": {
+        "id": 287,
+        "wikiId": 332,
+        "name": "呆瓜冲锋枪",
+        "englishName": "Dolt ACP"
+      },
+      "power": 1,
+      "cooldown": null,
+      "knockback": 1,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "D",
+      "notes": "Bayonetti 初始持有。",
+      "reload": 0.66,
+      "penetrate": 2,
+      "ammunition": "Bullets (max 60)",
+      "spread": 0,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "ranged",
+      "sourcePage": "Ranged Weapons",
+      "englishNotes": "Bayonetti starts with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 288,
+        "wikiId": 334,
+        "name": "竞技步枪",
+        "englishName": "Target Rifle"
+      },
+      "power": 3.25,
+      "cooldown": null,
+      "knockback": 1.75,
+      "extraHits": null,
+      "breakScale": null,
+      "tier": "C",
+      "notes": null,
+      "reload": 1.15,
+      "penetrate": 2,
+      "ammunition": "Rounds (max 50)",
+      "spread": 0,
+      "vendors": [],
+      "locations": [
+        "Various"
+      ],
+      "events": [],
+      "category": "ranged",
+      "sourcePage": "Ranged Weapons"
+    },
+    {
+      "weapon": {
+        "id": 289,
+        "wikiId": 336,
+        "name": "弹簧刀",
+        "englishName": "Switchblade"
+      },
+      "power": 1.67,
+      "cooldown": 0.7,
+      "knockback": 0.5,
+      "extraHits": {
+        "count": 1,
+        "chance": 0.2
+      },
+      "breakScale": 0,
+      "tier": "B",
+      "notes": "突刺武器，疲劳产生速度为正常的一半。拥有「招牌武器」特质的角色可能初始持有。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Thrusting weapon that causes fatigue at half the normal rate. Characters with Trademark Weapon may start with this weapon."
+    },
+    {
+      "weapon": {
+        "id": 290,
+        "wikiId": 340,
+        "name": "相位剑",
+        "englishName": "Phaseblade"
+      },
+      "power": 0.25,
+      "cooldown": 0.6,
+      "knockback": 0,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "B",
+      "notes": "拥有「招牌武器」和「Hyperfixated」特质的角色初始持有。拥有 40 次充能，命中可立即击杀僵尸；剩余充能时也是光源。每次命中消耗 1 次充能，每次任务后充能。疲劳产生速度为正常的一半。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [
+        {
+          "name": "Weapon Fanatic",
+          "price": 10,
+          "currency": "food",
+          "condition": null,
+          "raw": "Weapon Fanatic (10 food)"
+        }
+      ],
+      "locations": [],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Characters with Trademark Weapon and Hyperfixated start with this weapon. Has 40 charges, can kill zombies instantly on hit, as well as being a light source if there are charges left. Hitting target consumes 1 charge. Recharges after each mission. Causes Fatigue at half of the normal rate."
+    },
+    {
+      "weapon": {
+        "id": 325,
+        "wikiId": 399,
+        "name": "捕鱼叉",
+        "englishName": "Fishing Harpoon"
+      },
+      "power": null,
+      "cooldown": 1,
+      "knockback": null,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "D",
+      "notes": "攻击距离不错的突刺武器。疲劳产生速度为正常的 66%。",
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Martial Arts Shop"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons",
+      "englishNotes": "Thrusting weapon with good reach. Causes fatigue at 66% of normal rate."
+    },
+    {
+      "weapon": {
+        "id": 313,
+        "wikiId": 399,
+        "name": "长棍",
+        "englishName": "Quarterstaff"
+      },
+      "power": 2,
+      "cooldown": 0.65,
+      "knockback": 2.5,
+      "extraHits": {
+        "count": 0,
+        "chance": 0
+      },
+      "breakScale": 0,
+      "tier": "C",
+      "notes": null,
+      "reload": null,
+      "penetrate": null,
+      "ammunition": null,
+      "spread": null,
+      "vendors": [],
+      "locations": [
+        "Martial Arts Shop"
+      ],
+      "events": [],
+      "category": "melee",
+      "sourcePage": "Melee Weapons"
+    }
+  ],
+  "weaponNameLanguage": "zh-CN",
+  "nameTranslation": {
+    "source": "中文版weapondef.df",
+    "preservedOriginalField": "weapon.englishName",
+    "report": "weapon_name_translation_report.json"
+  },
+  "idSource": {
+    "type": "weapondefRegistrationOrder",
+    "verifiedInGame": true,
+    "definitionFiles": [
+      "英文版weapondef.df",
+      "weapondef-英文版/"
+    ],
+    "wikiReferenceField": "weapon.wikiId"
+  },
+  "idReconciliation": {
+    "totalWeapons": 211,
+    "sameAsWikiId": 193,
+    "differentFromWikiId": 18
+  },
+  "notesLanguage": "zh-CN",
+  "notesTranslation": {
+    "preservedOriginalField": "englishNotes",
+    "translatedCount": 178
+  }
+}
