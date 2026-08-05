@@ -45,6 +45,30 @@ _TRUNK_WEAPON = re.compile(rb'^(?P<value>-?\d+)\s+(?P<id>\d+)\s+trunk\.weapon!\s
 _CAR_FIELD = re.compile(rb'^(?P<value>-?\d+(?:\.\d+)?)\s+\'\s+(?P<field>car-(?:max-)?(?:chassis|engine|armor|speed)|car-mpg|car-repair)\s+<to\s*$')
 _ROAD_FIELD = re.compile(rb'^(?P<value>-?\d+)\s+road\{\s+\'\s+(?P<field>road-trip-days|nearcanada-day)\s+}\s+<to\s*$')
 _GSTAT_FIELD = re.compile(rb"^(?P<value>-?\d+)\s+gstats\{\s+'\s+(?P<field>[A-Za-z0-9+_-]+)\s+}\s+<to\s*$")
+_STACK_TARGET = re.compile(
+    rb"(?:[A-Za-z0-9_-]+\{\s+)?'\s+(?P<field>[A-Za-z0-9_-]+)\s+(?:}\s+)?<to\s*$"
+)
+
+# 这些字段保存的是已经洗过牌的地区／随机事件堆。堆中的部分 Forth 词标识和
+# 富文本内容随语言包本地化，不能直接跨语言 evaluate。载入游戏时目标语言的定义
+# 已经先把默认堆创建好，因此跨语言时应保留该默认值、舍弃来源语言的旧堆。
+_CROSS_LOCALE_TRANSIENT_STACKS = frozenset({
+    # regiondef{
+    "rare-lot-deck", "trader-list", "trader-list-rare", "trader-draw-pick",
+    "dochead-pick-stack-base", "camprecruit-list", "camprecruit-draw-pick",
+    "camprecruit-list-rare", "tnome-reward-1-deck", "tnome-reward-2-deck",
+    "tnome-reward-3-deck",
+    # road{
+    "daily-deck", "fate-deck", "innerraid-deck", "rareinnerraid-deck",
+    "specialchar-deck", "normalchar-deck", "specialchargood-deck",
+    "specialcharbad-deck", "recruit-deck", "easyinnerraid-deck",
+    "easycityraid-deck", "cityraid-deck", "hazardraid-deck",
+    "easyhazardraid-deck", "canadahazard-deck", "trade-camp-deck",
+    "trade-camp-special-deck", "walk-camp-deck", "find-car-deck", "walk-deck",
+    "day-pick-deck", "day-shuffle-deck", "common-deck", "rare-deck", "camp-deck",
+    "despair-solo-deck", "despair-dog-deck", "despair-deck", "bandit-deck",
+    "trade-deck", "loc-pick-stack", "loc-pick-rare", "clouds-pick-stack",
+})
 
 
 class SaveError(RuntimeError):
@@ -85,6 +109,7 @@ class ConversionReport:
     traits: int
     weapons: int
     renamed: int
+    transient_stacks: int = 0
     unknown: tuple[str, ...] = ()
 
 
@@ -126,13 +151,15 @@ def gstats_filename(chinese: bool) -> str:
 def _parts(data: bytes) -> list[tuple[bytes, bytes]]:
     """返回 (正文, 换行符)，保留每一个原始字节。"""
     result = []
-    for raw in data.splitlines(keepends=True):
-        if raw.endswith(b"\r\n"):
-            result.append((raw[:-2], b"\r\n"))
-        elif raw.endswith(b"\n") or raw.endswith(b"\r"):
-            result.append((raw[:-1], raw[-1:]))
-        else:
-            result.append((raw, b""))
+    # 不用 bytes.splitlines()：它会把 \v、\f 等二进制控制字节也当成换行，
+    # 而 Deathforth 富文本恰好会把原始控制码嵌进存档。
+    chunks = data.split(b"\n")
+    for index, raw in enumerate(chunks):
+        ending = b"\n" if index < len(chunks) - 1 else b""
+        if raw.endswith(b"\r"):
+            raw = raw[:-1]
+            ending = b"\r\n" if ending else b"\r"
+        result.append((raw, ending))
     return result
 
 
@@ -184,6 +211,44 @@ def read_activity(data: bytes) -> ActivityModel:
 def _replace_value(body: bytes, match: re.Match[bytes], value: bytes) -> bytes:
     start, end = match.span("value")
     return body[:start] + value + body[end:]
+
+
+def _reset_cross_locale_transient_stacks(parts: list[tuple[bytes, bytes]]) -> tuple[list[tuple[bytes, bytes]], int]:
+    """删除跨语言不兼容的 ``0 stack ... <to`` 保存块。
+
+    只处理游戏启动时会创建默认值的地区／路途牌堆；当前流程 ``road-stack``、
+    天数、游戏模式和所有普通数值字段均不会碰。
+    """
+    output: list[tuple[bytes, bytes]] = []
+    reset = 0
+    index = 0
+    while index < len(parts):
+        body, ending = parts[index]
+        if body.strip() != b"0 stack":
+            output.append((body, ending))
+            index += 1
+            continue
+
+        target_index: int | None = None
+        target_field: bytes | None = None
+        for candidate in range(index + 1, len(parts)):
+            candidate_body = parts[candidate][0]
+            if b"<to" not in candidate_body:
+                continue
+            match = _STACK_TARGET.search(candidate_body)
+            if match:
+                target_index = candidate
+                target_field = match["field"]
+            break
+
+        if target_index is not None and target_field is not None and target_field.decode("ascii") in _CROSS_LOCALE_TRANSIENT_STACKS:
+            reset += 1
+            index = target_index + 1
+            continue
+
+        output.append((body, ending))
+        index += 1
+    return output, reset
 
 
 def convert_bytes(data: bytes, direction: str, *, activity: bool) -> tuple[bytes, ConversionReport]:
@@ -252,10 +317,23 @@ def convert_bytes(data: bytes, direction: str, *, activity: bool) -> tuple[bytes
                 weapons += 1
         output.append((body, ending))
 
+    transient_stacks = 0
+    if activity:
+        # 不同语言包会把牌堆中的 Forth 词标识和富文本一同本地化。原样保留会令
+        # $load-savefile 在区域状态处中止，导致后面的天数和 gamemode 都没被读到。
+        output, transient_stacks = _reset_cross_locale_transient_stacks(output)
+
     result = _join(output)
     if result.startswith(b"\xef\xbb\xbf"):
         raise SaveError("输出包含 UTF-8 BOM，已拒绝写入。")
-    return result, ConversionReport(perks + traits + weapons + renamed, perks, traits, weapons, renamed)
+    return result, ConversionReport(
+        perks + traits + weapons + renamed + transient_stacks,
+        perks,
+        traits,
+        weapons,
+        renamed,
+        transient_stacks,
+    )
 
 
 def patch_activity(data: bytes, updates: dict[tuple[str, int, int | str | None], int | float | str]) -> bytes:

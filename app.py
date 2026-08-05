@@ -47,7 +47,7 @@ INK, MUTED, LINE = "#28302f", "#68716d", "#c8c9c1"
 ACCENT, ACCENT_HOVER, GOLD, DANGER, OK = "#3f7d68", "#579984", "#a66c28", "#c14d52", "#33845f"
 SELECT_GREEN, SELECT_GOLD = "#bfddc4", "#ecd7ae"
 PIXEL_FONT, BODY_FONT, MONO = "VonwaonBitmap 16px", "Microsoft YaHei UI", "Consolas"
-APP_VERSION = "1.0.0"
+APP_VERSION = "1.0.1"
 APP_CODENAME = "旅途启程"
 
 
@@ -862,7 +862,7 @@ class GlobalStatsPanel:
 class DR2CApp(ctk.CTk):
     def __init__(self) -> None:
         super().__init__()
-        self.title("DR2C 存档助手 // SAVE STATION")
+        self.title("DR2C 存档助手 // SAVE EDITOR")
         self.geometry("1500x1080")
         self.minsize(800, 600)
         self.configure(fg_color=BG)
@@ -883,7 +883,7 @@ class DR2CApp(ctk.CTk):
         top = ctk.CTkFrame(self, fg_color=TOP, corner_radius=0, height=70)
         top.pack(fill="x")
         top.pack_propagate(False)
-        title = ctk.CTkLabel(top, text="DR2C  SAVE STATION", font=(PIXEL_FONT, 25), text_color=GOLD, cursor="hand2")
+        title = ctk.CTkLabel(top, text="DR2C  SAVE EDITOR", font=(PIXEL_FONT, 25), text_color=GOLD, cursor="hand2")
         title.pack(side="left", padx=22)
         title.bind("<Button-1>", self.title_click)
         ctk.CTkLabel(top, text=f"v{APP_VERSION} · {APP_CODENAME}  |  ORIGINAL 20260727  ·  CN PATCH 906.2", font=(MONO, 10), text_color=MUTED).pack(side="left", padx=5)
@@ -915,7 +915,9 @@ class DR2CApp(ctk.CTk):
         ctk.CTkLabel(row, text="转换方向", font=(BODY_FONT, 11), text_color=MUTED).pack(side="left", padx=(25, 7))
         ctk.CTkSegmentedButton(row, values=["英文 → 中文", "中文 → 英文"], variable=self.convert_direction, selected_color=SELECT_GOLD, selected_hover_color="#f4e5c8", unselected_color=PANEL_ALT, unselected_hover_color=LINE, text_color=INK).pack(side="left")
         self.slot_host = ctk.CTkFrame(card, fg_color="transparent")
-        self.slot_host.pack(fill="x", padx=20, pady=(5, 14))
+        self.slot_host.pack(fill="x", padx=20, pady=(5, 4))
+        self.deck_notice = ctk.CTkLabel(card, text="", font=(BODY_FONT, 11), text_color=GOLD, justify="left", wraplength=940)
+        self.deck_notice.pack(anchor="w", padx=20, pady=(0, 12))
         self.refresh_convert_kind()
         actions = ctk.CTkFrame(card, fg_color="transparent")
         actions.pack(fill="x", padx=20, pady=(0, 16))
@@ -929,10 +931,12 @@ class DR2CApp(ctk.CTk):
         for child in self.slot_host.winfo_children():
             child.destroy()
         if self.convert_kind.get() == "活动存档":
+            self.deck_notice.configure(text="活动存档跨语言会重置地区／路途随机事件牌堆，避免目标语言版在读取 Forth 状态时中断；这可能让少量已见事件再次出现。两个转换方向都会处理。")
             ctk.CTkLabel(self.slot_host, text="活动存档位", font=(BODY_FONT, 11), text_color=MUTED).pack(side="left", padx=(0, 8))
             for index, label in enumerate(["第 1 个存档位  ·  0.save", "第 2 个存档位  ·  1.save", "第 3 个存档位  ·  2.save"]):
                 ctk.CTkButton(self.slot_host, text=label, width=168, fg_color=SELECT_GOLD if self.convert_slot.get() == str(index) else PANEL_ALT, hover_color="#f4e5c8" if self.convert_slot.get() == str(index) else LINE, text_color=INK, command=lambda value=index: self.choose_convert_slot(value)).pack(side="left", padx=3)
         else:
+            self.deck_notice.configure(text="")
             ctk.CTkLabel(self.slot_host, text="自建角色没有存档位：会转换 custchars.save 与 custchars-mod.save。", font=(BODY_FONT, 12), text_color=MUTED).pack(side="left")
 
     def choose_convert_slot(self, slot: int) -> None:
@@ -984,6 +988,8 @@ class DR2CApp(ctk.CTk):
             f"来源：{source.name}\n目标：{target.name}\n\n"
             f"将转换：PERK {report.perks} 项、TRAIT {report.traits} 项、武器运行时 ID {report.weapons} 项。\n"
             f"中文名替换为 A1/A2…：{report.renamed} 项。\n"
+            + (f"\n跨语言兼容（两个方向一致）：会重置 {report.transient_stacks} 组地区／路途随机事件牌堆；这些牌堆保存的是带语言包 Forth 词标识与富文本的剩余事件序列，不能只翻译显示文字。保留角色、物资、车辆、天数、游戏模式和当前主流程；目标版本会重新生成这些牌堆，后续事件可能重复。逐项无损保留事件牌堆尚未实现。\n" if activity else "")
+            +
             f"合计：{report.changed} 个字段。\n{slot_note}\n"
             "下一步：点击「备份后执行转换」才会覆盖目标文件。目标旧文件会备份到软件目录 backups。\n"
             "安全说明：活动存档使用二进制定点替换，原始 Forth 控制字节会保留；未知 perk/trait 会直接阻止转换。\n"
@@ -1028,13 +1034,14 @@ class DR2CApp(ctk.CTk):
         box.pack(fill="both", expand=True, padx=10, pady=10)
         box.insert("1.0", """使用说明 / 开发者
 
-版本：1.0.0 · 旅途启程
+版本：1.0.1 · 旅途启程
 
 这是用来在英文原版与简体中文汉化补丁之间转移存档的工具，也可以直接编辑捏人和活动存档。
 
 • 操作前完全退出游戏。游戏运行时可能把旧内存存档重新覆盖回来。
 • 转换会覆盖目标版本的同名文件，但软件每次都会在自身 backups 文件夹留下完整备份。
 • 活动存档混有 Forth 原始控制字节。请不要用普通文本编辑器“另存为”；本工具只替换已识别字段。
+• 活动存档在英文／中文间转换时，会重置地区／路途随机事件牌堆：它们控制许多事件的短期不重复，但内部含本地化 Forth 词标识，不能原样跨语言读取。角色、物资、天数、模式和当前主流程会保留；代价是少量已见事件可能再次出现。英→中和中→英都会这样处理，逐项无损保留牌堆尚未实现。
 • PERK/TRAIT 改名后，部分每次触发的字符串判定可能有效；开局赠送属性、武器、资源等不会自动重跑。
 • 基础属性有效范围为 0–6；bonus 是独立额外加成，通常能让最终属性超过 6。
 • 属性编辑区的“显示 / 已揭示”开关只控制该属性是否已经在游戏内面板公开，不会改变属性数值；关闭后，它仍可能被游戏事件重新揭示。

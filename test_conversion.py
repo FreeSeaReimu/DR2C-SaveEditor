@@ -47,6 +47,30 @@ class CoreTests(unittest.TestCase):
         restored, _ = convert_bytes(chinese, "zh_to_en", activity=True)
         self.assertEqual(restored, SAMPLE)
 
+    def test_cross_locale_conversion_resets_only_localized_event_stacks(self) -> None:
+        source = (
+            b'0 stack\n'
+            b"regiondef{ ' 30-gas---10-\xf4ZP\xf0 } <s\n"
+            b"regiondef{ ' tnome-reward-1-deck } <to\n"
+            b"15 road{ ' nearcanada-day } <to\n"
+            b"gamedef{ ' defaultmode } ' gamemode-word <to\n"
+            b'0 stack\n'
+            b"road{ ' \xf3Shopping-Mall\xf0 } <s\n"
+            b"road{ ' daily-deck } <to\n"
+            b'0 stack\n'
+            b"road{ ' do-actual-save } <s\n"
+            b"road{ ' road-stack } <to\n"
+        )
+        converted, report = convert_bytes(source, "en_to_zh", activity=True)
+        self.assertEqual(report.transient_stacks, 2)
+        self.assertEqual(report.changed, 2)
+        self.assertNotIn(b"30-gas", converted)
+        self.assertNotIn(b"Shopping-Mall", converted)
+        self.assertIn(b"15 road{ ' nearcanada-day } <to", converted)
+        self.assertIn(b"gamedef{ ' defaultmode } ' gamemode-word <to", converted)
+        self.assertIn(b"road{ ' do-actual-save } <s", converted)
+        self.assertIn(b"road{ ' road-stack } <to", converted)
+
     def test_read_and_patch_known_fields_only(self) -> None:
         model = read_activity(SAMPLE)
         self.assertEqual(model.remaining_days, 15)
