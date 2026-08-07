@@ -26,7 +26,7 @@ $env:PYTHONNOUSERSITE = "1"
   --clean `
   --onefile `
   --windowed `
-  --name "DR2C-SaveEditor-1.0.1" `
+  --name "DR2C-SaveEditor-1.0.2" `
   --distpath $distDir `
   --workpath $workDir `
   --specpath $specDir `
@@ -35,11 +35,11 @@ $env:PYTHONNOUSERSITE = "1"
   --add-data "$resourcePath;resource" `
   (Join-Path $appDir "app.py")
 
-$built = Join-Path $distDir "DR2C-SaveEditor-1.0.1.exe"
+$built = Join-Path $distDir "DR2C-SaveEditor-1.0.2.exe"
 if (-not (Test-Path -LiteralPath $built)) {
   throw "PyInstaller output was not found: $built"
 }
 
-$target = Join-Path $releaseDir "DR2C-SaveEditor-1.0.1.exe"
+$target = Join-Path $releaseDir "DR2C-SaveEditor-1.0.2.exe"
 Copy-Item -LiteralPath $built -Destination $target -Force
 Write-Output "Release built: $target"

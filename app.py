@@ -21,8 +21,8 @@ from PIL import Image, ImageOps
 
 from dr2c_core import (
     APP_DIR, DATA_DIR, DEFAULT_SAVE_DIR, RESOURCE_LABELS, STAT_LABELS, STAT_NAMES,
-    SaveError, assert_same_gstats_structure, backup_and_replace, convert_bytes,
-    gstats_filename, load_mapping, patch_activity, read_activity, read_gstats,
+    SaveError, backup_and_replace, convert_bytes, gstats_filename, load_mapping,
+    merge_gstats, patch_activity, read_activity, read_gstats,
     replace_trunk_weapons, save_filename, set_gstats_fields, slot_filename,
 )
 
@@ -47,8 +47,8 @@ INK, MUTED, LINE = "#28302f", "#68716d", "#c8c9c1"
 ACCENT, ACCENT_HOVER, GOLD, DANGER, OK = "#3f7d68", "#579984", "#a66c28", "#c14d52", "#33845f"
 SELECT_GREEN, SELECT_GOLD = "#bfddc4", "#ecd7ae"
 PIXEL_FONT, BODY_FONT, MONO = "VonwaonBitmap 16px", "Microsoft YaHei UI", "Consolas"
-APP_VERSION = "1.0.1"
-APP_CODENAME = "旅途启程"
+APP_VERSION = "1.0.2"
+APP_CODENAME = "时光机"
 
 
 def game_running() -> bool:
@@ -800,7 +800,7 @@ class GlobalStatsPanel:
             ctk.CTkLabel(card, text=label, font=(BODY_FONT, 11), text_color=MUTED).pack(padx=13, pady=(6, 0))
             ctk.CTkLabel(card, text=value, font=(PIXEL_FONT, 18), text_color=INK).pack(padx=13, pady=(0, 7))
 
-        transfer = self.section("英文 / 中文全局升级存档互转", "gstats.save 和 gstats-mod.save 的 136 个字段结构与顺序一致。转换会完整复制来源文件，保留所有解锁、统计与累计数据。")
+        transfer = self.section("英文 / 中文全局升级存档互转", "字段完全一致时会完整复制来源文件。旧版来源字段是新版目标字段的子集时，会迁移同名进度，并把新版独有字段归零；来源存在目标没有的字段时仍会阻止转换。")
         action = ctk.CTkFrame(transfer, fg_color="transparent")
         action.pack(fill="x", padx=14, pady=(0, 11))
         ctk.CTkButton(action, text="英文 gstats → 中文 gstats-mod", fg_color=ACCENT, hover_color=ACCENT_HOVER, text_color=TOP, command=lambda: self.convert(False)).pack(side="left", padx=(0, 6))
@@ -825,13 +825,25 @@ class GlobalStatsPanel:
             return
         try:
             source_data = source.read_bytes()
-            read_gstats(source_data)
+            output = source_data
+            summary = "两边字段完全一致：将完整复制来源文件，保留所有解锁、统计与累计数据。"
             if target.is_file() and target.stat().st_size:
-                assert_same_gstats_structure(source_data, target.read_bytes())
+                output, report = merge_gstats(source_data, target.read_bytes())
+                if report.mode == "forward_merge":
+                    names = "、".join(report.zeroed_target_fields)
+                    summary = (
+                        f"检测到旧版来源：已迁移 {report.copied_fields} 个同名字段；"
+                        f"目标独有的 {len(report.zeroed_target_fields)} 个新版字段将归零：{names}。"
+                    )
+                else:
+                    summary = "两边字段完全一致：将完整复制来源文件，保留所有解锁、统计与累计数据。"
+            else:
+                read_gstats(source_data)
+                summary = "目标文件不存在：将写入来源文件。没有目标模板，无法补齐新版独有字段。"
         except (SaveError, OSError) as exc:
             self.app.notice(f"全局升级存档转换已阻止：{exc}", error=True)
             return
-        self.app.write_with_confirmation(target, source_data, f"将把 {source.name} 的全部全局升级数据复制到 {target.name}。\n目标旧文件会备份到软件目录 backups。\n该操作不翻译任何字段，因为两版本结构相同。")
+        self.app.write_with_confirmation(target, output, f"将把 {source.name} 的全局升级数据迁移到 {target.name}。\n{summary}\n目标旧文件会备份到软件目录 backups。")
 
     def unlock_modes(self) -> None:
         self.apply_unlock(
@@ -1034,7 +1046,7 @@ class DR2CApp(ctk.CTk):
         box.pack(fill="both", expand=True, padx=10, pady=10)
         box.insert("1.0", """使用说明 / 开发者
 
-版本：1.0.1 · 旅途启程
+版本：1.0.2 · 时光机
 
 这是用来在英文原版与简体中文汉化补丁之间转移存档的工具，也可以直接编辑捏人和活动存档。
 

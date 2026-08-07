@@ -8,7 +8,7 @@ from pathlib import Path
 
 from dr2c_core import (
     assert_same_gstats_structure, backup_and_replace, convert_bytes, gstats_filename,
-    patch_activity, read_activity, read_gstats, replace_trunk_weapons,
+    merge_gstats, patch_activity, read_activity, read_gstats, replace_trunk_weapons,
     set_gstats_fields, slot_filename,
 )
 
@@ -133,6 +133,41 @@ class CoreTests(unittest.TestCase):
         self.assertEqual(read_gstats(unlocks)["trait-specialist"], 3)
         self.assertEqual(gstats_filename(False), "gstats.save")
         self.assertEqual(gstats_filename(True), "gstats-mod.save")
+
+    def test_gstats_forward_merge_copies_shared_fields_and_zeroes_new_fields(self) -> None:
+        source = (
+            b"4 gstats{ ' wins-normal } <to\n"
+            b"0 stack\n"
+            b"' old-achievement <s\n"
+            b"gstats{ ' cheevo-list } <to\n"
+            b"2 gstats{ ' perk-mechanic } <to\n"
+        )
+        target = (
+            b"9 gstats{ ' wins-normal } <to\n"
+            b"0 gstats{ ' wins-newmode } <to\n"
+            b"7 gstats{ ' wins-newmode-streak } <to\n"
+            b"0 stack\n"
+            b"' target-achievement <s\n"
+            b"gstats{ ' cheevo-list } <to\n"
+            b"3 gstats{ ' perk-mechanic } <to\n"
+            b"3 gstats{ ' perk-new } <to\n"
+        )
+        output, report = merge_gstats(source, target)
+        self.assertEqual(report.mode, "forward_merge")
+        self.assertEqual(report.zeroed_target_fields, ("wins-newmode", "wins-newmode-streak", "perk-new"))
+        self.assertEqual(read_gstats(output)["wins-normal"], 4)
+        self.assertEqual(read_gstats(output)["perk-mechanic"], 2)
+        self.assertEqual(read_gstats(output)["wins-newmode"], 0)
+        self.assertEqual(read_gstats(output)["wins-newmode-streak"], 0)
+        self.assertEqual(read_gstats(output)["perk-new"], 0)
+        self.assertIn(b"' old-achievement <s", output)
+        self.assertNotIn(b"' target-achievement <s", output)
+
+    def test_gstats_merge_blocks_downgrade(self) -> None:
+        source = b"1 gstats{ ' wins-normal } <to\n1 gstats{ ' wins-newmode } <to\n"
+        target = b"1 gstats{ ' wins-normal } <to\n"
+        with self.assertRaisesRegex(Exception, "不能安全降级"):
+            merge_gstats(source, target)
 
 
 if __name__ == "__main__":

@@ -45,6 +45,7 @@ _TRUNK_WEAPON = re.compile(rb'^(?P<value>-?\d+)\s+(?P<id>\d+)\s+trunk\.weapon!\s
 _CAR_FIELD = re.compile(rb'^(?P<value>-?\d+(?:\.\d+)?)\s+\'\s+(?P<field>car-(?:max-)?(?:chassis|engine|armor|speed)|car-mpg|car-repair)\s+<to\s*$')
 _ROAD_FIELD = re.compile(rb'^(?P<value>-?\d+)\s+road\{\s+\'\s+(?P<field>road-trip-days|nearcanada-day)\s+}\s+<to\s*$')
 _GSTAT_FIELD = re.compile(rb"^(?P<value>-?\d+)\s+gstats\{\s+'\s+(?P<field>[A-Za-z0-9+_-]+)\s+}\s+<to\s*$")
+_GSTAT_ASSIGNMENT = re.compile(rb"^.*?gstats\{\s+'\s+(?P<field>[A-Za-z0-9+_-]+)\s+}\s+<to\s*$")
 _STACK_TARGET = re.compile(
     rb"(?:[A-Za-z0-9_-]+\{\s+)?'\s+(?P<field>[A-Za-z0-9_-]+)\s+(?:}\s+)?<to\s*$"
 )
@@ -111,6 +112,15 @@ class ConversionReport:
     renamed: int
     transient_stacks: int = 0
     unknown: tuple[str, ...] = ()
+
+
+@dataclass(frozen=True)
+class GStatsMergeReport:
+    """全局升级存档互转采用的兼容策略及其影响。"""
+
+    mode: str
+    copied_fields: int
+    zeroed_target_fields: tuple[str, ...] = ()
 
 
 def load_mapping(path: Path | None = None) -> dict[str, dict[str, str]]:
@@ -426,12 +436,103 @@ def read_gstats(data: bytes) -> dict[str, int]:
     return result
 
 
+def _gstats_field_blocks(data: bytes) -> tuple[list[tuple[bytes, bytes]], dict[str, tuple[int, int]]]:
+    """定位每个 gstats 字段的完整保存块。
+
+    大多数全局字段是一行数值赋值；成就列表等容器则是 ``0 stack`` 开始、
+    ``gstats{ ... } <to`` 结束的多行块。合并旧档时，容器字段也必须整体迁移，
+    不能只处理数值字段。
+    """
+    parts = _parts(data)
+    blocks: dict[str, tuple[int, int]] = {}
+    stack_start: int | None = None
+    for index, (body, _) in enumerate(parts):
+        if body.strip() == b"0 stack":
+            stack_start = index
+            continue
+        if not (match := _GSTAT_ASSIGNMENT.match(body)):
+            continue
+        field = match["field"].decode("ascii")
+        if field in blocks:
+            raise SaveError(f"全局升级存档字段重复：{field}")
+        numeric = _GSTAT_FIELD.match(body) is not None
+        if numeric:
+            blocks[field] = (index, index)
+        elif stack_start is not None:
+            blocks[field] = (stack_start, index)
+        else:
+            raise SaveError(f"全局升级字段 {field} 使用了未识别的非数值保存格式，已拒绝转换。")
+        stack_start = None
+    if not blocks:
+        raise SaveError("文件中未找到 gstats 字段，不是可识别的全局升级存档。")
+    return parts, blocks
+
+
 def assert_same_gstats_structure(source: bytes, target: bytes) -> None:
-    """确认两份 gstats 仅数值不同，防止跨未兼容版本盲目覆盖。"""
-    source_fields = tuple(read_gstats(source))
-    target_fields = tuple(read_gstats(target))
+    """确认两份 gstats 所有字段一致，防止跨未兼容版本盲目覆盖。"""
+    _, source_blocks = _gstats_field_blocks(source)
+    _, target_blocks = _gstats_field_blocks(target)
+    source_fields = tuple(source_blocks)
+    target_fields = tuple(target_blocks)
     if source_fields != target_fields:
         raise SaveError("两份 gstats 字段结构不同，可能来自未兼容的游戏或补丁版本，已拒绝转换。")
+
+
+def merge_gstats(source: bytes, target: bytes) -> tuple[bytes, GStatsMergeReport]:
+    """将旧版本 gstats 安全迁移到字段更多的目标版本。
+
+    字段完全一致时沿用完整复制。若来源字段是目标字段的有序子集，则以目标文件
+    为模板：迁移所有同名字段，目标独有的数值字段写为 0。来源有目标不存在的字段、
+    字段顺序改变，或目标独有字段不是可安全归零的数值字段时一律拒绝。
+    """
+    source_parts, source_blocks = _gstats_field_blocks(source)
+    target_parts, target_blocks = _gstats_field_blocks(target)
+    source_fields = tuple(source_blocks)
+    target_fields = tuple(target_blocks)
+    source_only = tuple(field for field in source_fields if field not in target_blocks)
+    if source_only:
+        raise SaveError(
+            "来源 gstats 含有目标版本没有的字段，不能安全降级转换："
+            + "、".join(source_only)
+        )
+    if source_fields == target_fields:
+        return source, GStatsMergeReport("exact", len(source_fields))
+    if source_fields != tuple(field for field in target_fields if field in source_blocks):
+        raise SaveError("两份 gstats 的共同字段顺序不同，不能安全合并。")
+
+    source_values = read_gstats(source)
+    target_only = tuple(field for field in target_fields if field not in source_blocks)
+    stack_replacements: dict[int, tuple[int, list[tuple[bytes, bytes]]]] = {}
+    for field in source_fields:
+        source_start, source_end = source_blocks[field]
+        target_start, target_end = target_blocks[field]
+        source_numeric = _GSTAT_FIELD.match(source_parts[source_end][0]) is not None
+        target_numeric = _GSTAT_FIELD.match(target_parts[target_end][0]) is not None
+        if source_numeric != target_numeric:
+            raise SaveError(f"全局升级字段 {field} 的保存格式在两个版本间不同，已拒绝转换。")
+        if not source_numeric:
+            stack_replacements[target_start] = (target_end, source_parts[source_start:source_end + 1])
+    for field in target_only:
+        _, target_end = target_blocks[field]
+        if _GSTAT_FIELD.match(target_parts[target_end][0]) is None:
+            raise SaveError(f"目标新增字段 {field} 不是可安全归零的数值字段，已拒绝转换。")
+
+    output: list[tuple[bytes, bytes]] = []
+    index = 0
+    while index < len(target_parts):
+        if index in stack_replacements:
+            end, replacement = stack_replacements[index]
+            output.extend(replacement)
+            index = end + 1
+            continue
+        body, ending = target_parts[index]
+        if match := _GSTAT_FIELD.match(body):
+            field = match["field"].decode("ascii")
+            value = source_values[field] if field in source_values else 0
+            body = _replace_value(body, match, str(value).encode("ascii"))
+        output.append((body, ending))
+        index += 1
+    return _join(output), GStatsMergeReport("forward_merge", len(source_fields), target_only)
 
 
 def set_gstats_fields(data: bytes, *, prefixes: tuple[str, ...], value: int) -> tuple[bytes, int]:
